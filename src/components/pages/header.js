@@ -3,7 +3,10 @@ import '../styles/header.css'
 import {Link, Route, BrowserRouter as Router, Routes} from 'react-router-dom'
 
 import About from './about'
+import Account from './account'
+import Contact from './contact'
 import Home from './home'
+import Logout from './logout'
 import React from 'react'
 import logo from '../images/CTA-Logo.png'
 import search from '../images/svg8.svg'
@@ -28,7 +31,10 @@ const Header = () => {
 
             <Routes>
                 <Route path='/' element={<Home />} />
-                <Route path='/about' element={ <About/>} />
+                <Route path='/about' element={<About />} />
+                <Route path='/contact' element={<Contact />} />
+                <Route path='/account' element={<Account />} />
+                <Route path='/logout' element={<Logout/>} />
             </Routes>
         </Router>
     )
