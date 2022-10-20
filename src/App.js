@@ -1,24 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import './components/styles/app.css';
+import './components/pages/header.js'
+
+import Header from './components/pages/header';
+import React from 'react';
+import image from './components/images/CWW-Tech-Africa.png'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <React.Fragment>
+      <Header />
+
+      <img src={image} alt="" style={{'width':'100px', 'height':'100px'}} />
+      <div className="App">
+      <p>Cww Tech Africa web site clonned with react</p>
+      </div><br /><br /><br />
+
+
+    </React.Fragment>
   );
 }
 
