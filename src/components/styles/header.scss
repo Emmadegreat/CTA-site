@@ -1,5 +1,116 @@
+@import './_config';
+
+*{
+    @include general;
+}
+
+@mixin flex ($direction){
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    flex-direction: $direction;
+}
+$mobile:768px;
+
+@mixin mobile-view {
+    @media (max-width:$mobile) {
+        @content;
+
+    }
+
+}
+
 .header{
+    @include flex(row);
     background-color: #e3ecf2;
     height: 80px;
+    width: 100vw;
+    position: fixed;
     padding: 0rem 2rem;
+    z-index: 3;
+
+    & .logo img{
+        width: 70px;
+        height: 60px;
+    }
+    & .nav-bar{
+        display: flex;
+
+
+        & .nav-menu{
+            display: flex;
+
+
+            & li{
+                list-style-type: none;
+                margin: 0rem 1rem;
+
+                & a{
+                    text-decoration: none;
+                    font-weight: 700;
+                    color: rgb(69, 65, 65);
+                    cursor: pointer;
+
+
+                    &:hover{
+                        color: #756f73;
+                    }
+                }
+            }
+
+        }
+
+
+        & section{
+            display: flex;
+            align-items: center;
+
+            & #search-icon{
+                border-radius: 50%;
+                margin: 0rem 1rem;
+            }
+            & .hamburger{
+                display: none;
+            }
+        }
+    }
+    @include mobile-view {
+        @include flex(row);
+
+        & .nav-menu{
+            flex-direction: column;
+            align-items: flex-start;
+            text-align: left;
+            position: fixed;
+            top: 80px;
+            background-color: #fff;
+            height: 290px;
+            width: 100%;
+            left: -100%;
+            z-index: 2;
+            padding: 1rem;
+            transition: 1s ease;
+            transition-duration: all 1s ease;
+            border-top: 3px solid midnightblue;
+            box-shadow: rgb(83, 75, 75) 2px solid gray;
+
+            & li{
+                padding: 0.8rem 1rem;
+                border-bottom: 1px solid rgb(121, 108, 108);
+                width: 95%;
+                & a{
+                    text-align: left;
+                    font-weight: 300;
+                    font-size: 0.8rem;
+                }
+            }
+            &.active{
+                left: 0;
+            }
+        }
+        & .nav-bar section .hamburger{
+            display: block;
+        }
+    }
 }
