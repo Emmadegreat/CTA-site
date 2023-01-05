@@ -5,6 +5,11 @@
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.app {
-  padding-top: 7rem;
+.spacer {
+  padding-top: 10rem;
+  width: 100%;
+}
+
+pages {
+  padding: 0rem 1rem 10rem 1rem;
 }/*# sourceMappingURL=app.css.map */

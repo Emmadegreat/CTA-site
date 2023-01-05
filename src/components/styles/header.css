@@ -21,6 +21,7 @@
 .header .logo img {
   width: 70px;
   height: 60px;
+  transition: all 0.5s ease-in-out;
 }
 .header .nav-bar {
   display: flex;
@@ -35,11 +36,14 @@
 .header .nav-bar .nav-menu li a {
   text-decoration: none;
   font-weight: 700;
-  color: rgb(69, 65, 65);
+  color: #333333;
   cursor: pointer;
 }
 .header .nav-bar .nav-menu li a:hover {
-  color: #756f73;
+  opacity: 0.7;
+}
+.header .nav-bar .nav-menu li .active {
+  color: red;
 }
 .header .nav-bar section {
   display: flex;
@@ -59,6 +63,11 @@
     align-items: center;
     text-align: center;
     flex-direction: row;
+    background: #fff;
+  }
+  .header .logo img {
+    width: 50px;
+    height: 40px;
   }
   .header .nav-menu {
     flex-direction: column;
@@ -75,12 +84,15 @@
     transition: 1s ease;
     transition-duration: all 1s ease;
     border-top: 3px solid midnightblue;
-    box-shadow: rgb(83, 75, 75) 2px solid gray;
+    box-shadow: rgb(0, 0, 0) 0px 2px 5px 0px;
   }
   .header .nav-menu li {
     padding: 0.8rem 1rem;
     border-bottom: 1px solid rgb(121, 108, 108);
     width: 95%;
+  }
+  .header .nav-menu li:hover {
+    background: #f8f9fa;
   }
   .header .nav-menu li a {
     text-align: left;

@@ -1,0 +1,24 @@
+@import './_config';
+
+*{
+    @include general;
+}
+
+.footer{
+    width: 100%;
+    height: auto;
+    position: absolute;
+
+    & .wrapper-1{
+        background: #333;
+       @include display(row, space-around);
+       color: #fff;
+       padding: 1.5rem;
+    }
+    & .wrapper-2{
+        background: #000;
+        @include display(row, space-between);
+        color: #333;
+        padding: 1.2rem 4rem;
+    }
+}

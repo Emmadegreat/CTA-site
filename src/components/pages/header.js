@@ -2,15 +2,10 @@ import '../styles/header.css'
 
 import { FaBars, FaTimes } from 'react-icons/fa'
 import {Link, Route, BrowserRouter as Router, Routes} from 'react-router-dom'
-import React, { useState } from 'react'
+import React, { Fragment, useState } from 'react'
 
-import About from './about'
-import Account from './account'
-import Contact from './contact'
-import Home from './home'
-import Logout from './logout'
 import logo from '../images/CTA-Logo.png'
-import search from '../images/svg8.svg'
+import search from '../images/search-icon.svg'
 
 const Header = () => {
 
@@ -18,9 +13,10 @@ const Header = () => {
     const handleClick = () => setClick(!click);
 
     const closeLinks = () => setClick(false);
+    //const [activeTab, setActiveTab] = useState('Home')
 
     return (
-        <Router>
+        <Fragment>
             <nav className='header'>
                 <div className='logo'>
                     <a href="https://cwwtechafrica.com" onClick={closeLinks}><img src={ logo } alt="page-logo"  /></a>
@@ -49,14 +45,7 @@ const Header = () => {
 
             </nav>
 
-            <Routes>
-                <Route path='/' element={<Home />} />
-                <Route path='/about' element={<About />} />
-                <Route path='/contact' element={<Contact />} />
-                <Route path='/account' element={<Account />} />
-                <Route path='/logout' element={<Logout />} />
-            </Routes>
-        </Router>
+        </Fragment>
     )
 }
 

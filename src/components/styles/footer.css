@@ -1,0 +1,28 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.footer {
+  width: 100%;
+  height: auto;
+  position: absolute;
+}
+.footer .wrapper-1 {
+  background: #333;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  color: #fff;
+  padding: 1.5rem;
+}
+.footer .wrapper-2 {
+  background: #000;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  color: #333;
+  padding: 1.2rem 4rem;
+}/*# sourceMappingURL=footer.css.map */
