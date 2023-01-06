@@ -265,7 +265,7 @@
     & .section-5-container{
         @include display(row, space-evenly);
 
-        & .box{
+        & .card{
             flex-basis: 42%;
             color: #333333;
             text-align: start;
@@ -304,12 +304,92 @@
         & .section-5-container{
             @include display(column, center);
 
-            & .box{
+            & .card{
                 margin-bottom: 1.6rem;
 
                 & h4{
                     font-size: 30px;
                 }
+            }
+        }
+    }
+}
+
+.section-6{
+    padding: 2.5rem 2.6rem;
+
+    & .section-6-container{
+        @include display(row, space-evenly);
+
+        & .card {
+            flex-basis: 27%;
+            color: #333333;
+            text-align: start;
+
+            & img{
+                width: 100%;
+            }
+            & h4{
+                margin: 1rem 0rem;
+                font-size: 18px;
+            }
+            & p{
+                line-height: 1.6;
+                font-size: 1rem;
+            }
+        }
+    }
+    @media (max-width:900px) {
+        padding: 2rem;
+
+        & .section-6-container{
+            @include display(column, space-evenly);
+
+            & .card{
+                margin-bottom: 1.6rem;
+
+                & img{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+.section-7{
+    padding: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    & .card{
+        margin: 2rem 0rem;
+        color: #333333;
+
+        & h4{
+            font-size: 35px;
+            line-height: 35px;
+        }
+        & p{
+            margin: 1rem 0rem;
+            font-size: 1.2rem;
+        }
+        & button{
+            background: #ffc21c;
+            padding: 0.5rem;
+            width: 150px;
+            height: 37px;
+            border-width: 0rem;
+            border-radius: 0.4rem;
+            margin: 1.2rem 0rem;
+            box-shadow: rgb(0, 37, 148) 0px 2px 3px 2px;
+
+            & a{
+                text-decoration: none;
+                color: #000;
+                font-weight: 700;
+                font-size: 1rem;
             }
         }
     }

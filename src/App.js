@@ -36,9 +36,7 @@ function App() {
         </Routes>
       </div>
 
-
-           <p>Cww Tech Africa web site clonned with react</p>
-        <Footer/>
+      <Footer/>
 
 
 

@@ -2,6 +2,9 @@ import '../styles/home.css'
 
 import Data from '../data.json'
 import React from 'react'
+import col1_img from '../images/col1-img.jpg'
+import col2_img from '../images/col2-img.jpg'
+import col3_img from '../images/col3-img.jpg'
 import image from '../images/CWW-Tech-Africa.png'
 import img1 from '../images/img1.png'
 import img2 from '../images/img2.PNG'
@@ -140,7 +143,7 @@ const Home = () => {
 
             <section className="section-5">
                 <section className="section-5-container">
-                    <div className="box">
+                    <div className="card">
                         <h4>Want to Volunteer with us?</h4>
                         <p>
                             We are looking for skilled volunteers who are looking to be a part of
@@ -148,7 +151,7 @@ const Home = () => {
                         </p>
                         <button><a href="https://www.cwwtechafrica.com/cta-volunteer-form/">Learn more</a></button>
                     </div>
-                    <div className="box">
+                    <div className="card">
                         <h4>Need Interns?</h4>
                         <p>
                             Want to hire a talent, we have the best African talents in our community.
@@ -158,6 +161,47 @@ const Home = () => {
                         <button><a href="https://www.cwwtechafrica.com/internship-placement-form">Get in touch</a></button>
                     </div>
                 </section>
+            </section>
+
+            <section className="section-6">
+                <section className="section-6-container">
+                    <div className="card">
+                        <img src={ col1_img } alt=""  />
+                        <h4>Learn and in-demand skill</h4>
+                        <p>
+                            Tech is the future of work. Learn an in-demand skill today and be equipped with
+                            the ecosystem. In addition, you would get trained in soft skills and entrepreneurship.                      our mission to empower African youths with in-demand digital and tech skills.
+                        </p>
+                    </div>
+                    <div className="card">
+                        <img src={col2_img} alt=""  />
+                        <h4>Build new networks</h4>
+                        <p>
+                            Get access to a community of like minded individuals, build relationships and
+                            learn from each other.
+                        </p>
+                    </div>
+                    <div className="card">
+                        <img src={ col3_img } alt="" />
+                        <h4>Get Intership placement</h4>
+                        <p>
+                            Get an internship placement after after the program. This will ensure that you
+                            have enough experience to get into a tech role and build your portfolio.         Our traineers are empowered with in-demand tech skills and also equipped with
+                            soft skills and business skills. We have the best.
+                        </p>
+                    </div>
+                </section>
+            </section>
+
+            <section className="section-7">
+                <div className="card">
+                    <h4>Stand a change to win amazing prizes, refer a friend</h4>
+                    <p>
+                        Amazing cash prizes, laptops, power banks, and more are available to be
+                        won. Refer as many people as possible to win.
+                    </p>
+                    <button><a href="https://www.cwwtechafrica.com/join-the-waitlist/">Join the Waitlist</a></button>
+                </div>
             </section>
 
         </section>

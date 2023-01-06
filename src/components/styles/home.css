@@ -262,21 +262,21 @@
   justify-content: space-evenly;
   flex-direction: row;
 }
-.section-5 .section-5-container .box {
+.section-5 .section-5-container .card {
   flex-basis: 42%;
   color: #333333;
   text-align: start;
 }
-.section-5 .section-5-container .box h4 {
+.section-5 .section-5-container .card h4 {
   font-size: 35px;
   line-height: 35px;
 }
-.section-5 .section-5-container .box p {
+.section-5 .section-5-container .card p {
   font-size: 1rem;
   line-height: 23.8px;
   margin: 0.7rem 0rem;
 }
-.section-5 .section-5-container .box button {
+.section-5 .section-5-container .card button {
   background: #002594;
   padding: 0.5rem;
   width: 110px;
@@ -285,7 +285,7 @@
   border-radius: 0.4rem;
   margin: 1.2rem 0rem;
 }
-.section-5 .section-5-container .box button a {
+.section-5 .section-5-container .card button a {
   text-decoration: none;
   color: #fff;
   font-weight: 700;
@@ -300,10 +300,87 @@
     justify-content: center;
     flex-direction: column;
   }
-  .section-5 .section-5-container .box {
+  .section-5 .section-5-container .card {
     margin-bottom: 1.6rem;
   }
-  .section-5 .section-5-container .box h4 {
+  .section-5 .section-5-container .card h4 {
     font-size: 30px;
   }
+}
+
+.section-6 {
+  padding: 2.5rem 2.6rem;
+}
+.section-6 .section-6-container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+}
+.section-6 .section-6-container .card {
+  flex-basis: 27%;
+  color: #333333;
+  text-align: start;
+}
+.section-6 .section-6-container .card img {
+  width: 100%;
+}
+.section-6 .section-6-container .card h4 {
+  margin: 1rem 0rem;
+  font-size: 18px;
+}
+.section-6 .section-6-container .card p {
+  line-height: 1.6;
+  font-size: 1rem;
+}
+@media (max-width: 900px) {
+  .section-6 {
+    padding: 2rem;
+  }
+  .section-6 .section-6-container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+  }
+  .section-6 .section-6-container .card {
+    margin-bottom: 1.6rem;
+  }
+  .section-6 .section-6-container .card img {
+    width: 100%;
+  }
+}
+
+.section-7 {
+  padding: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.section-7 .card {
+  margin: 2rem 0rem;
+  color: #333333;
+}
+.section-7 .card h4 {
+  font-size: 35px;
+  line-height: 35px;
+}
+.section-7 .card p {
+  margin: 1rem 0rem;
+  font-size: 1.2rem;
+}
+.section-7 .card button {
+  background: #ffc21c;
+  padding: 0.5rem;
+  width: 150px;
+  height: 37px;
+  border-width: 0rem;
+  border-radius: 0.4rem;
+  margin: 1.2rem 0rem;
+  box-shadow: rgb(0, 37, 148) 0px 2px 3px 2px;
+}
+.section-7 .card button a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 700;
+  font-size: 1rem;
 }/*# sourceMappingURL=home.css.map */
