@@ -1,10 +1,12 @@
 import '../styles/home.css'
 
 import Data from '../data.json'
+import { FaAngleRight } from 'react-icons/fa'
 import React from 'react'
 import col1_img from '../images/col1-img.jpg'
 import col2_img from '../images/col2-img.jpg'
 import col3_img from '../images/col3-img.jpg'
+import { icons } from 'react-icons'
 import image from '../images/CWW-Tech-Africa.png'
 import img1 from '../images/img1.png'
 import img2 from '../images/img2.PNG'
@@ -13,9 +15,15 @@ import img4 from '../images/img4.png'
 import img5 from '../images/img5.png'
 import img6 from '../images/img6.png'
 import img7 from '../images/cta-sect-3-img.png'
+import review1 from '../images/review1.jpeg'
+import review2 from '../images/review2.jpg'
+import review3 from '../images/review3.jpg'
+import { useState } from 'react'
 
 const Home = () => {
 
+    const [angle, setAngle] = useState(false);
+    const handleAngle = () => setAngle(!angle);
 
     return (
         <section className='home'>
@@ -144,7 +152,7 @@ const Home = () => {
             <section className="section-5">
                 <section className="section-5-container">
                     <div className="card">
-                        <h4>Want to Volunteer with us?</h4>
+                        <h3>Want to Volunteer with us?</h3>
                         <p>
                             We are looking for skilled volunteers who are looking to be a part of
                             our mission to empower African youths with in-demand digital and tech skills.
@@ -152,7 +160,7 @@ const Home = () => {
                         <button><a href="https://www.cwwtechafrica.com/cta-volunteer-form/">Learn more</a></button>
                     </div>
                     <div className="card">
-                        <h4>Need Interns?</h4>
+                        <h3>Need Interns?</h3>
                         <p>
                             Want to hire a talent, we have the best African talents in our community.
                             Our traineers are empowered with in-demand tech skills and also equipped with
@@ -195,12 +203,89 @@ const Home = () => {
 
             <section className="section-7">
                 <div className="card">
-                    <h4>Stand a change to win amazing prizes, refer a friend</h4>
+                    <h3>Stand a chance to win amazing prizes, refer a friend</h3>
                     <p>
                         Amazing cash prizes, laptops, power banks, and more are available to be
                         won. Refer as many people as possible to win.
                     </p>
-                    <button><a href="https://www.cwwtechafrica.com/join-the-waitlist/">Join the Waitlist</a></button>
+                    <button><a href="https://www.cwwtechafrica.com/join-the-waitlist/"target="_blank" rel='noreferrer'>Join the Waitlist</a></button>
+                </div>
+            </section>
+
+            <section className="section-wrapper">
+                <h3>Review From Our Students</h3>
+                <section className="section-8-container">
+                    <div className="card">
+                        <small>"</small>
+                        <img src={review1} alt="" />
+                        <article>
+                            <p>
+                                CWW has given me a good opportunity to start a career in tech. I have learnt
+                                more than i thought I would. My facilitator did a great job in imparting knowledge
+                                into us anf I'am glad to be a beneficiary of CWW cohort 1.0.                      our mission to empower African youths with in-demand digital and tech skills.
+                            </p>
+                            <b>Adeyemi Amerah (Nigeria)</b>
+                            <span>Ui/UX Design Trainee, CTA cohort 1.0.</span>
+                        </article>
+
+                    </div>
+                    <div className="card">
+                        <small>"</small>
+                        <img src={ review2 } alt=""  />
+                        <article>
+                            <p>
+                                The course was refreshing, interactive and interesting; a good mixture of
+                                practical and theory with enough time to discuss issues.
+                            </p>
+                            <b>Gilbert Asumwisye (Tanzania)</b>
+                            <span>Digital Marketing Trainee, CTA cohort 1.0.</span>
+                        </article>
+
+                    </div>
+                    <div className="card">
+                        <small>"</small>
+                        <img src={ review3 } alt="" />
+                        <article>
+                            <p>
+                                It was an immense plasure to test the skills acquired during this program,
+                                through the holistically conceived individual projects and I also enjoyed
+                                working with a fellow trainees on group projects.
+                            </p>
+                            <b>SONNA Mael (Cameroun)</b>
+                            <span>Data Analysis Trainee, CTA cohort 1.0.</span>
+                        </article>
+                    </div>
+                </section>
+
+                <div className='section-9-container'>
+                    <div className="card">
+                        <h3>Join our Tech community</h3>
+                        <p>
+                            Be the first to know about the latest courses, training programs,
+                            jobs, interships and freebies!
+                        </p>
+                    </div>
+                    <div className="card">
+                        <div id=''></div>
+                        <small><em>*</em> indicates required field</small>
+                        <form action="" method="post">
+                            <legend>
+                                <label htmlFor="firstname">Firstname</label>
+                                <input type="text" name='firstname' placeholder='First Name'/>
+                            </legend>
+                             <legend>
+                                <label htmlFor="lastname">Firstname</label>
+                                <input type="text" name='lastname' placeholder='Last Name'/>
+                            </legend>
+                             <legend>
+                                <label htmlFor="email">Firstname</label>
+                                <input type="text" name='email' placeholder='Email'/>
+                            </legend>
+                            <button type="submit">Submit</button>
+                        </form>
+
+                    </div>
+
                 </div>
             </section>
 

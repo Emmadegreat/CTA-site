@@ -270,7 +270,7 @@
             color: #333333;
             text-align: start;
 
-            & h4{
+            & h3{
                 font-size: 35px;
                 line-height: 35px;
             }
@@ -307,7 +307,7 @@
             & .card{
                 margin-bottom: 1.6rem;
 
-                & h4{
+                & h3{
                     font-size: 30px;
                 }
             }
@@ -361,13 +361,15 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     text-align: center;
+    margin-bottom: 3rem;
 
     & .card{
         margin: 2rem 0rem;
         color: #333333;
 
-        & h4{
+        & h3{
             font-size: 35px;
             line-height: 35px;
         }
@@ -378,19 +380,204 @@
         & button{
             background: #ffc21c;
             padding: 0.5rem;
-            width: 150px;
+            width: 170px;
             height: 37px;
             border-width: 0rem;
             border-radius: 0.4rem;
             margin: 1.2rem 0rem;
+            transition: all 1s;
             box-shadow: rgb(0, 37, 148) 0px 2px 3px 2px;
+            position: absolute;
+            right: 40%;
 
             & a{
                 text-decoration: none;
                 color: #000;
-                font-weight: 700;
-                font-size: 1rem;
+                font-weight: 600;
+                font-size: 1.1rem;
+                position: relative;
+            }
+            & a:after{
+                content: "\203A";
+                position: absolute;
+                transition: 1s;
+                top: 0;
+                bottom: 0;
+                opacity: 0;
+                right: -20px;
+            }
+            &:hover a{
+                padding-right: 5px;
+            }
+            &:hover a:after{
+                opacity: 1;
+                right: -6px;
+            }
+
+        }
+    }
+    @media (max-width:900px) {
+        padding:2rem;
+
+        & .card{
+
+            & h3{
+                font-size: 30px;
+                line-height: 30px;
+            }
+            & p{
+                margin: 1rem 0rem;
+                font-size: 1.2rem;
+            }
+            @media (max-width:550px){
+
+                & button{
+                    right: 28%;
+                }
             }
         }
+    }
+}
+
+.section-wrapper{
+    padding: 2.5rem;
+    background: #002594;
+
+    & h4{
+        font-size: 35px;
+        line-height: 35px;
+        text-align: center;
+        color: #fff;
+        padding: 2rem 0rem 4rem 0rem
+    }
+
+    & .section-8-container{
+        @include display(row, space-evenly);
+
+        & .card {
+            @include display(column, center);
+            padding: 1.6rem;
+            flex-basis: 27%;
+            color: #333333;
+            background: rgb(242, 240, 240);
+            border: 2px solid #ffc21c;
+            text-align: start;
+            position: relative;
+
+            & small {
+                position: absolute;
+                width: 35px;
+                height: 35px;
+                font-size: 2rem;
+                font-weight: 700;
+                left: 45%;
+                top: -17px;
+                background: rgb(242, 240, 240);
+                border-radius: 50%;
+                border: 2px solid #000;
+                text-align: center;
+            }
+
+            & img{
+                width: 150px;
+                height: 170px;
+                margin: auto;
+                border-radius: 45%;
+                border: 1.5px solid rgb(222, 218, 218);
+                margin-top: 0rem;
+            }
+            & article{
+                margin-top: 2.2rem;
+                height: 100%;
+
+                & p{
+                    line-height: 1.6;
+                    font-size: 1rem;
+                    padding-bottom: 1.5rem;
+                }
+            }
+        }
+    }
+    @media (max-width:1000px){
+        padding: 2rem;
+
+        & h4{
+            font-size: 28px;
+            line-height: 30px;
+        }
+
+        & .section-8-container{
+            @include display(column, center);
+
+            & .card{
+                @include display(row, space-evenly);
+                margin-bottom: 2rem;
+
+                & article{
+                    margin-left: 1rem;
+                }
+                @media (max-width:768px){
+                    @include display(column, center);
+                    padding: 1.6rem 1rem;
+                }
+            }
+        }
+    }
+    & .section-9-container{
+        margin: 3rem 0rem;
+
+        & .card{
+            @include display(column, center);
+            text-align: center;
+            padding: 2rem 0rem;
+
+            & h4{
+                padding-bottom: 1.5rem;
+            }
+            & p{
+                color:#fff;
+                font-size: 1rem;
+            }
+            & small em{
+                color: #ff0000;
+            }
+            & form{
+                width: 55%;
+                margin: auto;
+                padding-top: 1.5rem;
+
+                & label{
+                    display: none;
+                }
+                & input{
+                    width: 100%;
+                    height: 34px;
+                    padding: 0.3rem;
+                    font-size: 1rem;
+                    margin-bottom: 0.5rem;
+                    border-width: 0rem;
+                }
+                & button{
+                    width: 130px;
+                    height: 40px;
+                    font-size: 1rem;
+                    background: #ffc21c;
+                    color: #002594;
+                    border-radius: 0.3rem;
+                    border-width: 0rem;
+                    margin-top: 1.5rem;
+                    float: left;
+                }
+            }
+            @media (max-width:500px){
+                padding: 0rem;
+
+                & form{
+                    width: 70%;
+                }
+            }
+        }
+
+
     }
 }
