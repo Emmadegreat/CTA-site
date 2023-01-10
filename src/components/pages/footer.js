@@ -8,19 +8,19 @@ import instagram from '../images/instag.png'
 const Footer = (props) => {
     return (
         <section className='footer'>
-             {/*<div className="footer-wrapper">
+            <div className="footer-wrapper" id='first-card'>
                 <div className="card">
-                    <p>COPYRIGHT <span>{ props.year}</span> &copy; CWW Tech Africa</p>
+                    <p>COPYRIGHT <span>{ props.year}</span> &copy; <b>CWW Tech Africa</b></p>
                 </div>
-                <div className="card first-card">
-                   *<ul>
-                        <a href="https://www.cwwtechafrican.com/contact-us" target="_blank" rel='noreferrer'><img src={ facebook } alt="faceooklink" width='50px' /></a>
-                        <a href="https://www.cwwtechafrican.com/cta-application-form" target="_blank" rel='noreferrer'><img src={ instagram } alt="intagramlink" width='50px' /></a>
-                        <a href="https://www.cwwtechafrican.com/referrals" target="_blank" rel='noreferrer'><img src={ feed } alt="feedlink" width='50px' /></a>
-    </ul>
+                <div className="card" id="second-card">
+                   <ul>
+                        <a href="https://www.facebook.com/cwwtechafrica" target="_blank" rel='noreferrer'><img src={ facebook } alt="faceooklink" width='30px' /></a>
+                        <a href="https://www.instagram.com/cwwtechafrica" target="_blank" rel='noreferrer'><img src={ instagram } alt="intagramlink" width='30px' /></a>
+                        <a href="https://www.cwwtechafrican.com/feed" target="_blank" rel='noreferrer'><img src={ feed } alt="feedlink" width='30px' /></a>
+                    </ul>
 
                 </div>
-            </div>*/}
+            </div>
         </section>
     )
 }
