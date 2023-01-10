@@ -7,22 +7,23 @@
 
 .footer {
   width: 100%;
-  height: auto;
+  height: 60px;
   position: absolute;
-}
-.footer .wrapper-1 {
-  background: #333;
-  display: flex;
-  justify-content: space-around;
-  flex-direction: row;
-  color: #fff;
-  padding: 1.5rem;
-}
-.footer .wrapper-2 {
   background: #000;
+  padding: 1rem 2.5rem;
+  /*& .footer-wrapper{
+      background: #000;
+      @include display(row, space-between);
+      color: #333;
+      padding: 1.2rem 4rem;
+  }*/
+}
+.footer .footer-wrapper {
   display: flex;
   justify-content: space-between;
   flex-direction: row;
-  color: #333;
-  padding: 1.2rem 4rem;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  padding: 1.5rem;
 }/*# sourceMappingURL=footer.css.map */

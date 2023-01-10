@@ -103,7 +103,16 @@
   height: 100px;
   margin: 1rem;
 }
+@media (max-width: 1000px) {
+  .section-2 {
+    padding: 1.5rem 2rem 4rem 2rem;
+  }
+}
 @media (max-width: 768px) {
+  .section-2 h2 {
+    font-size: 40px;
+    line-height: 1.4;
+  }
   .section-2 .container {
     display: flex;
     justify-content: center;
@@ -119,17 +128,6 @@
     max-width: 60px;
     max-height: 60px;
     width: 100%;
-  }
-}
-@media (max-width: 1000px) {
-  .section-2 {
-    padding: 1.5rem 2rem 4rem 2rem;
-  }
-}
-@media (max-width: 768px) {
-  .section-2 h2 {
-    font-size: 40px;
-    line-height: 1.4;
   }
 }
 
@@ -156,7 +154,7 @@
   line-height: 24px;
   color: #002594;
 }
-.section-3 .section-3-container .box article h3 {
+.section-3 .section-3-container .box article h2 {
   font-size: 46px;
   line-height: 2;
 }
@@ -189,7 +187,7 @@
   .section-3 {
     padding: 4rem 2rem;
   }
-  .section-3 .section-3-container .box article h3 {
+  .section-3 .section-3-container .box article h2 {
     font-size: 30px;
   }
   .section-3 .section-3-container .box article p {
@@ -201,7 +199,7 @@
 .section-4 {
   padding: 4rem;
 }
-.section-4 h3 {
+.section-4 h2 {
   font-size: 50px;
   line-height: 65px;
   text-align: center;
@@ -242,7 +240,7 @@
   .section-4 {
     padding: 4rem 2rem;
   }
-  .section-4 h3 {
+  .section-4 h2 {
     font-size: 25px;
     line-height: 40px;
   }
@@ -392,7 +390,7 @@
   position: relative;
 }
 .section-7 .card button a:after {
-  content: "›";
+  content: "❯";
   position: absolute;
   transition: 1s;
   top: 0;
@@ -430,7 +428,7 @@
   padding: 2.5rem;
   background: #002594;
 }
-.section-wrapper h4 {
+.section-wrapper h3 {
   font-size: 35px;
   line-height: 35px;
   text-align: center;
@@ -459,7 +457,7 @@
   width: 35px;
   height: 35px;
   font-size: 2rem;
-  font-weight: 700;
+  font-weight: 200;
   left: 45%;
   top: -17px;
   background: rgb(242, 240, 240);
@@ -469,9 +467,9 @@
 }
 .section-wrapper .section-8-container .card img {
   width: 150px;
-  height: 170px;
+  height: 160px;
   margin: auto;
-  border-radius: 45%;
+  border-radius: 50%;
   border: 1.5px solid rgb(222, 218, 218);
   margin-top: 0rem;
 }
@@ -482,13 +480,13 @@
 .section-wrapper .section-8-container .card article p {
   line-height: 1.6;
   font-size: 1rem;
-  padding-bottom: 1.5rem;
+  padding-bottom: 2rem;
 }
 @media (max-width: 1000px) {
   .section-wrapper {
     padding: 2rem;
   }
-  .section-wrapper h4 {
+  .section-wrapper h3 {
     font-size: 28px;
     line-height: 30px;
   }
@@ -525,7 +523,7 @@
   text-align: center;
   padding: 2rem 0rem;
 }
-.section-wrapper .section-9-container .card h4 {
+.section-wrapper .section-9-container .card h3 {
   padding-bottom: 1.5rem;
 }
 .section-wrapper .section-9-container .card p {
@@ -568,5 +566,74 @@
   }
   .section-wrapper .section-9-container .card form {
     width: 70%;
+  }
+  .section-wrapper .section-9-container .card form button {
+    width: 100%;
+  }
+}
+
+.section-11 {
+  padding: 3.5rem 0rem;
+  background: #333333;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+}
+.section-11 .card {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-basis: 50%;
+  padding-left: 3rem;
+  line-height: 2.5;
+  color: #fff;
+}
+.section-11 .card a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 0.95rem;
+}
+.section-11 .card1 {
+  display: flex;
+  justify-content: left;
+  flex-direction: column;
+  border: 1px solid green;
+  margin-right: 5rem;
+}
+.section-11 .card1 input {
+  width: 180px;
+  height: 38px;
+  border-radius: 0.3rem;
+  border-width: 0rem;
+  padding: 0.4rem;
+}
+.section-11 .inner-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-basis: 45%;
+}
+@media (max-width: 1000px) {
+  .section-11 {
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    padding: 2rem;
+  }
+  .section-11 .card {
+    margin-bottom: 4rem;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+  }
+}
+@media (max-width: 600px) {
+  .section-11 .card {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+  }
+  .section-11 .card .inner-card {
+    padding-top: 2rem;
   }
 }/*# sourceMappingURL=home.css.map */

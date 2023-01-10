@@ -72,7 +72,7 @@
         font-size: 50px;
     }
 
-   & .container{
+    & .container{
         @include display(row, space-around);
         padding-top: 2rem;
         text-align: start;
@@ -96,7 +96,18 @@
 
         }
 
-        @media (max-width:768px){
+    }
+    @media (max-width:1000px) {
+        padding: 1.5rem 2rem 4rem 2rem;
+    }
+
+    @media (max-width:768px) {
+        h2{
+            font-size: 40px;
+            line-height: 1.4;
+        }
+
+        & .container{
             @include display(column, center);
             margin: 0rem;
 
@@ -111,17 +122,6 @@
                     width: 100%;
                 }
             }
-        }
-
-    }
-    @media (max-width:1000px) {
-        padding: 1.5rem 2rem 4rem 2rem;
-    }
-
-    @media (max-width:768px) {
-        h2{
-            font-size: 40px;
-            line-height: 1.4;
         }
     }
 }
@@ -146,7 +146,7 @@
                     line-height: 24px;
                     color: #002594;
                 }
-                & h3{
+                & h2{
                     font-size: 46px;
                     line-height: 2;
                 }
@@ -184,7 +184,7 @@
 
         & .section-3-container .box{
             & article {
-                & h3{
+                & h2{
                     font-size: 30px;
                 }
                 & p{
@@ -200,7 +200,7 @@
 .section-4{
     padding: 4rem;
 
-    & h3{
+    & h2{
         font-size: 50px;
         line-height: 65px;
         text-align: center;
@@ -242,7 +242,7 @@
     @media (max-width:768px) {
         padding: 4rem 2rem;
 
-        & h3{
+        & h2{
             font-size: 25px;
             line-height: 40px;
         }
@@ -398,7 +398,7 @@
                 position: relative;
             }
             & a:after{
-                content: "\203A";
+                content: "\276f";
                 position: absolute;
                 transition: 1s;
                 top: 0;
@@ -443,7 +443,7 @@
     padding: 2.5rem;
     background: #002594;
 
-    & h4{
+    & h3{
         font-size: 35px;
         line-height: 35px;
         text-align: center;
@@ -469,7 +469,7 @@
                 width: 35px;
                 height: 35px;
                 font-size: 2rem;
-                font-weight: 700;
+                font-weight: 200;
                 left: 45%;
                 top: -17px;
                 background: rgb(242, 240, 240);
@@ -480,9 +480,9 @@
 
             & img{
                 width: 150px;
-                height: 170px;
+                height: 160px;
                 margin: auto;
-                border-radius: 45%;
+                border-radius: 50%;
                 border: 1.5px solid rgb(222, 218, 218);
                 margin-top: 0rem;
             }
@@ -493,7 +493,7 @@
                 & p{
                     line-height: 1.6;
                     font-size: 1rem;
-                    padding-bottom: 1.5rem;
+                    padding-bottom: 2rem;
                 }
             }
         }
@@ -501,7 +501,7 @@
     @media (max-width:1000px){
         padding: 2rem;
 
-        & h4{
+        & h3{
             font-size: 28px;
             line-height: 30px;
         }
@@ -531,7 +531,7 @@
             text-align: center;
             padding: 2rem 0rem;
 
-            & h4{
+            & h3{
                 padding-bottom: 1.5rem;
             }
             & p{
@@ -574,10 +574,76 @@
 
                 & form{
                     width: 70%;
+
+                    & button{
+                        width: 100%;
+                    }
                 }
             }
         }
 
 
     }
+}
+
+.section-11{
+    padding: 3.5rem 0rem;
+    background: #333333;
+    @include display(row, space-around);
+
+    & .card{
+        @include display(row, space-around);
+        flex-basis: 50%;
+        padding-left: 3rem;
+        line-height: 2.5;
+        color: #fff;
+
+        & a{
+            text-decoration: none;
+            color: #fff;
+            font-size: 0.95rem
+        }
+    }
+
+    & .card1{
+        @include display(column, left);
+        border: 1px solid green;
+        margin-right: 5rem;
+
+        & input{
+            width: 180px;
+            height: 38px;
+            border-radius: 0.3rem;
+            border-width: 0rem;
+            padding: 0.4rem;
+        }
+
+    }
+    & .inner-card{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-basis: 45%;
+    }
+
+    @media (max-width:1000px){
+        @include display(column, start);
+        padding: 2rem;
+
+        & .card{
+            margin-bottom: 4rem;
+            @include display(row, space-around);
+        }
+    }
+    @media (max-width:600px){
+        .card{
+            @include display(column, flex-start);
+
+            & .inner-card{
+                padding-top: 2rem;
+            }
+        }
+    }
+
+
 }

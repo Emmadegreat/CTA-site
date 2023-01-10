@@ -36,7 +36,7 @@ function App() {
         </Routes>
       </div>
 
-      <Footer/>
+      <Footer year = {new Date().getFullYear()} />
 
 
 

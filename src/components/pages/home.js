@@ -1,12 +1,9 @@
 import '../styles/home.css'
 
-import Data from '../data.json'
-import { FaAngleRight } from 'react-icons/fa'
 import React from 'react'
 import col1_img from '../images/col1-img.jpg'
 import col2_img from '../images/col2-img.jpg'
 import col3_img from '../images/col3-img.jpg'
-import { icons } from 'react-icons'
 import image from '../images/CWW-Tech-Africa.png'
 import img1 from '../images/img1.png'
 import img2 from '../images/img2.PNG'
@@ -19,6 +16,25 @@ import review1 from '../images/review1.jpeg'
 import review2 from '../images/review2.jpg'
 import review3 from '../images/review3.jpg'
 import { useState } from 'react'
+
+//import Data from '../data.json'
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 const Home = () => {
 
@@ -50,14 +66,14 @@ const Home = () => {
                         <div className="content">
                             <img src={ img1 } alt="" className='' />
                             <article>
-                                <h3>Hands-on practical classes</h3>
+                                <h4>Hands-on practical classes</h4>
                                 <p>Work with real life projects with real companies</p>
                             </article>
                         </div>
                         <div className="content">
                             <img src={img2} alt="" className='' id='img-2' />
                             <article>
-                                <h3>Mentorship</h3>
+                                <h4>Mentorship</h4>
                                 <p>You would have access to people already in the system and get guidance from them</p>
                             </article>
                         </div>
@@ -68,14 +84,14 @@ const Home = () => {
                         <div className="content">
                             <img src={ img3 } alt="" className='' />
                             <article>
-                                <h3>Certificate of completion</h3>
+                                <h4>Certificate of completion</h4>
                                 <p>You would be awarded a certificate of completion at the end of your training</p>
                             </article>
                         </div>
                         <div className="content">
                             <img src={img4} alt="" className='' id='img-2' />
                             <article>
-                                <h3>Free soft skills training</h3>
+                                <h4>Free soft skills training</h4>
                                 <p>Get free soft skill training for free. Get equiped with life skills</p>
                             </article>
                         </div>
@@ -86,14 +102,14 @@ const Home = () => {
                         <div className="content">
                             <img src={ img5 } alt="" className='' />
                             <article>
-                                <h3>Instructor led training</h3>
+                                <h4>Instructor led training</h4>
                                 <p>Get trained by the best mind in the industry</p>
                             </article>
                         </div>
                         <div className="content">
                             <img src={img6} alt="" className='' id='img-2' />
                             <article>
-                                <h3>Internship</h3>
+                                <h4>Internship</h4>
                                 <p>
                                     Internships will be awarded on the basis of performance
                                     and commitment to the program
@@ -109,7 +125,7 @@ const Home = () => {
                     <div className="box">
                         <article>
                             <b>CWW TECH AFRICA</b>
-                            <h3>About Us</h3>
+                            <h2>About Us</h2>
                             <p>
                                 CWW tech Africa is empowering young people with digital and tech skills.
                                 CWW Tech Africa was created to empower African youth to be employable
@@ -127,7 +143,7 @@ const Home = () => {
             </section>
 
             <section className="section-4">
-                <h3>Join the waitlist for CTA cohort 3.0</h3>
+                <h2>Join the waitlist for CTA cohort 3.0</h2>
                 <div className="section-4-container">
                     <div className="box">
                         <p>Instructor Led Training</p>
@@ -213,10 +229,10 @@ const Home = () => {
             </section>
 
             <section className="section-wrapper">
-                <h3>Review From Our Students</h3>
+                <h3>Reviews from previous Trainees</h3>
                 <section className="section-8-container">
                     <div className="card">
-                        <small>"</small>
+                        <small>&#10078;</small>
                         <img src={review1} alt="" />
                         <article>
                             <p>
@@ -230,7 +246,7 @@ const Home = () => {
 
                     </div>
                     <div className="card">
-                        <small>"</small>
+                        <small>&#10078;</small>
                         <img src={ review2 } alt=""  />
                         <article>
                             <p>
@@ -243,7 +259,7 @@ const Home = () => {
 
                     </div>
                     <div className="card">
-                        <small>"</small>
+                        <small>&#10078;</small>
                         <img src={ review3 } alt="" />
                         <article>
                             <p>
@@ -288,6 +304,31 @@ const Home = () => {
 
                 </div>
             </section>
+
+            <sction className="section-11">
+
+                    <div className="card">
+                        <div className="inner-card">
+                            <h5>QUICK LINKS</h5>
+                            <a href="https://www.cwwtechafrican.com/faqs" target="_blank" rel='noreferrer'>FAQs</a>
+                            <a href="https://www.cwwtechafrican.com/internship-placement-form" target="_blank" rel='noreferrer'>Hire an Intern</a>
+                            <a href="https://www.cwwtechafrican.com/cta-volunteer-form" target="_blank" rel='noreferrer'>Volunteer</a>
+                            <a href="https://www.cwwtechafrican.com/#" target="_blank" rel='noreferrer'>Donate</a>
+                        </div>
+                        <div className="inner-card">
+                            <h5>ABOUT CTA</h5>
+                            <a href="https://www.cwwtechafrican.com/about-us" target="_blank" rel='noreferrer'>About us</a>
+                            <a href="https://www.cwwtechafrican.com/contact-us" target="_blank" rel='noreferrer'>Contact us</a>
+                            <a href="https://www.cwwtechafrican.com/cta-application-form" target="_blank" rel='noreferrer'>Apply as a trainee</a>
+                            <a href="https://www.cwwtechafrican.com/referrals" target="_blank" rel='noreferrer'>Referrals</a>
+                        </div>
+
+                    </div>
+                    <div className="card1">
+                        <input type="search" name="search" id="" placeholder='search'/>
+                    </div>
+
+            </sction>
 
         </section>
     )
