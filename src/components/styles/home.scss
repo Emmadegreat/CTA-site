@@ -6,11 +6,9 @@
 
 .section-1{
     @include display(row, space-around);
-    border: 1px solid red;
     padding: 0rem 2.5rem 4rem 2.5rem;
 
     & .box{
-        border: 1px solid green;
         flex-basis: 40%;
 
         & .image{

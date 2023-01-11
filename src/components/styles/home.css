@@ -10,11 +10,9 @@
   display: flex;
   justify-content: space-around;
   flex-direction: row;
-  border: 1px solid red;
   padding: 0rem 2.5rem 4rem 2.5rem;
 }
 .section-1 .box {
-  border: 1px solid green;
   flex-basis: 40%;
 }
 .section-1 .box .image {
