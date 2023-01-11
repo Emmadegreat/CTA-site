@@ -572,6 +572,74 @@
   }
 }
 
+.section-10 {
+  padding: 3.5rem 2.5rem;
+  background: #e3ecf2;
+  color: #333333;
+}
+.section-10 .card {
+  width: 90%;
+  margin: auto;
+}
+.section-10 .card h3 {
+  font-size: 35px;
+  line-height: 35px;
+  text-align: start;
+  margin-bottom: 2.5rem;
+  font-weight: 600;
+}
+.section-10 .card button {
+  background: #002594;
+  padding: 0.5rem;
+  width: 110px;
+  height: 36px;
+  border-width: 0rem;
+  border-radius: 0.4rem;
+  margin: 1.2rem 0rem;
+}
+.section-10 .card button a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+.section-10 .card .item {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 1rem;
+  background: #fff;
+  margin: 1rem 0rem;
+}
+.section-10 .card .item .title {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  margin-bottom: 0.6rem;
+  align-items: center;
+  cursor: pointer;
+}
+.section-10 .card .item .title span {
+  background: #e3ecf2;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  text-align: center;
+}
+.section-10 .card .item .content {
+  max-height: 0;
+  transition: all 0.5s cubic-bezier(1, 0, 1, 0);
+  overflow: hidden;
+}
+.section-10 .card .item .show {
+  max-height: 999px;
+  transition: all 0.5s cubic-bezier(1, 0, 1, 0);
+  height: auto;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  padding-right: 1rem;
+}
+
 .section-11 {
   padding: 3.5rem 0rem;
   background: #333333;
@@ -595,9 +663,8 @@
 }
 .section-11 .card1 {
   display: flex;
-  justify-content: left;
+  justify-content: flex-start;
   flex-direction: column;
-  border: 1px solid green;
   margin-right: 5rem;
 }
 .section-11 .card1 input {
@@ -605,7 +672,8 @@
   height: 38px;
   border-radius: 0.3rem;
   border-width: 0rem;
-  padding: 0.4rem;
+  padding: 0.5rem;
+  font-size: 1.1rem;
 }
 .section-11 .inner-card {
   display: flex;

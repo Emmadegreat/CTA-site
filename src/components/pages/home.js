@@ -4,6 +4,7 @@ import React from 'react'
 import col1_img from '../images/col1-img.jpg'
 import col2_img from '../images/col2-img.jpg'
 import col3_img from '../images/col3-img.jpg'
+import faq from './faq.json'
 import image from '../images/CWW-Tech-Africa.png'
 import img1 from '../images/img1.png'
 import img2 from '../images/img2.PNG'
@@ -38,8 +39,15 @@ import { useState } from 'react'
 
 const Home = () => {
 
-    const [angle, setAngle] = useState(false);
-    const handleAngle = () => setAngle(!angle);
+    const [faqs, setFaqs] = useState(null);
+    //const handleAngle = () => setAngle(!angle);
+
+    const toggle = (id) => {
+        if (faqs === id) {
+            return setFaqs(null);
+        }
+        setFaqs(id);
+    }
 
     return (
         <section className='home'>
@@ -303,6 +311,29 @@ const Home = () => {
                     </div>
 
                 </div>
+            </section>
+
+            <section className="section-10">
+
+                <section className="card">
+                    <h3>Frequently Asked Questions</h3>
+                    {faq.map((item, id) => {
+                        return (
+                            <div className="item">
+                                <div className="title" onClick={()=>toggle(id)}>
+                                    <h4>{ item.question }</h4>
+                                    <span>{ faqs === id? "-":"+"}</span>
+                                </div>
+                                <div className={ faqs === id? "content show ":"content" }>{ item.answer }</div>
+                            </div>
+
+                        )
+
+                    })}
+
+                    <button><a href="https://www.cwwtechafrica.com/internship-placement-form">Learn more</a></button>
+
+                </section>
             </section>
 
             <sction className="section-11">
