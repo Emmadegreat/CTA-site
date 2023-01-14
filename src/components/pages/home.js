@@ -304,7 +304,7 @@ const Home = () => {
                     <h3>Frequently Asked Questions</h3>
                     {faq.map((item, id) => {
                         return (
-                            <div className="item">
+                            <div className="item" key={item.id}>
                                 <div className="title" onClick={()=>handleFaqs(id)}>
                                     <h4>{ item.question }</h4>
                                     <span>{ faqs === id? "-":"+"}</span>

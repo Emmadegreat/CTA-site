@@ -5,7 +5,7 @@ const Detail = () => {
     const params = useParams();
     return (
         <div>
-            <p>kkkkkkk jjjjjjjj</p>
+            <p>{ params.account}</p>
 
         </div>
     )

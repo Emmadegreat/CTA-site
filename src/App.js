@@ -36,7 +36,7 @@ function App() {
       <div className="pages">
         <Routes>
           <Route path='/' element={<Home />} />
-          <Route path='/about/:detailId' element={<Detail />} />
+          <Route path='/about' element={<About />} />
           <Route path='/contact' element={<Contact />} />
           {!islogged && <Route path='/login' element={<Login />} />}
           <Route path='/register' element={ < Register /> } />
