@@ -37,9 +37,9 @@
             line-height: 20.5px;
             color: #fff;
             border-radius: 8px;
-            width: 180px;
-            font-size: 1rem;
-            font-weight: 400;
+            width: 160px;
+            font-size: 0.8rem;
+            font-weight: 600;
             margin: 1.2rem 0rem;
             padding: 0.8rem;
             text-decoration: none;
@@ -75,12 +75,11 @@
         padding-top: 2rem;
         text-align: start;
         line-height: 2;
-
-        border: 2px solid blue;
+        //border: 2px solid blue;
 
         & .content{
             flex-basis: 44%;
-            border: 2px solid green;
+            //border: 2px solid green;
             color: #333333;
             font-size: 15px;
             @include display(row, flex-start);
@@ -589,6 +588,24 @@
     padding: 3.5rem 2.5rem;
     background: #e3ecf2;
     color: #333333;
+    @include display(column,center);
+
+    button{
+        background: #002594;
+        padding: 0.5rem;
+        width: 110px;
+        height: 36px;
+        border-width: 0rem;
+        border-radius: 0.4rem;
+        margin: auto;
+
+        & a{
+            text-decoration: none;
+            color: #fff;
+            font-weight: 700;
+            font-size: 0.9rem;
+        }
+    }
 
     & .card{
         width: 90%;
@@ -602,22 +619,6 @@
             font-weight: 600;
         }
 
-        button{
-            background: #002594;
-            padding: 0.5rem;
-            width: 110px;
-            height: 36px;
-            border-width: 0rem;
-            border-radius: 0.4rem;
-            margin: 1.2rem 0rem;
-
-            & a{
-                text-decoration: none;
-                color: #fff;
-                font-weight: 700;
-                font-size: 0.9rem;
-            }
-        }
 
         & .item{
             @include display(column, center);
@@ -638,6 +639,9 @@
                     height: 25px;
                     text-align: center;
                 }
+                & h4{
+                    font-weight: 500;
+                }
             }
 
             & .content{
@@ -656,67 +660,4 @@
             }
         }
     }
-}
-
-
-.section-11{
-    padding: 3.5rem 0rem;
-    background: #333333;
-    @include display(row, space-around);
-
-    & .card{
-        @include display(row, space-around);
-        flex-basis: 50%;
-        padding-left: 3rem;
-        line-height: 2.5;
-        color: #fff;
-
-        & a{
-            text-decoration: none;
-            color: #fff;
-            font-size: 0.95rem
-        }
-    }
-
-    & .card1{
-        @include display(column, flex-start);
-        margin-right: 5rem;
-
-        & input{
-            width: 180px;
-            height: 38px;
-            border-radius: 0.3rem;
-            border-width: 0rem;
-            padding: 0.5rem;
-            font-size: 1.1rem;
-        }
-
-    }
-    & .inner-card{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        flex-basis: 45%;
-    }
-
-    @media (max-width:1000px){
-        @include display(column, start);
-        padding: 2rem;
-
-        & .card{
-            margin-bottom: 4rem;
-            @include display(row, space-around);
-        }
-    }
-    @media (max-width:600px){
-        .card{
-            @include display(column, flex-start);
-
-            & .inner-card{
-                padding-top: 2rem;
-            }
-        }
-    }
-
-
 }

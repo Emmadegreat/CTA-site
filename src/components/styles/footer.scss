@@ -4,6 +4,70 @@
     @include general;
 }
 
+
+.section-11{
+    padding: 3.5rem 0rem;
+    background: #333333;
+    @include display(row, space-around);
+
+    & .card{
+        @include display(row, space-around);
+        flex-basis: 50%;
+        padding-left: 3rem;
+        line-height: 2.5;
+        color: #fff;
+
+        & a{
+            text-decoration: none;
+            color: #fff;
+            font-size: 0.95rem
+        }
+    }
+
+    & .card1{
+        @include display(column, flex-start);
+        margin-right: 5rem;
+
+        & input{
+            width: 180px;
+            height: 38px;
+            border-radius: 0.3rem;
+            border-width: 0rem;
+            padding: 0.5rem;
+            font-size: 1.1rem;
+        }
+
+    }
+    & .inner-card{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-basis: 45%;
+    }
+
+    @media (max-width:1000px){
+        @include display(column, flex-start);
+        padding: 2rem;
+
+        & .card{
+            margin-bottom: 4rem;
+            @include display(row, space-around);
+        }
+    }
+    @media (max-width:600px){
+        .card{
+            @include display(column, flex-start);
+
+            & .inner-card{
+                padding-top: 2rem;
+            }
+        }
+    }
+
+
+}
+
+
 .footer{
     width: 100%;
     height: auto;

@@ -1,8 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;1,100;1,500;1,900&family=Sofia+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Noto", sans-serif;
+}
+
+.section-11 {
+  padding: 3.5rem 0rem;
+  background: #333333;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+}
+.section-11 .card {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-basis: 50%;
+  padding-left: 3rem;
+  line-height: 2.5;
+  color: #fff;
+}
+.section-11 .card a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 0.95rem;
+}
+.section-11 .card1 {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  margin-right: 5rem;
+}
+.section-11 .card1 input {
+  width: 180px;
+  height: 38px;
+  border-radius: 0.3rem;
+  border-width: 0rem;
+  padding: 0.5rem;
+  font-size: 1.1rem;
+}
+.section-11 .inner-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-basis: 45%;
+}
+@media (max-width: 1000px) {
+  .section-11 {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 2rem;
+  }
+  .section-11 .card {
+    margin-bottom: 4rem;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+  }
+}
+@media (max-width: 600px) {
+  .section-11 .card {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+  }
+  .section-11 .card .inner-card {
+    padding-top: 2rem;
+  }
 }
 
 .footer {

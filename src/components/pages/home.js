@@ -18,31 +18,16 @@ import review2 from '../images/review2.jpg'
 import review3 from '../images/review3.jpg'
 import { useState } from 'react'
 
-//import Data from '../data.json'
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+//import Data from '../data.json
 
 
 
 const Home = () => {
 
     const [faqs, setFaqs] = useState(null);
-    //const handleAngle = () => setAngle(!angle);
+    //const handleFaqs = (id) => setFaqs(id);
 
-    const toggle = (id) => {
+    const handleFaqs = (id) => {
         if (faqs === id) {
             return setFaqs(null);
         }
@@ -320,7 +305,7 @@ const Home = () => {
                     {faq.map((item, id) => {
                         return (
                             <div className="item">
-                                <div className="title" onClick={()=>toggle(id)}>
+                                <div className="title" onClick={()=>handleFaqs(id)}>
                                     <h4>{ item.question }</h4>
                                     <span>{ faqs === id? "-":"+"}</span>
                                 </div>
@@ -331,35 +316,11 @@ const Home = () => {
 
                     })}
 
-                    <button><a href="https://www.cwwtechafrica.com/internship-placement-form">Learn more</a></button>
-
                 </section>
+                <button><a href="https://www.cwwtechafrica.com/internship-placement-form">Learn more</a></button>
             </section>
 
-            <sction className="section-11">
 
-                    <div className="card">
-                        <div className="inner-card">
-                            <h5>QUICK LINKS</h5>
-                            <a href="https://www.cwwtechafrican.com/faqs" target="_blank" rel='noreferrer'>FAQs</a>
-                            <a href="https://www.cwwtechafrican.com/internship-placement-form" target="_blank" rel='noreferrer'>Hire an Intern</a>
-                            <a href="https://www.cwwtechafrican.com/cta-volunteer-form" target="_blank" rel='noreferrer'>Volunteer</a>
-                            <a href="https://www.cwwtechafrican.com/#" target="_blank" rel='noreferrer'>Donate</a>
-                        </div>
-                        <div className="inner-card">
-                            <h5>ABOUT CTA</h5>
-                            <a href="https://www.cwwtechafrican.com/about-us" target="_blank" rel='noreferrer'>About us</a>
-                            <a href="https://www.cwwtechafrican.com/contact-us" target="_blank" rel='noreferrer'>Contact us</a>
-                            <a href="https://www.cwwtechafrican.com/cta-application-form" target="_blank" rel='noreferrer'>Apply as a trainee</a>
-                            <a href="https://www.cwwtechafrican.com/referrals" target="_blank" rel='noreferrer'>Referrals</a>
-                        </div>
-
-                    </div>
-                    <div className="card1">
-                        <input type="search" name="search" id="" placeholder='search'/>
-                    </div>
-
-            </sction>
 
         </section>
     )

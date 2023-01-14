@@ -56,10 +56,11 @@ $mobile:768px;
                     &:hover{
                         opacity: 0.7;
                     }
+                    &.active{
+                        color: #002595;
+                    }
                 }
-                & .active{
-                    color: red;
-                }
+
 
             }
 

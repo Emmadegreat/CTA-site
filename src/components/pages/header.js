@@ -1,13 +1,25 @@
 import '../styles/header.css'
 
 import { FaBars, FaTimes } from 'react-icons/fa'
-import {Link, Route, BrowserRouter as Router, Routes} from 'react-router-dom'
 import React, { Fragment, useState } from 'react'
+import { useDispatch, useSelector } from 'react-redux'
 
+import { LoginActions } from '../../store/auth'
+import { NavLink } from 'react-router-dom'
 import logo from '../images/CTA-Logo.png'
 import search from '../images/search-icon.svg'
 
 const Header = () => {
+
+
+    const isloggedin = useSelector((state) => (state.login.isloggedin));
+
+    const dispatch = useDispatch();
+    const logoutHandler = () => {
+        dispatch(LoginActions.logout());
+    }
+
+
 
     const [click, setClick] = useState(false);
     const handleClick = () => setClick(!click);
@@ -24,11 +36,23 @@ const Header = () => {
 
                 <div className='nav-bar'>
                     <ul className={click ? "nav-menu active" : "nav-menu"}>
-                        <li><Link to="/" onClick={closeLinks}>Home</Link></li>
-                        <li><Link to="about" onClick={closeLinks}>About us</Link></li>
-                        <li><Link to="contact" onClick={closeLinks}>Contact us</Link></li>
-                        <li><Link to="account" onClick={closeLinks}>My account</Link></li>
-                        <li><Link to="logout" onClick={closeLinks}>Logout</Link></li>
+                        <li><NavLink to="/" onClick={closeLinks} >Home</NavLink></li>
+                        <li><NavLink to="about" onClick={closeLinks} >About us</NavLink></li>
+                        <li><NavLink to="contact" onClick={closeLinks}>Contact us</NavLink></li>
+
+                        {!isloggedin && (
+                            <>
+                                <li><NavLink to="login" onClick={closeLinks}>Login</NavLink></li>
+                                <li><NavLink to="register" onClick={closeLinks}>Sign up</NavLink></li>
+                            </>
+                        )}
+
+                        {isloggedin && (
+                            <>
+                                <li><NavLink to="account" onClick={closeLinks}>My account</NavLink></li>
+                                <li><NavLink onClick={logoutHandler}>Logout</NavLink></li>
+                            </>
+                        )}
 
                     </ul>
                     <section>
