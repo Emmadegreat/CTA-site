@@ -1,7 +1,7 @@
 import '../styles/header.css'
 
 import { FaBars, FaTimes } from 'react-icons/fa'
-import React, { Fragment, useState } from 'react'
+import React, { Fragment, useEffect, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 
 import { LoginActions } from '../../store/auth'
@@ -41,14 +41,14 @@ const Header = () => {
 
     return (
         <Fragment>
-            <nav className={nav ? 'header bg' : 'header'} id='navbar'>
+            <nav className={nav ? 'header bg' : 'header'} id='navbar' data-aos="flip-right">
                 <div className='logo'>
                     <a href="https://cwwtechafrica.com" onClick={closeLinks}><img src={ logo } alt="page-logo"  /></a>
                 </div>
 
                 <div className='nav-bar'>
                     <ul className={click ? "nav-menu active" : "nav-menu"}>
-                        <li><NavLink to="/home" onClick={closeLinks} >Home</NavLink></li>
+                        <li><NavLink to="/" onClick={closeLinks} >Home</NavLink></li>
                         <li><NavLink to="about" onClick={closeLinks} >About us</NavLink></li>
                         <li><NavLink to="contact" onClick={closeLinks}>Contact us</NavLink></li>
 

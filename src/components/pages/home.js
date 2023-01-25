@@ -1,6 +1,8 @@
 import '../styles/home.css'
 
-import React from 'react'
+import React, { useEffect } from 'react'
+
+import Aos from 'aos'
 import col1_img from '../images/col1-img.jpg'
 import col2_img from '../images/col2-img.jpg'
 import col3_img from '../images/col3-img.jpg'
@@ -30,20 +32,25 @@ const Home = () => {
     const handleFaqs = (id) => {
         if (faqs === id) {
             return setFaqs(null);
+        } else {
+            setFaqs(id);
         }
-        setFaqs(id);
     }
 
+    useEffect(() => {
+        Aos.init();
+        Aos.refresh({duration:1500,once:false})
+    }, [])
     return (
         <section className='home'>
             <div className="spacer"></div>
             <section className="section-1">
-                <div className="box box1">
+                <div className="card card1">
                     <h1>CWW Tech Africa</h1>
                     <p>Empowering African youths with digital and tech skills.</p>
                     <a href="https://www.cwwtechafrica.com/join-the-waitlist" target={"_blank"} rel="noreferrer">APPLY AS A TRAINEE</a>
                 </div>
-                <div className="box box2">
+                <div className="card card2" data-aos="flip-right">
                     <img src={image} alt=""  className="image" />
                 </div>
             </section>
@@ -116,7 +123,7 @@ const Home = () => {
 
             <section className="section-3">
                 <div className="section-3-container">
-                    <div className="box">
+                    <div className="card">
                         <article>
                             <b>CWW TECH AFRICA</b>
                             <h2>About Us</h2>
@@ -128,7 +135,7 @@ const Home = () => {
                             </p>
                         </article>
                     </div>
-                    <div className="box">
+                    <div className="card">
                         <img src={ img7 } alt="" />
                     </div>
 
@@ -138,20 +145,20 @@ const Home = () => {
 
             <section className="section-4">
                 <h2>Join the waitlist for CTA cohort 3.0</h2>
-                <div className="section-4-container">
-                    <div className="box">
+                <div className="section-4-container" data-aos="flip-up">
+                    <div className="card">
                         <p>Instructor Led Training</p>
                         <button>100%</button>
                     </div>
-                    <div className="box">
+                    <div className="card">
                         <p>Internship</p>
                         <button>100%</button>
                     </div>
-                    <div className="box">
+                    <div className="card">
                         <p>Mentorship</p>
                         <button>100%</button>
                     </div>
-                    <div className="box">
+                    <div className="card">
                         <p>Learning Community</p>
                         <button>100%</button>
                     </div>
@@ -306,7 +313,7 @@ const Home = () => {
                     {faq.map((item, id) => {
                         return (
                             <div className="item" key={item.id}>
-                                <div className="title" onClick={()=>handleFaqs(id)}>
+                                <div className="title" onClick={()=>handleFaqs(id)} data-aos="flip-up">
                                     <h4>{ item.question }</h4>
                                     <span>{ faqs === id? "-":"+"}</span>
                                 </div>

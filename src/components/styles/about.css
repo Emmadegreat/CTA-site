@@ -31,8 +31,9 @@
   color: #333333;
 }
 .section-one .card article h3 {
-  font-size: 30px;
+  font-size: 35px;
   line-height: 35px;
+  font-weight: 600;
   padding: 0.5rem 0rem;
 }
 .section-one .card article p {
