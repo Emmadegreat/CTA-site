@@ -36,6 +36,7 @@ const Home = () => {
 
     return (
         <section className='home'>
+            <div className="spacer"></div>
             <section className="section-1">
                 <div className="box box1">
                     <h1>CWW Tech Africa</h1>
@@ -223,7 +224,7 @@ const Home = () => {
 
             <section className="section-wrapper">
                 <h3>Reviews from previous Trainees</h3>
-                <section className="section-8-container">
+                <div className="section-8-container">
                     <div className="card">
                         <small>&#10078;</small>
                         <img src={review1} alt="" />
@@ -264,7 +265,7 @@ const Home = () => {
                             <span>Data Analysis Trainee, CTA cohort 1.0.</span>
                         </article>
                     </div>
-                </section>
+                </div>
 
                 <div className='section-9-container'>
                     <div className="card">
@@ -300,7 +301,7 @@ const Home = () => {
 
             <section className="section-10">
 
-                <section className="card">
+                <div className="card">
                     <h3>Frequently Asked Questions</h3>
                     {faq.map((item, id) => {
                         return (
@@ -316,7 +317,7 @@ const Home = () => {
 
                     })}
 
-                </section>
+                </div>
                 <button><a href="https://www.cwwtechafrica.com/internship-placement-form">Learn more</a></button>
             </section>
 

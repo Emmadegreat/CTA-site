@@ -25,18 +25,30 @@ const Header = () => {
     const handleClick = () => setClick(!click);
 
     const closeLinks = () => setClick(false);
-    //const [activeTab, setActiveTab] = useState('Home')
+    //const [activeTab, setActiveTab] = useState('Home');
+
+    const [nav, setNav] = useState(false);
+
+    const handleNav = () => {
+        if (window.scrollY >= 80) {
+            setNav(true);
+        } else {
+            setNav(false);
+        }
+    }
+
+    window.addEventListener('scroll', handleNav);
 
     return (
         <Fragment>
-            <nav className='header'>
+            <nav className={nav ? 'header bg' : 'header'} id='navbar'>
                 <div className='logo'>
                     <a href="https://cwwtechafrica.com" onClick={closeLinks}><img src={ logo } alt="page-logo"  /></a>
                 </div>
 
                 <div className='nav-bar'>
                     <ul className={click ? "nav-menu active" : "nav-menu"}>
-                        <li><NavLink to="/" onClick={closeLinks} >Home</NavLink></li>
+                        <li><NavLink to="/home" onClick={closeLinks} >Home</NavLink></li>
                         <li><NavLink to="about" onClick={closeLinks} >About us</NavLink></li>
                         <li><NavLink to="contact" onClick={closeLinks}>Contact us</NavLink></li>
 

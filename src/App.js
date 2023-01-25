@@ -1,6 +1,7 @@
 import './components/styles/app.css';
 import './components/pages/header.js'
 
+import React, { useEffect, useState } from 'react';
 import { Route, BrowserRouter as Router, Routes } from 'react-router-dom'
 
 import About from './components/pages/about';
@@ -13,13 +14,29 @@ import Header from './components/pages/header';
 import Home from './components/pages/home';
 import Login from './components/pages/login';
 import Logout from './components/pages/logout';
-import React from 'react';
 import Register from './components/pages/register';
 import { useSelector } from 'react-redux';
 
 //import image from './components/images/CWW-Tech-Africa.png'
 
 function App() {
+
+  const [button, setButton] = useState(true);
+
+  const showButton = () => {
+    if (window.innerHeight <= 960) {
+      setButton(false);
+    } else {
+      setButton(true);
+    }
+  }
+
+  useEffect(() => {
+    showButton();
+  }, [])
+
+  window.addEventListener('resize', showButton);
+
 
   const islogged = useSelector((state) => state.login.isLoggededin);
   return (
@@ -31,11 +48,11 @@ function App() {
         {/*<AnimationOnScroll animateIn='animate__fadeInLeftBig'>*/}
 
       {/*</AnimationOnScroll>482comments*/}
-      <div className="spacer"></div>
+
 
       <div className="pages">
         <Routes>
-          <Route path='/' element={<Home />} />
+          <Route path='/home' element={<Home />} />
           <Route path='/about' element={<About />} />
           <Route path='/contact' element={<Contact />} />
           {!islogged && <Route path='/login' element={<Login />} />}

@@ -4,4 +4,53 @@
   margin: 0;
   box-sizing: border-box;
   font-family: "Noto", sans-serif;
+}
+
+.space {
+  padding-top: 8rem;
+  width: 100%;
+  background: rgb(242, 240, 240);
+}
+
+.section-one {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  background: rgb(242, 240, 240);
+  padding: 3rem 5rem;
+}
+.section-one .card {
+  flex-basis: 40%;
+}
+.section-one .card img {
+  width: 100%;
+  height: auto;
+}
+.section-one .card article {
+  text-align: left;
+  color: #333333;
+}
+.section-one .card article h3 {
+  font-size: 30px;
+  line-height: 35px;
+  padding: 0.5rem 0rem;
+}
+.section-one .card article p {
+  font-size: 1.1rem;
+  line-height: 1.5;
+  margin-bottom: 0.7rem;
+}
+@media (max-width: 900px) {
+  .section-one {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 3rem 2.5rem;
+  }
+  .section-one .card {
+    margin-bottom: 1.6rem;
+  }
+  .section-one .card h3 {
+    font-size: 25px;
+  }
 }/*# sourceMappingURL=about.css.map */

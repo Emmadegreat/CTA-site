@@ -2,7 +2,10 @@
 *{
     @include general;
 }
-
+.spacer{
+    padding-top: 10rem;
+    width: 100%;
+}
 
 .section-1{
     @include display(row, space-around);
@@ -638,6 +641,7 @@
                     width: 25px;
                     height: 25px;
                     text-align: center;
+                    padding-top: 0.2rem;
                 }
                 & h4{
                     font-weight: 500;
@@ -646,17 +650,17 @@
 
             & .content{
                 max-height: 0;
-                transition: all 0.5s cubic-bezier(1,0,1,0);
+                transition: all 0.5s ease-in-out;
                 overflow: hidden;
             }
 
             & .show{
                 max-height: 999px;
-                transition: all 0.5s cubic-bezier(1,0,1,0);
+                transition: all 0.5s ease-in-out;
                 height: auto;
                 font-size: 0.9rem;
                 line-height: 1.6;
-                padding-right: 1rem;
+                //padding-right: 1rem;
             }
         }
     }

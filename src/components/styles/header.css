@@ -6,13 +6,20 @@
   font-family: "Noto", sans-serif;
 }
 
+.bg {
+  background: #e3ecf2;
+  opacity: 0.5;
+  transition: 0.5s;
+}
+
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   text-align: center;
   flex-direction: row;
-  background-color: #e3ecf2;
+  background: #e3ecf2;
+  transition: 0.5s;
   height: 80px;
   width: 100vw;
   position: fixed;
@@ -39,6 +46,7 @@
   font-weight: 700;
   color: #333333;
   cursor: pointer;
+  transition: 0.5s;
 }
 .header .nav-bar .nav-menu li a:hover {
   opacity: 0.7;

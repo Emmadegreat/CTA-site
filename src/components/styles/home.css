@@ -7,6 +7,11 @@
   font-family: "Noto", sans-serif;
 }
 
+.spacer {
+  padding-top: 10rem;
+  width: 100%;
+}
+
 .section-1 {
   display: flex;
   justify-content: space-around;
@@ -625,20 +630,20 @@
   width: 25px;
   height: 25px;
   text-align: center;
+  padding-top: 0.2rem;
 }
 .section-10 .card .item .title h4 {
   font-weight: 500;
 }
 .section-10 .card .item .content {
   max-height: 0;
-  transition: all 0.5s cubic-bezier(1, 0, 1, 0);
+  transition: all 0.5s ease-in-out;
   overflow: hidden;
 }
 .section-10 .card .item .show {
   max-height: 999px;
-  transition: all 0.5s cubic-bezier(1, 0, 1, 0);
+  transition: all 0.5s ease-in-out;
   height: auto;
   font-size: 0.9rem;
   line-height: 1.6;
-  padding-right: 1rem;
 }/*# sourceMappingURL=home.css.map */
