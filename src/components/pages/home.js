@@ -1,4 +1,5 @@
 import '../styles/home.css'
+import 'aos/dist/aos.css'
 
 import React, { useEffect } from 'react'
 
@@ -47,8 +48,8 @@ const Home = () => {
             <section className="section-1">
                 <div className="card card1">
                     <h1>CWW Tech Africa</h1>
-                    <p>Empowering African youths with digital and tech skills.</p>
-                    <a href="https://www.cwwtechafrica.com/join-the-waitlist" target={"_blank"} rel="noreferrer">APPLY AS A TRAINEE</a>
+                    <p>Equipping African youths with digital and tech skills.</p>
+                    <a href="https://www.cwwtechafrica.com/join-the-waitlist" target={"_blank"} rel="noreferrer">View our programmes</a>
                 </div>
                 <div className="card card2" data-aos="flip-right">
                     <img src={image} alt=""  className="image" />
@@ -125,8 +126,8 @@ const Home = () => {
                 <div className="section-3-container">
                     <div className="card">
                         <article>
-                            <b>CWW TECH AFRICA</b>
-                            <h2>About Us</h2>
+                            {/*<b>CWW TECH AFRICA</b>*/}
+                            <h2>About us</h2>
                             <p>
                                 CWW tech Africa is empowering young people with digital and tech skills.
                                 CWW Tech Africa was created to empower African youth to be employable

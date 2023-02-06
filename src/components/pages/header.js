@@ -1,5 +1,5 @@
 import '../styles/header.css'
-
+import 'aos/dist/aos.css'
 import { FaBars, FaTimes } from 'react-icons/fa'
 import React, { Fragment, useEffect, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
@@ -48,7 +48,7 @@ const Header = () => {
 
                 <div className='nav-bar'>
                     <ul className={click ? "nav-menu active" : "nav-menu"}>
-                        <li><NavLink to="/" onClick={closeLinks} >Home</NavLink></li>
+                        <li><NavLink to="/" onClick={closeLinks} className={({ isActive })=>isActive? 'nav-menu.active':undefined } end >Home</NavLink></li>
                         <li><NavLink to="about" onClick={closeLinks} >About us</NavLink></li>
                         <li><NavLink to="contact" onClick={closeLinks}>Contact us</NavLink></li>
 

@@ -14,13 +14,13 @@
 @mixin heading-1{
     font-size: 75px;
     line-height: 100px;
-    color: #333333;
+    //color: #333333;
     margin-bottom: 1.5rem;
 }
-@mixin heading-2{
+@mixin heading-2($color){
     font-weight: 700;
     font-size: 50px;
-    color:#333333;
+    color:$color;
     line-height: 2;
 }
 

@@ -6,6 +6,10 @@
   font-family: "Noto", sans-serif;
 }
 
+.nav-menu.active {
+  color: red;
+}
+
 .bg {
   background: #e3ecf2;
   opacity: 0.5;
