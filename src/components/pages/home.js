@@ -49,7 +49,7 @@ const Home = () => {
                 <div className="card card1">
                     <h1>CWW Tech Africa</h1>
                     <p>Equipping African youths with digital and tech skills.</p>
-                    <a href="https://www.cwwtechafrica.com/join-the-waitlist" target={"_blank"} rel="noreferrer">View our programmes</a>
+                    <a href="https://www.cwwtechafrica.com/join-the-waitlist" target={"_blank"} rel="noreferrer">APPLY AS A TRAINEE</a>
                 </div>
                 <div className="card card2" data-aos="flip-right">
                     <img src={image} alt=""  className="image" />

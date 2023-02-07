@@ -2,8 +2,6 @@
 *{
     @include general;
 }
-
-
 .spacer{
     padding-top: 10rem;
     width: 100%;
@@ -40,7 +38,8 @@
             color: #fff;
             border-radius: 8px;
             width: 200px;
-            font-size: 0.8rem;
+            font-size: 1rem;
+            text-align: center;
             //font-weight: 600;
             margin: 1.2rem 0rem;
             padding: 0.8rem 1rem;
@@ -61,6 +60,7 @@
     }
 }
 
+
 .section-2{
     padding: 1.5rem 2.5rem 4rem 2.5rem;
     text-align: center;
@@ -68,7 +68,7 @@
     color: #333333;
 
     & h2{
-        @include heading-2;
+        @include heading-2(#4b4b4b);
     }
 
     & .container{
@@ -147,7 +147,7 @@
                 & h2{
                     //font-size: 46px;
                     //line-height: 2;
-                    @include heading-2;
+                    @include heading-2(#002594);
                 }
                 & p{
                     font-size: 1.1rem;
@@ -204,7 +204,7 @@
         //line-height: 65px;
         text-align: center;
 
-        @include heading-2;
+        @include heading-2(#4b4b4b);
     }
 
     & .section-4-container{
