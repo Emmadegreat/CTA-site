@@ -1,18 +1,20 @@
 import '../styles/home.css'
 import 'aos/dist/aos.css'
 
+import { FaArrowDown, FaCaretDown, FaCertificate, FaChalkboardTeacher, FaCheckCircle, FaUserCheck, FaUserGraduate } from 'react-icons/fa'
 import React, { useEffect } from 'react'
 
 import Aos from 'aos'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import col1_img from '../images/col1-img.jpg'
 import col2_img from '../images/col2-img.jpg'
 import col3_img from '../images/col3-img.jpg'
 import faq from './faq.json'
 import image from '../images/CWW-Tech-Africa.png'
-import img1 from '../images/img1.png'
-import img2 from '../images/img2.PNG'
-import img3 from '../images/img3.png'
-import img4 from '../images/img4.png'
+import img1 from '../images/ux.jpg'
+import img2 from '../images/data.jpg'
+import img3 from '../images/web.jpg'
+import img4 from '../images/digitalmktg.jpg'
 import img5 from '../images/img5.png'
 import img6 from '../images/img6.png'
 import img7 from '../images/cta-sect-3-img.png'
@@ -66,14 +68,14 @@ const Home = () => {
 
                     <div className="container">
                         <div className="content">
-                            <img src={ img1 } alt="" className='' />
+                            <span><FaCheckCircle className='icon' /></span>
                             <article>
                                 <h4>Hands-on practical classes</h4>
                                 <p>Work with real life projects with real companies</p>
                             </article>
                         </div>
                         <div className="content">
-                            <img src={img2} alt="" className='' id='img-2' />
+                            <span><FaUserGraduate className='icon' /></span>
                             <article>
                                 <h4>Mentorship</h4>
                                 <p>You would have access to people already in the system and get guidance from them</p>
@@ -84,14 +86,14 @@ const Home = () => {
 
                     <div className="container">
                         <div className="content">
-                            <img src={ img3 } alt="" className='' />
+                            <span><FaCertificate className='icon' /></span>
                             <article>
                                 <h4>Certificate of completion</h4>
                                 <p>You would be awarded a certificate of completion at the end of your training</p>
                             </article>
                         </div>
                         <div className="content">
-                            <img src={img4} alt="" className='' id='img-2' />
+                            <span><FaCheckCircle className='icon' /></span>
                             <article>
                                 <h4>Free soft skills training</h4>
                                 <p>Get free soft skill training for free. Get equiped with life skills</p>
@@ -102,14 +104,14 @@ const Home = () => {
 
                     <div className="container">
                         <div className="content">
-                            <img src={ img5 } alt="" className='' />
+                            <span><FaChalkboardTeacher className='icon' /></span>
                             <article>
                                 <h4>Instructor led training</h4>
                                 <p>Get trained by the best mind in the industry</p>
                             </article>
                         </div>
                         <div className="content">
-                            <img src={img6} alt="" className='' id='img-2' />
+                            <span><FaUserCheck className='icon' /></span>
                             <article>
                                 <h4>Internship</h4>
                                 <p>
@@ -142,6 +144,64 @@ const Home = () => {
 
                 </div>
 
+            </section>
+
+            <section className="section-star">
+                <div className="card-header">
+                    <div>
+                        <p>Top Categories</p>
+                        <h2>Popular Courses</h2>
+                    </div>
+                    <a href="https://www.cwwtechafrica.com/course/">View All Courses</a>
+                </div>
+                <section className="section-star-container">
+
+                    <div className="card">
+                        <img src={ img1 } alt="ui/ux-imag"  />
+
+                        <div className="card-body">
+                            <p>CTA Cohort program.</p>
+                            <h4>UI/UX Design</h4>
+                            <small>6 weeks - Virtual</small><br />
+                            <a href="https://www.cwwtechafrica.com/cta-application-form/">
+                                <button><FaCaretDown id='arrow'/> Get started</button>
+                            </a>
+                        </div>
+                    </div>
+                    <div className="card">
+                        <img src={img2} alt="data-analysis-img"  />
+                        <div className="card-body">
+                            <p>CTA Cohort program.</p>
+                            <h4>Data Analysis</h4>
+                            <small>6 weeks - Virtual</small><br />
+                            <a href="https://www.cwwtechafrica.com/cta-application-form/">
+                                <button><FaCaretDown id='arrow'/> Get started</button>
+                            </a>
+                        </div>
+                    </div>
+                    <div className="card">
+                        <img src={ img3 } alt="web-dev-img" />
+                        <div className="card-body">
+                            <p>CTA Cohort program.</p>
+                            <h4>Web Development</h4>
+                            <small>6 weeks - Virtual</small><br />
+                            <a href="https://www.cwwtechafrica.com/cta-application-form/">
+                                <button><FaCaretDown id='arrow'/> Get started</button>
+                            </a>
+                        </div>
+                    </div>
+                    <div className="card">
+                        <img src={ img4 } alt="digital-marketing-img" />
+                        <div className="card-body">
+                            <p>CTA Cohort program.</p>
+                            <h4>Digital Marketing</h4>
+                            <small>6 weeks - Virtual</small><br />
+                            <a href="https://www.cwwtechafrica.com/cta-application-form/">
+                                <button><FaCaretDown id='arrow'/> Get started</button>
+                            </a>
+                        </div>
+                    </div>
+                </section>
             </section>
 
             <section className="section-4">

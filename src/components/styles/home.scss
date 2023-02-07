@@ -9,7 +9,11 @@
 
 .section-1{
     @include display(row, space-around);
-    padding: 0rem 2.5rem 4rem 2.5rem;
+    padding: 0rem 2.5rem 2.7rem 2.5rem;
+    border-bottom-right-radius: 6rem;
+    -moz-box-shadow: inset 0 -10px 10px -10px #002594;
+    -webkit-box-shadow: inset 0 -10px 10px -10px #002594;
+    box-shadow: inset 0 -80px 40px -50px #002594;
 
     & .card{
         flex-basis: 40%;
@@ -26,6 +30,7 @@
 
         & h1{
             @include heading-1;
+            color: #333333;
         }
         & p{
             line-height: 32px;
@@ -50,7 +55,7 @@
     @media (max-width:1000px){
         padding: 0rem 2rem 4rem 2rem;;
     }
-    @media (max-width:768px){
+    @media (max-width:767px){
         @include display(column,center);
 
         & .card1 h1{
@@ -64,7 +69,7 @@
 .section-2{
     padding: 1.5rem 2.5rem 4rem 2.5rem;
     text-align: center;
-    background: #e3ecf2;
+    //background: #fff;
     color: #333333;
 
     & h2{
@@ -84,12 +89,17 @@
             color: #333333;
             font-size: 15px;
             @include display(row, flex-start);
+            align-items: center;
 
-            & img{
-                max-width: 100px;
+            & span .icon{
+                max-width: 50px;
                 width: 100%;
-                height: 100px;
-                margin: 1rem;
+                height: 60px;
+                color: #002594;
+                margin: -1.2rem 1.5rem 0rem 0rem;
+            }
+            & h4{
+                padding-bottom: 0.8rem;
             }
 
         }
@@ -99,7 +109,7 @@
         padding: 1.5rem 2rem 4rem 2rem;
     }
 
-    @media (max-width:768px) {
+    @media (max-width:767px) {
         h2{
             font-size: 40px;
             line-height: 1.4;
@@ -125,32 +135,25 @@
 }
 
 .section-3{
-    background: #002594;
+    background: #e3ecf2;
     padding: 4rem 6rem;
 
     & .section-3-container{
-        @include display(row, space-around);
-        background: #fff;
+        @include display(row, space-between);
         padding: 1.3rem 0rem;
 
         & .card{
             flex-basis: 40%;
 
             & article {
-                text-align: left;
+                text-align: start;
                 color: #333333;
-                & b{
-                    font-size: 12px;
-                    line-height: 24px;
-                    color: #002594;
-                }
+
                 & h2{
-                    //font-size: 46px;
-                    //line-height: 2;
                     @include heading-2(#002594);
                 }
                 & p{
-                    font-size: 1.1rem;
+                    font-size: 0.98rem;
                     line-height: 1.7;
                 }
             }
@@ -162,7 +165,7 @@
         }
 
     }
-    @media (max-width: 900px){
+    @media (max-width: 767px){
         padding: 4rem;
 
         & .section-3-container{
@@ -196,6 +199,111 @@
 
 }
 
+///star-one
+
+.section-star{
+    padding: 2.5rem 2.5rem;
+
+    & .card-header{
+        @include display(row, space-between);
+        align-items: center;
+        margin: 0rem 1.2rem 6rem 1.2rem;
+
+        & a{
+            text-decoration: none;
+            background: #ffc21c;
+            padding: 0.8rem 1.5rem;
+            border-radius: 0.5rem;
+            cursor: pointer;
+            color: #4b4b4b;
+            margin-right: 8rem;
+        }
+
+        & h2{
+            @include heading-2(#002594);
+        }
+    }
+    @media (max-width:1024px) {
+        .card-header{
+            @include display(column, left);
+            margin: 0rem 1.2rem 6rem 0.2rem;
+            align-items: start;
+
+            & a{
+                margin-right: 4rem;
+                padding: 0.8rem 1.2rem;
+            }
+
+            & h2{
+                font-size: 2rem;
+                line-height: 1.4;
+                padding: 1rem 0rem;
+            }
+        }
+    }
+
+    & .section-star-container{
+        @include display(row, space-evenly);
+
+
+
+        & .card {
+            flex-basis: 23%;
+            color: #333333;
+            text-align: start;
+
+            & img{
+                width: 100%;
+                border-radius: 0.8rem;
+                margin-bottom: 1rem;
+            }
+            & h4{
+                margin: 1rem 0rem;
+                @include heading-4;
+            }
+            & p{
+                line-height: 1.6;
+                font-size: 1rem;
+            }
+            & button{
+                max-width: 100%;
+                width: 100%;
+                margin: 1.2rem 0rem;
+                padding: 1rem 1.3rem;
+                background: #002594;
+                border-width: 0rem;
+                border-radius: 0.5rem;
+                cursor: pointer;
+                color: #fff;
+                font-size: 1.1rem;
+                text-decoration: none;
+                color: #fff;
+
+                & #arrow{
+                    float: left;
+                }
+            }
+        }
+
+    }
+
+    @media (max-width:767px) {
+        padding: 2rem;
+
+        & .section-star-container{
+            @include display(column, space-evenly);
+
+            & .card{
+                margin-bottom: 1.6rem;
+
+                & img{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
 .section-4{
     padding: 4rem;
 
@@ -214,7 +322,7 @@
         padding: 3rem 0rem 0rem 0rem;
 
         & .card{
-            width: 100%;
+           width: 100%;
             margin-bottom: 0.8rem;
 
             & p{
@@ -239,7 +347,7 @@
             }
         }
     }
-    @media (max-width:768px) {
+    @media (max-width:767px) {
         padding: 4rem 2rem;
 
         & h2{

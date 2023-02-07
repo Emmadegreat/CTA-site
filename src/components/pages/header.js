@@ -1,6 +1,7 @@
 import '../styles/header.css'
 import 'aos/dist/aos.css'
-import { FaBars, FaTimes } from 'react-icons/fa'
+
+import { FaBars, FaTimes, FaUserGraduate } from 'react-icons/fa'
 import React, { Fragment, useEffect, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 
