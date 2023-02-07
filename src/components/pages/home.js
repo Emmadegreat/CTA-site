@@ -6,6 +6,8 @@ import React, { useEffect } from 'react'
 
 import Aos from 'aos'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import bootcamp from '../images/cta-bootcamp.jpg'
+import cohort from '../images/cta-cohort.jpg'
 import col1_img from '../images/col1-img.jpg'
 import col2_img from '../images/col2-img.jpg'
 import col3_img from '../images/col3-img.jpg'
@@ -15,12 +17,14 @@ import img1 from '../images/ux.jpg'
 import img2 from '../images/data.jpg'
 import img3 from '../images/web.jpg'
 import img4 from '../images/digitalmktg.jpg'
-import img5 from '../images/img5.png'
-import img6 from '../images/img6.png'
-import img7 from '../images/cta-sect-3-img.png'
 import review1 from '../images/review1.jpeg'
 import review2 from '../images/review2.jpg'
 import review3 from '../images/review3.jpg'
+import sect_3 from '../images/cta-sect-3-img.png'
+import sect_6 from '../images/sect-6.jpg'
+import sect_7 from '../images/sect-7.jpg'
+import sect_8 from  '../images/sect-8.jpg'
+import softskill from '../images/cta-softskill.jpg'
 import { useState } from 'react'
 
 //import Data from '../data.json
@@ -139,14 +143,14 @@ const Home = () => {
                         </article>
                     </div>
                     <div className="card">
-                        <img src={ img7 } alt="" />
+                        <img src={ sect_3 } alt="" />
                     </div>
 
                 </div>
 
             </section>
 
-            <section className="section-star">
+            <section className="section-4">
                 <div className="card-header">
                     <div>
                         <p>Top Categories</p>
@@ -154,7 +158,7 @@ const Home = () => {
                     </div>
                     <a href="https://www.cwwtechafrica.com/course/">View All Courses</a>
                 </div>
-                <section className="section-star-container">
+                <section className="section-4-container">
 
                     <div className="card">
                         <img src={ img1 } alt="ui/ux-imag"  />
@@ -204,7 +208,139 @@ const Home = () => {
                 </section>
             </section>
 
-            <section className="section-4">
+
+            <section className="section-5">
+                <div className="card-header">
+                    <div>
+                        <p>Top Categories</p>
+                        <h2>Popular Programmes</h2>
+                    </div>
+                    <a href="https://www.cwwtechafrica.com/programmes/">View All Programmes</a>
+                </div>
+                <section className="section-5-container">
+
+                    <div className="card">
+                        <img src={ cohort } alt="ui/ux-imag"  />
+
+                        <div className="card-body">
+                            <h4>CTA Cohort Program</h4>
+                            <p>Programmes</p><br />
+                        </div>
+                    </div>
+                    <div className="card">
+                        <img src={softskill} alt="data-analysis-img"  />
+                        <div className="card-body">
+                            <h4>CTA Soft Skills Program</h4>
+                            <p>Programmes</p><br />
+                        </div>
+                    </div>
+                    <div className="card">
+                        <img src={ bootcamp } alt="web-dev-img" />
+                        <div className="card-body">
+                            <h4>CTA Bootcamp</h4>
+                            <p>Programmes</p><br />
+                        </div>
+                    </div>
+
+                </section>
+            </section>
+
+            <section className="section-6">
+                <div className="section-6-container">
+                    <div className="card">
+                        <article>
+                            <h2>Hire an Intern</h2>
+                            <p>
+                                Want to hire a talent, we have the best African talents in our community.
+                                Our trainees are equipped with in-demand tech skills and also equipped
+                                with soft skills and business skills. We have the best!
+                            </p>
+                            <a href="https://www.cwwtechafrica.com/internship-placement-form/">Get in touch</a>
+                        </article>
+                    </div>
+                    <div className="card">
+                        <img src={ sect_6 } alt="section-6-img" />
+                    </div>
+
+                </div>
+
+            </section>
+
+            <section className="section-7">
+                <div className="section-7-container">
+                    <div className="card">
+                        <img src={ sect_7 } alt="section-7-img" />
+                    </div>
+                    <div className="card">
+                        <article>
+                            <h4>CTA Business</h4>
+                            <h2>Equip your workforce</h2>
+                            <ul>
+                                <li>Access to free soft skills training</li>
+                                <li>100% Instructor-led training</li>
+                                <li>Mentorship</li>
+                            </ul>
+                            <a href="https://www.cwwtechafrica.com/#">Learn more</a>
+                        </article>
+                    </div>
+
+
+                </div>
+
+            </section>
+
+            <section className="section-8">
+                <div className="section-8-container">
+                    <div className="card">
+                        <article>
+                            <h2>Become a Trainer</h2>
+                            <p>
+                                We are looking for skilled individuals who are looking to be
+                                a part of our mission to equip African youths with in-demand
+                                digital and tech skills.
+                            </p>
+                            <a href="https://www.cwwtechafrica.com/frntend-volunteer-form/">Learn more</a>
+                        </article>
+                    </div>
+                    <div className="card">
+                        <img src={ sect_8 } alt="section-6-img" />
+                    </div>
+
+                </div>
+
+            </section>
+
+            <section className="section-9">
+                <section className="section-9-container">
+                    <div className="card">
+                        <img src={ col1_img } alt="section-9-img"  />
+                        <h4>Learn and in-demand skill</h4>
+                        <p>
+                            Tech is the future of work. Learn an in-demand skill today and be equipped with
+                            the ecosystem. In addition, you would get trained in soft skills and entrepreneurship.                      our mission to empower African youths with in-demand digital and tech skills.
+                        </p>
+                    </div>
+                    <div className="card">
+                        <img src={col2_img} alt="section-9-img-1"  />
+                        <h4>Build new networks</h4>
+                        <p>
+                            Get access to a community of like minded individuals, build relationships and
+                            learn from each other.
+                        </p>
+                    </div>
+                    <div className="card">
+                        <img src={ col3_img } alt="section-9-img2" />
+                        <h4>Get Intership placement</h4>
+                        <p>
+                            Get an internship placement after after the program. This will ensure that you
+                            have enough experience to get into a tech role and build your portfolio.         Our traineers are empowered with in-demand tech skills and also equipped with
+                            soft skills and business skills. We have the best.
+                        </p>
+                    </div>
+                </section>
+            </section>
+
+            {/*<section className="section-4">
                 <h2>Join the waitlist for CTA cohort 3.0</h2>
                 <div className="section-4-container" data-aos="flip-up">
                     <div className="card">
@@ -249,35 +385,7 @@ const Home = () => {
                 </section>
             </section>
 
-            <section className="section-6">
-                <section className="section-6-container">
-                    <div className="card">
-                        <img src={ col1_img } alt=""  />
-                        <h4>Learn and in-demand skill</h4>
-                        <p>
-                            Tech is the future of work. Learn an in-demand skill today and be equipped with
-                            the ecosystem. In addition, you would get trained in soft skills and entrepreneurship.                      our mission to empower African youths with in-demand digital and tech skills.
-                        </p>
-                    </div>
-                    <div className="card">
-                        <img src={col2_img} alt=""  />
-                        <h4>Build new networks</h4>
-                        <p>
-                            Get access to a community of like minded individuals, build relationships and
-                            learn from each other.
-                        </p>
-                    </div>
-                    <div className="card">
-                        <img src={ col3_img } alt="" />
-                        <h4>Get Intership placement</h4>
-                        <p>
-                            Get an internship placement after after the program. This will ensure that you
-                            have enough experience to get into a tech role and build your portfolio.         Our traineers are empowered with in-demand tech skills and also equipped with
-                            soft skills and business skills. We have the best.
-                        </p>
-                    </div>
-                </section>
-            </section>
+
 
             <section className="section-7">
                 <div className="card">
@@ -387,7 +495,7 @@ const Home = () => {
 
                 </div>
                 <button><a href="https://www.cwwtechafrica.com/internship-placement-form">Learn more</a></button>
-            </section>
+                </section>*/}
 
 
 
