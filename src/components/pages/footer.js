@@ -1,6 +1,6 @@
 import '../styles/footer.css'
 
-import { FaFacebook, FaInstagram } from 'react-icons/fa'
+import { FaFacebook, FaInstagram, FaLinkedinIn, FaTwitter, FaYoutube } from 'react-icons/fa'
 
 import React from 'react'
 
@@ -12,16 +12,9 @@ const Footer = (props) => {
     return (
         <footer>
 
-            <section className="section-11">
+            <section className="first-section">
 
                 <div className="card">
-                    <div className="inner-card">
-                        <h5>QUICK LINKS</h5>
-                        <a href="https://www.cwwtechafrican.com/faqs" target="_blank" rel='noreferrer'>FAQs</a>
-                        <a href="https://www.cwwtechafrican.com/internship-placement-form" target="_blank" rel='noreferrer'>Hire an Intern</a>
-                        <a href="https://www.cwwtechafrican.com/cta-volunteer-form" target="_blank" rel='noreferrer'>Volunteer</a>
-                        <a href="https://www.cwwtechafrican.com/#" target="_blank" rel='noreferrer'>Donate</a>
-                    </div>
                     <div className="inner-card">
                         <h5>ABOUT CTA</h5>
                         <a href="https://www.cwwtechafrican.com/about-us" target="_blank" rel='noreferrer'>About us</a>
@@ -29,25 +22,44 @@ const Footer = (props) => {
                         <a href="https://www.cwwtechafrican.com/cta-application-form" target="_blank" rel='noreferrer'>Apply as a trainee</a>
                         <a href="https://www.cwwtechafrican.com/referrals" target="_blank" rel='noreferrer'>Referrals</a>
                     </div>
+                    <div className="inner-card">
+                        <h5>PARTNER WITH US</h5>
+                        <a href="https://www.cwwtechafrican.com/#" target="_blank" rel='noreferrer'>CTA Business</a>
+                        <a href="https://www.cwwtechafrican.com/internship-placement-form" target="_blank" rel='noreferrer'>Hire an Intern</a>
+                        <a href="https://www.cwwtechafrican.com/cta-volunteer-form" target="_blank" rel='noreferrer'>Volunteer</a>
+                        <a href="https://www.cwwtechafrican.com/#" target="_blank" rel='noreferrer'>Donate</a>
+                    </div>
+                    <div className="inner-card">
+                        <h5>QUICK LINKS</h5>
+                        <a href="https://www.cwwtechafrican.com/faqs" target="_blank" rel='noreferrer'>FAQs</a>
+                        <a href="https://www.cwwtechafrican.com/courses" target="_blank" rel='noreferrer'>Courses</a>
+                        <a href="https://www.cwwtechafrican.com/Programmes" target="_blank" rel='noreferrer'>Programmes</a>
+                        <a href="https://www.cwwtechafrican.com/#" target="_blank" rel='noreferrer'>Blog</a>
+                    </div>
 
                 </div>
                 <div className="card1">
-                    <input type="search" name="search" id="" placeholder='search'/>
+                    <div className='inner-card-1' id='inner-card-1'>
+                        <input type="search" name="search" id="" />
+                        <button type="submit">Search</button>
+                    </div>
+                    <div className="inner-card-1">
+                        <p>Follow us on Social media</p>
+                        <ul>
+                            <a href="https://www.facebook.com/cwwtechafrica" target="_blank" rel='noreferrer'>< FaFacebook className='social-icon' style={{ color:'#fff' }} /></a>
+                            <a href="https://www.instagram.com/cwwtechafrica" target="_blank" rel='noreferrer'>< FaInstagram className='social-icon' style={{ color:'#fff' }} /></a>
+                            <a href="https://www.twitter.com/cwwtechafrica_" target="_blank" rel='noreferrer'>< FaTwitter className='social-icon' style={{ color: '#fff' }} /></a>
+                            <a href="https://www.youtube.com/@cwwtechafrica" target="_blank" rel='noreferrer'>< FaYoutube className='social-icon' style={{ color: '#fff' }} /></a>
+                            <a href="https://www.linkedin.com/company/cww-tech-africa/" target="_blank" rel='noreferrer'>< FaLinkedinIn className='social-icon' style={{ color:'#fff' }} /></a>
+                        </ul>
+                    </div>
                 </div>
             </section>
 
             <section className='footer'>
-                <div className="footer-wrapper" id='first-card'>
+                <div className="footer-wrapper">
                     <div className="card">
-                        <p>COPYRIGHT <span>{ props.year}</span> &copy; <b>CWW Tech Africa</b></p>
-                    </div>
-                    <div className="card" id="second-card">
-                    <ul>
-                            <a href="https://www.facebook.com/cwwtechafrica" target="_blank" rel='noreferrer'>< FaFacebook className='social-icon' style={{ color:'#ffc21c' }} /></a>
-                            <a href="https://www.instagram.com/cwwtechafrica" target="_blank" rel='noreferrer'>< FaInstagram className='social-icon' style={{ color:'#ffc21c' }} /></a>
-                            <a href="https://www.cwwtechafrican.com/feed" target="_blank" rel='noreferrer'>< FaFacebook className='social-icon' style={{ color:'#ffc21c' }} /></a>
-                        </ul>
-
+                        <p>Copyright &copy; <span>{ props.year}</span>  <b>CWW Tech Africa</b></p>
                     </div>
                 </div>
             </section>

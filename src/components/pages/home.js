@@ -11,6 +11,7 @@ import cohort from '../images/cta-cohort.jpg'
 import col1_img from '../images/col1-img.jpg'
 import col2_img from '../images/col2-img.jpg'
 import col3_img from '../images/col3-img.jpg'
+import country_logos from '../images/cooperation-countries-flags.png'
 import faq from './faq.json'
 import image from '../images/CWW-Tech-Africa.png'
 import img1 from '../images/ux.jpg'
@@ -268,10 +269,10 @@ const Home = () => {
 
             <section className="section-7">
                 <div className="section-7-container">
-                    <div className="card">
+                    <div className="card" data-aos="flip-right">
                         <img src={ sect_7 } alt="section-7-img" />
                     </div>
-                    <div className="card">
+                    <div className="card" data-aos="flip-right">
                         <article>
                             <h4>CTA Business</h4>
                             <h2>Equip your workforce</h2>
@@ -316,29 +317,151 @@ const Home = () => {
                         <img src={ col1_img } alt="section-9-img"  />
                         <h4>Learn and in-demand skill</h4>
                         <p>
-                            Tech is the future of work. Learn an in-demand skill today and be equipped with
-                            the ecosystem. In addition, you would get trained in soft skills and entrepreneurship.                      our mission to empower African youths with in-demand digital and tech skills.
+                            Tech is the future of work. Learn an in-demand skill today
+                            and be equipped for the tech ecosystem. In addition, you
+                            would get trained in soft skills and entrepreneurship.
                         </p>
                     </div>
                     <div className="card">
                         <img src={col2_img} alt="section-9-img-1"  />
                         <h4>Build new networks</h4>
                         <p>
-                            Get access to a community of like minded individuals, build relationships and
-                            learn from each other.
+                            Get access to a community of like-minded individuals,
+                            build relationships and learn from each other.
                         </p>
                     </div>
                     <div className="card">
                         <img src={ col3_img } alt="section-9-img2" />
                         <h4>Get Intership placement</h4>
                         <p>
-                            Get an internship placement after after the program. This will ensure that you
-                            have enough experience to get into a tech role and build your portfolio.         Our traineers are empowered with in-demand tech skills and also equipped with
-                            soft skills and business skills. We have the best.
+                            Get an internship placement after the program.
+                            This will ensure that you have enough experience
+                            to get into a tech role and build your portfolio.
                         </p>
                     </div>
                 </section>
             </section>
+
+            <section className="section-10">
+                <div className='section-10-header'>
+                    <h2>Our Impacts</h2>
+                    <img src={country_logos} alt={ country_logos } />
+                </div>
+                <div className="grid-display">
+                    <div className="trained">
+                        <h2>5000</h2>
+                        <p>Over 5k Trained</p>
+                    </div>
+                    <div className="satisfaction">
+                        <h2>99</h2>
+                        <p>99% Satisfaction</p>
+                    </div>
+                    <div className="countries">
+                        <h2>45</h2>
+                        <p>Countries</p>
+                    </div>
+                    <div className="completion-rate">
+                        <h2>92</h2>
+                        % Completion rate
+                    </div>
+                </div>
+            </section>
+
+
+            <section className="section-wrapper">
+                <h2>Success stories from previous trainees</h2>
+                <div className="section-11-container">
+                    <div className="card">
+                        <img src={review1} alt={review1} />
+                        <article>
+                            <p>
+                                CWW has given me a good opportunity to start a career in tech.
+                                I learnt more than I thought I would. I'm glad to be a beneficiary
+                                of CWW Tech Africa Cohort 1.0
+                            </p>
+                            <b>Adeyemi Amerah (Nigeria)</b> <br />
+                            <em>Ui/UX Design Trainee, CTA cohort 1.0.</em>
+                        </article>
+
+                    </div>
+                    <div className="card">
+
+                        <img src={review2} alt={ review2 }  />
+                        <article>
+                            <p>
+                                The course was refreshing, interactive and interesting; a good
+                                mixture of practical and theory with enough time to discuss issues.
+                            </p>
+                            <b>Gilbert Asumwisye (Tanzania)</b> <br />
+                            <em>Digital Marketing Trainee, CTA cohort 1.0.</em>
+                        </article>
+
+                    </div>
+                    <div className="card">
+
+                        <img src={ review3 } alt={review3} />
+                        <article>
+                            <p>
+                                It was an immense pleasure to test the skills acquired
+                                during the program, through the holistically conceived
+                                individual projects and I also enjoyed working with
+                                fellow trainees on group projects.
+                            </p>
+                            <b>SONNA Mael (Cameroun)</b> <br />
+                            <em>Data Analysis Trainee, CTA cohort 1.0.</em>
+                        </article>
+                    </div>
+                </div>
+
+                <div className='section-12-container'>
+                    <div className="card">
+                        <h3>Join our Tech community</h3>
+                        <p>
+                            Be the first to know about the latest courses, training programs,
+                            jobs, interships and freebies.
+                        </p>
+                    </div>
+                    <div className="card">
+                        <div id=''></div>
+                        <form action="" method="post">
+                            <legend>
+                                <label htmlFor="name">Firstname</label>
+                                <input type="text" name='name' placeholder='Name'/>
+                            </legend>
+                             <legend>
+                                <label htmlFor="email">Firstname</label>
+                                <input type="text" name='email' placeholder='Email'/>
+                            </legend>
+                            <button type="submit">Send</button>
+                        </form>
+
+                    </div>
+
+                </div>
+            </section>
+
+            <section className="section-13">
+                     <h3>Frequently Asked Questions</h3>
+                <div className="card">
+
+                    {faq.map((item, id) => {
+                        return (
+                            <div className="item" key={item.id}>
+                                <div className="title" onClick={()=>handleFaqs(id)}>
+                                    <span>{faqs === id ? "-" : "+"}</span>
+                                    <a href="https://www.cwwtechafrica.com">{ item.question }</a>
+                                </div>
+                                <div className={ faqs === id? "content show ":"content" }>{ item.answer }</div>
+                            </div>
+
+                        )
+
+                    })}
+
+                </div>
+                <a href="https://www.cwwtechafrica.com/faqs" id="view-faqs">View FAQS</a>
+                </section>
+
 
             {/*<section className="section-4">
                 <h2>Join the waitlist for CTA cohort 3.0</h2>
@@ -398,104 +521,7 @@ const Home = () => {
                 </div>
             </section>
 
-            <section className="section-wrapper">
-                <h3>Reviews from previous Trainees</h3>
-                <div className="section-8-container">
-                    <div className="card">
-                        <small>&#10078;</small>
-                        <img src={review1} alt="" />
-                        <article>
-                            <p>
-                                CWW has given me a good opportunity to start a career in tech. I have learnt
-                                more than i thought I would. My facilitator did a great job in imparting knowledge
-                                into us anf I'am glad to be a beneficiary of CWW cohort 1.0.                      our mission to empower African youths with in-demand digital and tech skills.
-                            </p>
-                            <b>Adeyemi Amerah (Nigeria)</b>
-                            <span>Ui/UX Design Trainee, CTA cohort 1.0.</span>
-                        </article>
-
-                    </div>
-                    <div className="card">
-                        <small>&#10078;</small>
-                        <img src={ review2 } alt=""  />
-                        <article>
-                            <p>
-                                The course was refreshing, interactive and interesting; a good mixture of
-                                practical and theory with enough time to discuss issues.
-                            </p>
-                            <b>Gilbert Asumwisye (Tanzania)</b>
-                            <span>Digital Marketing Trainee, CTA cohort 1.0.</span>
-                        </article>
-
-                    </div>
-                    <div className="card">
-                        <small>&#10078;</small>
-                        <img src={ review3 } alt="" />
-                        <article>
-                            <p>
-                                It was an immense plasure to test the skills acquired during this program,
-                                through the holistically conceived individual projects and I also enjoyed
-                                working with a fellow trainees on group projects.
-                            </p>
-                            <b>SONNA Mael (Cameroun)</b>
-                            <span>Data Analysis Trainee, CTA cohort 1.0.</span>
-                        </article>
-                    </div>
-                </div>
-
-                <div className='section-9-container'>
-                    <div className="card">
-                        <h3>Join our Tech community</h3>
-                        <p>
-                            Be the first to know about the latest courses, training programs,
-                            jobs, interships and freebies!
-                        </p>
-                    </div>
-                    <div className="card">
-                        <div id=''></div>
-                        <small><em>*</em> indicates required field</small>
-                        <form action="" method="post">
-                            <legend>
-                                <label htmlFor="firstname">Firstname</label>
-                                <input type="text" name='firstname' placeholder='First Name'/>
-                            </legend>
-                             <legend>
-                                <label htmlFor="lastname">Firstname</label>
-                                <input type="text" name='lastname' placeholder='Last Name'/>
-                            </legend>
-                             <legend>
-                                <label htmlFor="email">Firstname</label>
-                                <input type="text" name='email' placeholder='Email'/>
-                            </legend>
-                            <button type="submit">Submit</button>
-                        </form>
-
-                    </div>
-
-                </div>
-            </section>
-
-            <section className="section-10">
-
-                <div className="card">
-                    <h3>Frequently Asked Questions</h3>
-                    {faq.map((item, id) => {
-                        return (
-                            <div className="item" key={item.id}>
-                                <div className="title" onClick={()=>handleFaqs(id)} data-aos="flip-up">
-                                    <h4>{ item.question }</h4>
-                                    <span>{ faqs === id? "-":"+"}</span>
-                                </div>
-                                <div className={ faqs === id? "content show ":"content" }>{ item.answer }</div>
-                            </div>
-
-                        )
-
-                    })}
-
-                </div>
-                <button><a href="https://www.cwwtechafrica.com/internship-placement-form">Learn more</a></button>
-                </section>*/}
+            */}
 
 
 

@@ -5,64 +5,114 @@
 }
 
 
-.section-11{
+.first-section{
     padding: 3.5rem 0rem;
-    background: #333333;
-    @include display(row, space-around);
+    background: #1b1b1b;
+    display: flex ;
 
     & .card{
         @include display(row, space-around);
-        flex-basis: 50%;
-        padding-left: 3rem;
+        flex-basis: 70%;
+        padding-left: 2rem;
         line-height: 2.5;
         color: #fff;
 
-        & a{
-            text-decoration: none;
-            color: #fff;
-            font-size: 0.95rem
+        & .inner-card{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            flex-basis: 33%;
+
+            & h5{
+                font-size: 16px;
+            }
+
+            & a{
+                text-decoration: none;
+                color: #fff;
+                font-size: 0.95rem;
+                line-height:4;
+            }
         }
+
+
     }
 
     & .card1{
         @include display(column, flex-start);
-        margin-right: 5rem;
+        text-align: center;
+        padding-right: 2rem;
+
+        & #inner-card-1{
+            @include display(row, center);
+        }
 
         & input{
-            width: 180px;
-            height: 38px;
-            border-radius: 0.3rem;
+            max-width: 250px;
+            width: 100%;
+            height: 50px;
+            border-radius: 0.2rem;
             border-width: 0rem;
             padding: 0.5rem;
             font-size: 1.1rem;
+            margin-right: 0.8rem;
+            margin-bottom: 1rem;
+        }
+        button{
+            background: #ffc21c;
+            padding: 0.5rem;
+            //width: 100%;
+            width: 120px;
+            height: 50px;
+            border-width: 0rem;
+            border-radius: 0.4rem;
+            //margin: auto;
+            text-align: center;
+            color: #333333;
+            font-size: 1rem;
+            font-weight: 600;
+            padding: 1rem 0rem;
+
+            &:hover{
+                background: #002594;
+                color: #fff;
+            }
+        }
+        & p{
+            line-height: 8;
+            color: #fff;
+        }
+        & ul{
+            display: inline;
+
+            & a{
+                padding: 0.8rem;
+                font-size: 1.4rem;
+            }
         }
 
     }
-    & .inner-card{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        flex-basis: 45%;
-    }
+
 
     @media (max-width:1000px){
         @include display(column, flex-start);
-        padding: 2rem;
+        padding: 2rem 1rem;
 
         & .card{
             margin-bottom: 4rem;
             @include display(row, space-around);
-        }
-    }
-    @media (max-width:600px){
-        .card{
-            @include display(column, flex-start);
 
-            & .inner-card{
-                padding-top: 2rem;
+            @media (max-width:600px){
+                @include display(column, flex-start);
+
+                & .inner-card{
+                    padding-top: 2rem;
+                }
             }
         }
+
     }
+
 
 
 }
@@ -70,15 +120,22 @@
 
 .footer{
     width: 100%;
-    height: auto;
+    height: 70px;
     background: #000;
     padding: 1rem 2.5rem;
+    @include display(column, center);
+    color: #fff;
+    align-items: center;
 
-    & .footer-wrapper{
-       @include display(row, space-between);
-       color: #fff;
-       align-items: center;
+    /*& .footer-wrapper{
+       //@include display(column, center);
+       //color: #fff;
+       //align-items: center;
        padding: 0rem 3rem;
+       & .card{
+
+            padding: 0rem 3rem;
+       }
 
        & #second-card{
             order: 2;
@@ -92,7 +149,7 @@
             color: #666;
             font-size: 0.85rem;
         }
-        @media (max-width:768px){
+        @media (max-width:767px){
             @include display(column, center);
             padding: 0rem;
 
@@ -105,6 +162,9 @@
             }
         }
 
+    }*/
+    @media (max-width:767px){
+        font-size: 0.8rem;
     }
 
 }
