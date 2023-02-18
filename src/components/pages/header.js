@@ -49,7 +49,7 @@ const Header = () => {
 
                 <div className='nav-bar'>
                     <ul className={click ? "nav-menu active" : "nav-menu"}>
-                        <li><NavLink to="/" onClick={closeLinks} className={({ isActive })=>isActive? 'nav-menu.active':undefined } end >Home</NavLink></li>
+                        <li><NavLink to="/" onClick={closeLinks} className={({ isActive }) => isActive ? 'nav-menu.active' : ""} end style={({ isActive})=>({color:isActive ? 'blue':'black'})}>Home</NavLink></li>
                         <li><NavLink to="about" onClick={closeLinks} >About us</NavLink></li>
                         <li><NavLink to="contact" onClick={closeLinks}>Contact us</NavLink></li>
 

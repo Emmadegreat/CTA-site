@@ -5,7 +5,10 @@ import { FaArrowDown, FaCaretDown, FaCertificate, FaChalkboardTeacher, FaCheckCi
 import React, { useEffect } from 'react'
 
 import Aos from 'aos'
+import CountUp from 'react-countup'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { Link } from 'react-router-dom'
+import ScrollTrigger from 'react-scroll-trigger'
 import bootcamp from '../images/cta-bootcamp.jpg'
 import cohort from '../images/cta-cohort.jpg'
 import col1_img from '../images/col1-img.jpg'
@@ -49,6 +52,8 @@ const Home = () => {
         Aos.init();
         Aos.refresh({duration:1500,once:false})
     }, [])
+
+    const [counter, setCounter] = useState(false);
     return (
         <section className='home'>
             <div className="spacer"></div>
@@ -190,9 +195,9 @@ const Home = () => {
                             <p>CTA Cohort program.</p>
                             <h4>Web Development</h4>
                             <small>6 weeks - Virtual</small><br />
-                            <a href="https://www.cwwtechafrica.com/cta-application-form/">
+                            <Link to="https://www.cwwtechafrica.com/cta-application-form/">
                                 <button><FaCaretDown id='arrow'/> Get started</button>
-                            </a>
+                            </Link>
                         </div>
                     </div>
                     <div className="card">
@@ -349,19 +354,43 @@ const Home = () => {
                 </div>
                 <div className="grid-display">
                     <div className="trained">
-                        <h2>5000</h2>
+                        <ScrollTrigger onEnter={()=>setCounter(true)} onExit={()=>setCounter(false)}>
+                            <h2>
+                                {counter &&
+                                    <CountUp start={0} end={5000} duration={2} delay={0.5} />
+                                }
+                            </h2>
+                        </ScrollTrigger>
                         <p>Over 5k Trained</p>
                     </div>
                     <div className="satisfaction">
-                        <h2>99</h2>
+                        <ScrollTrigger onEnter={()=>setCounter(true)} onExit={()=>setCounter(false)}>
+                            <h2>
+                                {counter &&
+                                    <CountUp start={0} end={99} duration={2} delay={0.5} />
+                                }
+                            </h2>
+                        </ScrollTrigger>
                         <p>99% Satisfaction</p>
                     </div>
                     <div className="countries">
-                        <h2>45</h2>
+                        <ScrollTrigger onEnter={()=>setCounter(true)} onExit={()=>setCounter(false)}>
+                            <h2>
+                                {counter &&
+                                    <CountUp start={0} end={45} duration={2} delay={0.5} />
+                                }
+                            </h2>
+                        </ScrollTrigger>
                         <p>Countries</p>
                     </div>
                     <div className="completion-rate">
-                        <h2>92</h2>
+                        <ScrollTrigger onEnter={()=>setCounter(true)} onExit={()=>setCounter(false)}>
+                            <h2>
+                                {counter &&
+                                    <CountUp start={0} end={92} duration={2} delay={0.5} />
+                                }
+                            </h2>
+                        </ScrollTrigger>
                         % Completion rate
                     </div>
                 </div>

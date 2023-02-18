@@ -339,13 +339,13 @@
 
             & .content{
                 max-height: 0;
-                transition: all 0.5s ease-in-out;
+                transition: all 0.5s;
                 overflow: hidden;
             }
 
-            & .show{
+            & .show{///900 comments
                 max-height: 10rem;
-                transition: all 0.5s ease-in-out;
+                transition: all 0.5s;
                 height: 100%;
                 line-height: 1.7;
                 font-size: 0.9rem;
@@ -380,3 +380,12 @@
         }
     }
 }
+
+/*
+ What do you like about the startup &  what problem do they solve
+2. how do they solve it
+3. what stack do they use(ie. technologies e.g python, node js etc)
+4. are there job opportunities
+
+
+*/

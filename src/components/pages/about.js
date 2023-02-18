@@ -2,6 +2,7 @@ import '../styles/about.css'
 
 import React, {useState} from 'react'
 
+import { Link } from 'react-router-dom'
 import about_img from '../images/cta-about1.jpg'
 import col1_img from '../images/col2-img.jpg'
 import col2 from '../images/col2-img.jpg'
@@ -156,7 +157,7 @@ const About = () => {
                             <div className="item" key={item.id}>
                                 <div className="title" onClick={()=>handleFaqs(id)}>
                                     <span>{faqs === id ? "-" : "+"}</span>
-                                    <a href="https://www.cwwtechafrica.com">{ item.question }</a>
+                                    <Link href="https://www.cwwtechafrica.com">{ item.question }</Link>
                                 </div>
                                 <div className={ faqs === id? "content show ":"content" }>{ item.answer }</div>
                             </div>
@@ -166,7 +167,7 @@ const About = () => {
                     })}
 
                 </div>
-                <a href="https://www.cwwtechafrica.com/faqs" id="view-faqs">View FAQS</a>
+                <Link to="https://www.cwwtechafrica.com/faqs" id="view-faqs">View FAQS</Link>
                 </section>
 
         </section>

@@ -9,6 +9,7 @@ import Account from './components/pages/account';
 //import { AnimationOnScroll } from 'react-animation-on-scroll';
 import Contact from './components/pages/contact';
 import Detail from './components/pages/detail';
+import Error404 from './components/pages/404';
 import Footer from './components/pages/footer';
 import Header from './components/pages/header';
 import Home from './components/pages/home';
@@ -54,6 +55,7 @@ function App() {
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/about' element={<About />} />
+          <Route path='/*' element={ <Error404 />} />
           <Route path='/contact' element={<Contact />} />
           {!islogged && <Route path='/login' element={<Login />} />}
           <Route path='/register' element={ < Register /> } />
