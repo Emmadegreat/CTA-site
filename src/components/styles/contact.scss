@@ -1,0 +1,191 @@
+@import './config';
+*{
+    @include general;
+
+}
+
+.hero-section{
+    position: relative;
+    background-color: var(--overlay);
+    //opacity: 0.7;
+    height: 70vh;
+    width: 100%;
+    text-align: center;
+}
+
+.contact-us::before{
+    content: '';
+    position: absolute;
+    background: url('../images/lady-with-laptop.jpg') no-repeat center center /100% auto;
+    width: 100%;
+    height: 70%;
+    z-index: 1000;
+    top: 70px;
+    //right: 0;
+    //left: 0;
+    //bottom: 0;
+
+}
+
+h2{
+    position: relative;
+    top: 50px;
+    color: red;
+    //left: 50;
+}
+
+.contact-us{
+    background: #f9fafb;
+    & h3{
+        padding: 6rem 2rem 3rem 2rem;
+        @include heading-3;
+        text-align: center;
+        line-height: 3rem;
+    }
+
+    & .card-wrapper{
+        @include display(row, space-evenly);
+        padding: 2rem 1rem 4rem 1rem;
+
+        & .card{
+            background: #fff;
+            flex-basis: 32%;
+            border-radius: 0.5rem;
+            text-align: center;
+            padding: 2rem 0.5rem;
+            box-shadow: rgba(0, 0, 0, 0.05) 0px 10px 10px -5px;
+
+            & p{
+                line-height: 1.6;
+                margin-bottom: 1.2rem;
+            }
+            & span{
+                font-size: 1.1rem;
+                color: #002594;
+            }
+            & h4{
+                font-size: 26px;
+                line-height: 2;
+            }
+        }
+        @media (max-width:767px){
+            @include display(column, center);
+
+            & .card{
+                margin-bottom: 1rem;
+            }
+        }
+    }
+
+    & .card-2-wrapper{
+        padding: 5rem 2.5rem;
+        @include display(row, space-between);
+        //align-items: center;
+
+        & .card1{
+            flex-basis: 45%;
+
+            & h2{
+                @include heading-2(#002594);
+                padding-bottom: 2rem;
+            }
+            & p{
+                //margin: 2.2rem 0rem;
+                line-height: 1.6;
+            }
+
+            & .card-inner{
+                @include display(row, flex-start);
+                align-items: center;
+                color: #333333;
+                margin-top: 3rem;
+
+                & span .icon{
+                    max-width: 40px;
+                    width: 100%;
+                    height: 50px;
+                    color: #002594;
+                    margin: -1.2rem 0.9rem 0rem 0rem;
+                }
+                & h4{
+                    padding-bottom: 0rem;
+                    font-weight: 900;
+                }
+            }
+            & ul{
+                display: inline;
+                //padding-top: 8rem;
+
+                & .social-icon{
+                    padding-top: 1rem;
+                    font-size: 3rem;
+                }
+            }
+
+            & form{
+                background: #fff;
+                padding: 2.5rem;
+                margin: auto;
+                color: #333333;
+                //width: 100%;
+                & p{
+                    font-size: 2.5rem;
+                    line-height: 2;
+                }
+                & small{
+                    color: #e82921;
+                }
+
+                & span{
+                    line-height: 5;
+                }
+                & legend{
+                    @include display(column, center);
+                    margin-bottom: 1.2rem;
+
+                    & label{
+                        padding-bottom: 0.4rem;
+                        font-weight: 600;
+                    }
+                    & input{
+                        height: 50px;
+                        background: #f9fafb;
+                        border:0.5px solid #e8eaec;
+                    }
+                    & textarea{
+                        height: 200px;
+                        background: #f9fafb;
+                        border:0.5px solid #e8eaec;
+                    }
+                }
+                & button{
+                    width: 100px;
+                    height: 50px;
+                    border-radius: 0.3rem;
+                    background-color: #ffc21c;
+                    border-width: 0rem;
+                    color: #333333;
+                    font-size: 1.1rem;
+                    margin: 1rem 0rem;
+
+                    &:hover{
+                        background: #002594;
+                        color: #fff;
+                    }
+                }
+
+            }
+        }
+        @media (max-width:767px){
+            @include display(column, center);
+
+            & .card{
+
+                & form{
+                    padding: 1.5rem;
+                };
+            }
+        }
+    }
+
+}

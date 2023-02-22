@@ -1,5 +1,6 @@
 import '../styles/login.css'
 
+import { Link } from 'react-router-dom'
 import { LoginActions } from '../../store/auth'
 import React from 'react'
 import { useDispatch } from 'react-redux'
@@ -16,23 +17,33 @@ const Login = () => {
 
     return (
         <div className='login'>
+            <div className="spacer"></div>
 
-            <h2>Sign in</h2>
-            <form action="" onSubmit={loginHandler}>
-                <legend>
-                    <label htmlFor="email">Email</label>
-                    <input type="email" name='email' placeholder='Eemail'/>
-                </legend>
+            <div className='login-wrapper'>
+                <div className="card"></div>
 
-                <legend>
-                    <label htmlFor="username">Username</label>
-                    <input type="text" name='username' placeholder='Username'/>
-                </legend>
-                <button type="submit">Login</button>
-                <a href="signup">Register</a>
-            </form>
+                <div className="card">
+                    <form action="" onSubmit={loginHandler}>
+                        <legend>
+                            <label htmlFor="email">Username or Email Address</label><br />
+                            <input type="text" name='email'required />
+                        </legend>
 
-            <a href="forgotpassword">Forgot your password</a>
+                        <legend>
+                            <label htmlFor="password">Password</label><br />
+                            <input type="password" name='password' required /><br />
+
+                        </legend>
+                        <input type="checkbox" name="check" required />Remember Me <br />
+
+                        <button type="submit" id='login'>Log In</button>
+                    </form>
+                    <Link href="/forgotpassword">Lost your password</Link>
+
+                    <Link href="/register" id='sign-up-link'>Don't have an account? Register</Link>
+                </div>
+
+            </div>
 
         </div>
     )

@@ -42,7 +42,7 @@ const Header = () => {
 
     return (
         <Fragment>
-            <nav className={nav ? 'header bg' : 'header'} id='navbar' data-aos="flip-right">
+            <nav className={nav ? 'header bg' : 'header'} id='navbar'>
                 <div className='logo'>
                     <a href="https://cwwtechafrica.com" onClick={closeLinks}><img src={ logo } alt="page-logo"  /></a>
                 </div>

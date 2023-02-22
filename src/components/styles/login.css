@@ -6,10 +6,86 @@
   font-family: "Noto", sans-serif;
 }
 
+.space {
+  padding-top: 5rem;
+  width: 100%;
+  background: rgb(242, 240, 240);
+}
+
 .login {
   padding: 3rem;
+}
+.login .login-wrapper {
   display: flex;
-  flex-direction: column;
+  justify-content: space-around;
+  flex-direction: row;
   align-items: center;
-  text-align: center;
+  text-align: start;
+}
+.login .login-wrapper .card {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-left: 5rem;
+  padding-bottom: 2rem;
+  font-size: 0.9rem;
+}
+.login .login-wrapper .card form legend {
+  margin-bottom: 1rem;
+}
+.login .login-wrapper .card form legend input {
+  max-width: 100%;
+  width: 400px;
+  padding: 1.2rem;
+  height: 60px;
+  border-radius: 0.3rem;
+}
+.login .login-wrapper .card form #login {
+  width: 100px;
+  height: 50px;
+  border-radius: 0.3rem;
+  background-color: #ffc21c;
+  border-width: 0rem;
+  color: #333333;
+  font-size: 1.1rem;
+  margin: 1rem 0rem;
+}
+.login .login-wrapper .card a {
+  color: #333333;
+  margin-bottom: 1rem;
+}
+.login .login-wrapper .card #sign-up-link {
+  font-weight: 700;
+}
+@media (max-width: 767px) {
+  .login {
+    background: #002594;
+    padding: 2rem;
+  }
+  .login .login-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .login .login-wrapper .card {
+    margin: auto;
+    width: 100%;
+    color: #fff;
+    padding: 0rem 3rem;
+  }
+  .login .login-wrapper .card a {
+    color: #fff;
+  }
+  .login .login-wrapper .card form legend input {
+    border-width: 0rem;
+    width: 100%;
+    padding: 1.2rem;
+    height: 60px;
+    border-radius: 0.3rem;
+  }
+}
+@media (max-width: 767px) and (max-width: 450px) {
+  .login .login-wrapper .card {
+    padding: 0rem;
+  }
 }/*# sourceMappingURL=login.css.map */

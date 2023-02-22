@@ -1,1 +1,185 @@
-/*# sourceMappingURL=contact.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;1,100;1,500;1,900&family=Sofia+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Noto", sans-serif;
+}
+
+.hero-section {
+  position: relative;
+  background-color: var(--overlay);
+  height: 70vh;
+  width: 100%;
+  text-align: center;
+}
+
+.contact-us::before {
+  content: "";
+  position: absolute;
+  background: url("../images/lady-with-laptop.jpg") no-repeat center center/100% auto;
+  width: 100%;
+  height: 70%;
+  z-index: 1000;
+  top: 70px;
+}
+
+h2 {
+  position: relative;
+  top: 50px;
+  color: red;
+}
+
+.contact-us {
+  background: #f9fafb;
+}
+.contact-us h3 {
+  padding: 6rem 2rem 3rem 2rem;
+  font-size: 40px;
+  line-height: 35px;
+  font-weight: 600;
+  color: #333333;
+  text-align: center;
+  line-height: 3rem;
+}
+.contact-us .card-wrapper {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  padding: 2rem 1rem 4rem 1rem;
+}
+.contact-us .card-wrapper .card {
+  background: #fff;
+  flex-basis: 32%;
+  border-radius: 0.5rem;
+  text-align: center;
+  padding: 2rem 0.5rem;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 10px 10px -5px;
+}
+.contact-us .card-wrapper .card p {
+  line-height: 1.6;
+  margin-bottom: 1.2rem;
+}
+.contact-us .card-wrapper .card span {
+  font-size: 1.1rem;
+  color: #002594;
+}
+.contact-us .card-wrapper .card h4 {
+  font-size: 26px;
+  line-height: 2;
+}
+@media (max-width: 767px) {
+  .contact-us .card-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .contact-us .card-wrapper .card {
+    margin-bottom: 1rem;
+  }
+}
+.contact-us .card-2-wrapper {
+  padding: 5rem 2.5rem;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.contact-us .card-2-wrapper .card1 {
+  flex-basis: 45%;
+}
+.contact-us .card-2-wrapper .card1 h2 {
+  font-weight: 700;
+  font-size: 40px;
+  color: #002594;
+  line-height: 2;
+  padding-bottom: 2rem;
+}
+.contact-us .card-2-wrapper .card1 p {
+  line-height: 1.6;
+}
+.contact-us .card-2-wrapper .card1 .card-inner {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  align-items: center;
+  color: #333333;
+  margin-top: 3rem;
+}
+.contact-us .card-2-wrapper .card1 .card-inner span .icon {
+  max-width: 40px;
+  width: 100%;
+  height: 50px;
+  color: #002594;
+  margin: -1.2rem 0.9rem 0rem 0rem;
+}
+.contact-us .card-2-wrapper .card1 .card-inner h4 {
+  padding-bottom: 0rem;
+  font-weight: 900;
+}
+.contact-us .card-2-wrapper .card1 ul {
+  display: inline;
+}
+.contact-us .card-2-wrapper .card1 ul .social-icon {
+  padding-top: 1rem;
+  font-size: 3rem;
+}
+.contact-us .card-2-wrapper .card1 form {
+  background: #fff;
+  padding: 2.5rem;
+  margin: auto;
+  color: #333333;
+}
+.contact-us .card-2-wrapper .card1 form p {
+  font-size: 2.5rem;
+  line-height: 2;
+}
+.contact-us .card-2-wrapper .card1 form small {
+  color: #e82921;
+}
+.contact-us .card-2-wrapper .card1 form span {
+  line-height: 5;
+}
+.contact-us .card-2-wrapper .card1 form legend {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 1.2rem;
+}
+.contact-us .card-2-wrapper .card1 form legend label {
+  padding-bottom: 0.4rem;
+  font-weight: 600;
+}
+.contact-us .card-2-wrapper .card1 form legend input {
+  height: 50px;
+  background: #f9fafb;
+  border: 0.5px solid #e8eaec;
+}
+.contact-us .card-2-wrapper .card1 form legend textarea {
+  height: 200px;
+  background: #f9fafb;
+  border: 0.5px solid #e8eaec;
+}
+.contact-us .card-2-wrapper .card1 form button {
+  width: 100px;
+  height: 50px;
+  border-radius: 0.3rem;
+  background-color: #ffc21c;
+  border-width: 0rem;
+  color: #333333;
+  font-size: 1.1rem;
+  margin: 1rem 0rem;
+}
+.contact-us .card-2-wrapper .card1 form button:hover {
+  background: #002594;
+  color: #fff;
+}
+@media (max-width: 767px) {
+  .contact-us .card-2-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .contact-us .card-2-wrapper .card form {
+    padding: 1.5rem;
+  }
+}/*# sourceMappingURL=contact.css.map */

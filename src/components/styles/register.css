@@ -1,1 +1,74 @@
-/*# sourceMappingURL=register.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;1,100;1,500;1,900&family=Sofia+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Noto", sans-serif;
+}
+
+.register {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.register .first-part {
+  background-color: #002592;
+  padding: 4rem 0rem 6rem 0rem;
+}
+.register .first-part h2 {
+  font-weight: 700;
+  font-size: 40px;
+  color: #fff;
+  line-height: 2;
+  text-align: center;
+}
+.register .second-part {
+  padding: 4rem;
+}
+.register .second-part article {
+  line-height: 1.6;
+  color: #333333;
+}
+.register .second-part article h3 {
+  font-size: 40px;
+  line-height: 35px;
+  font-weight: 600;
+  color: #333333;
+  font-size: 26px;
+  margin: 1.2rem 0rem;
+}
+.register .second-part article ul, .register .second-part article ol {
+  padding-left: 2.2rem;
+  margin-bottom: 1.5rem;
+}
+.register .second-part article h4 {
+  margin: 1.1rem 0rem;
+}
+.register .second-part article a {
+  background: #ffc21c;
+  padding: 0.5rem;
+  height: 50px;
+  border-width: 0rem;
+  border-radius: 0.4rem;
+  margin: auto;
+  text-align: center;
+  text-decoration: none;
+  color: #454242;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 1rem 1.4rem;
+}
+.register .second-part article a:hover {
+  background: #002594;
+}
+@media (max-width: 767px) {
+  .register .first-part {
+    padding: 4rem 2rem 6rem 2rem;
+  }
+  .register .first-part h2 {
+    line-height: 1.4;
+  }
+  .register .second-part {
+    padding: 3rem 2rem;
+  }
+}/*# sourceMappingURL=register.css.map */

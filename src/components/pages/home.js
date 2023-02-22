@@ -548,11 +548,7 @@ const Home = () => {
                     </p>
                     <button><a href="https://www.cwwtechafrica.com/join-the-waitlist/"target="_blank" rel='noreferrer'>Join the Waitlist</a></button>
                 </div>
-            </section>
-
-            */}
-
-
+            </section>*/}
 
         </section>
     )

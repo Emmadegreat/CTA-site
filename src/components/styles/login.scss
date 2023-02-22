@@ -1,12 +1,94 @@
-@import "./_config";
+@import "./_config.scss";
 *{
     @include general;
+}
+.space{
+    padding-top: 5rem;
+    width: 100%;
+    background: rgb(242, 240, 240)
 }
 
 .login{
     padding: 3rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+
+    & .login-wrapper{
+        @include display(row, space-around);
+        align-items: center;
+        text-align: start;
+
+        & .card{
+            @include display(column, center);
+            margin-left: 5rem;
+            padding-bottom: 2rem;
+            font-size: 0.9rem;
+            & form{
+
+                & legend{
+                    margin-bottom: 1rem;
+
+                    & input{
+                        max-width: 100%;
+                        width: 400px;
+                        padding: 1.2rem;
+                        height: 60px;
+                        border-radius: 0.3rem;
+                    }
+                }
+                & #login{
+                    width: 100px;
+                    height: 50px;
+                    border-radius: 0.3rem;
+                    background-color: #ffc21c;
+                    border-width: 0rem;
+                    color: #333333;
+                    font-size: 1.1rem;
+                    margin: 1rem 0rem;
+                }
+            }
+            & a{
+                color: #333333;
+                margin-bottom: 1rem;
+            }
+            & #sign-up-link{
+                font-weight: 700;
+            }
+        }
+    }
+    @media (max-width:767px){
+        background: #002594;
+        padding: 2rem;
+
+        & .login-wrapper{
+            @include display(column, center);
+
+            & .card{
+                margin:auto;
+                width: 100%;
+                color: #fff;
+                padding: 0rem 3rem;
+                & a{
+                    color:#fff;
+                }
+
+                & form{
+
+                    & legend{
+
+                        & input{
+                            border-width: 0rem;
+                            width: 100%;
+                            padding: 1.2rem;
+                            height: 60px;
+                            border-radius: 0.3rem;
+                        }
+                    }
+
+                }
+
+                @media (max-width:450px){
+                    padding: 0rem;
+                }
+            }
+        }
+    }
 }
