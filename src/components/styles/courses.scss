@@ -1,0 +1,73 @@
+@import './config';
+
+*{
+    @include general;
+}
+
+.courses{
+    & .spacer{
+        padding-top: 20rem;
+        width: 100%;
+    }
+
+    & .courses-container{
+        @include display(row, space-evenly);
+
+
+
+        & .card {
+            flex-basis: 28%;
+            color: #333333;
+            text-align: start;
+
+            & img{
+                width: 100%;
+                border-radius: 0.8rem;
+                margin-bottom: 1rem;
+            }
+            & h4{
+                margin: 1rem 0rem;
+                @include heading-4;
+            }
+            & p{
+                line-height: 1.6;
+                font-size: 1rem;
+            }
+            & button{
+                max-width: 100%;
+                width: 100%;
+                margin: 1.3rem 0rem;
+                padding: 0.8rem 1.3rem;
+                background: #002594;
+                border-width: 0rem;
+                border-radius: 0.5rem;
+                cursor: pointer;
+                color: #fff;
+                font-size: 1.1rem;
+                text-decoration: none;
+                color: #fff;
+
+                & #arrow{
+                    float: left;
+                }
+            }
+        }
+
+    }
+
+    @media (max-width:767px) {
+        padding: 2rem;
+
+        & .courses-container{
+            @include display(column, space-evenly);
+
+            & .card{
+                margin-bottom: 1.6rem;
+
+                & img{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

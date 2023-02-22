@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;1,100;1,500;1,900&family=Sofia+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Noto", sans-serif;
+}
+
+.courses .spacer {
+  padding-top: 20rem;
+  width: 100%;
+}
+.courses .courses-container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+}
+.courses .courses-container .card {
+  flex-basis: 28%;
+  color: #333333;
+  text-align: start;
+}
+.courses .courses-container .card img {
+  width: 100%;
+  border-radius: 0.8rem;
+  margin-bottom: 1rem;
+}
+.courses .courses-container .card h4 {
+  margin: 1rem 0rem;
+  font-size: 22px;
+}
+.courses .courses-container .card p {
+  line-height: 1.6;
+  font-size: 1rem;
+}
+.courses .courses-container .card button {
+  max-width: 100%;
+  width: 100%;
+  margin: 1.3rem 0rem;
+  padding: 0.8rem 1.3rem;
+  background: #002594;
+  border-width: 0rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  color: #fff;
+  font-size: 1.1rem;
+  text-decoration: none;
+  color: #fff;
+}
+.courses .courses-container .card button #arrow {
+  float: left;
+}
+@media (max-width: 767px) {
+  .courses {
+    padding: 2rem;
+  }
+  .courses .courses-container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+  }
+  .courses .courses-container .card {
+    margin-bottom: 1.6rem;
+  }
+  .courses .courses-container .card img {
+    width: 100%;
+  }
+}/*# sourceMappingURL=courses.css.map */

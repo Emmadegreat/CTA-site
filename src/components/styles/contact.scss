@@ -27,7 +27,7 @@
 
 }
 
-h2{
+.contact{
     position: relative;
     top: 50px;
     color: red;
@@ -177,15 +177,87 @@ h2{
             }
         }
         @media (max-width:767px){
+            padding: 4rem 2rem;
             @include display(column, center);
 
-            & .card{
+            & .card1{
+                text-align: center;
+                & h2{
+                    line-height: 1.5;
+                    padding-bottom: 3rem;
+                    font-size: 30px;
+                }
+                & .card-inner{
+                    @include display(column,center);
+                    text-align: center;
+                }
 
                 & form{
+                    margin-top: 3rem;
                     padding: 1.5rem;
+                    text-align: left;
+
+                    & p{
+                        line-height: 1;
+                    }
                 };
             }
         }
     }
+    & .com-section{
+       padding-bottom: 2rem;
 
+        & .card{
+            @include display(column, center);
+            text-align: center;
+            padding: 2rem 0rem;
+
+            & h3{
+                @include heading-3;
+                padding-bottom: 1.5rem;
+            }
+            & p{
+                color:#333;
+                font-size: 1rem;
+            }
+            & form{
+                width: 65%;
+                margin: auto;
+                padding-top: 1rem;
+
+                & label{
+                    display: none;
+                }
+                & input{
+                    width: 100%;
+                    height: 40px;
+                    padding: 0.8rem 0.6rem;
+                    font-size: 1rem;
+                    margin-bottom: 0.5rem;
+                }
+                & button{
+                    width: 110px;
+                    height: 44px;
+                    font-size: 1rem;
+                    color: #fff;
+                    background: #002594;
+                    border-radius: 0.3rem;
+                    border-width: 0rem;
+                    margin: auto;
+                    margin-top: 1rem;
+                }
+            }
+            @media (max-width:500px){
+                padding: 0rem;
+
+                & form{
+                    width: 70%;
+
+                    & button{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
 }

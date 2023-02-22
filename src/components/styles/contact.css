@@ -24,7 +24,7 @@
   top: 70px;
 }
 
-h2 {
+.contact {
   position: relative;
   top: 50px;
   color: red;
@@ -175,11 +175,89 @@ h2 {
 }
 @media (max-width: 767px) {
   .contact-us .card-2-wrapper {
+    padding: 4rem 2rem;
     display: flex;
     justify-content: center;
     flex-direction: column;
   }
-  .contact-us .card-2-wrapper .card form {
+  .contact-us .card-2-wrapper .card1 {
+    text-align: center;
+  }
+  .contact-us .card-2-wrapper .card1 h2 {
+    line-height: 1.5;
+    padding-bottom: 3rem;
+    font-size: 30px;
+  }
+  .contact-us .card-2-wrapper .card1 .card-inner {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+  }
+  .contact-us .card-2-wrapper .card1 form {
+    margin-top: 3rem;
     padding: 1.5rem;
+    text-align: left;
+  }
+  .contact-us .card-2-wrapper .card1 form p {
+    line-height: 1;
+  }
+}
+.contact-us .com-section {
+  padding-bottom: 2rem;
+}
+.contact-us .com-section .card {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 2rem 0rem;
+}
+.contact-us .com-section .card h3 {
+  font-size: 40px;
+  line-height: 35px;
+  font-weight: 600;
+  color: #333333;
+  padding-bottom: 1.5rem;
+}
+.contact-us .com-section .card p {
+  color: #333;
+  font-size: 1rem;
+}
+.contact-us .com-section .card form {
+  width: 65%;
+  margin: auto;
+  padding-top: 1rem;
+}
+.contact-us .com-section .card form label {
+  display: none;
+}
+.contact-us .com-section .card form input {
+  width: 100%;
+  height: 40px;
+  padding: 0.8rem 0.6rem;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+.contact-us .com-section .card form button {
+  width: 110px;
+  height: 44px;
+  font-size: 1rem;
+  color: #fff;
+  background: #002594;
+  border-radius: 0.3rem;
+  border-width: 0rem;
+  margin: auto;
+  margin-top: 1rem;
+}
+@media (max-width: 500px) {
+  .contact-us .com-section .card {
+    padding: 0rem;
+  }
+  .contact-us .com-section .card form {
+    width: 70%;
+  }
+  .contact-us .com-section .card form button {
+    width: 100%;
   }
 }/*# sourceMappingURL=contact.css.map */

@@ -10,7 +10,7 @@ const Contact = () => {
         <section className='contact-us'>
 
             <div className="hero-section">
-                <h2>Contact us</h2>
+                <h2 className='contact'>Contact us</h2>
             </div><br />
             <h3>We're here to help.</h3>
 
@@ -107,6 +107,33 @@ const Contact = () => {
                 </div>
 
             </div>
+
+            <section className='com-section'>
+                    <div className="card">
+                        <h3>Join our Tech community</h3>
+                        <p>
+                            Be the first to know about the latest courses, training programs,
+                            jobs, interships and freebies.
+                        </p>
+                    </div>
+                    <div className="card">
+                        <div id=''></div>
+                        <form action="" method="post">
+                            <legend>
+                                <label htmlFor="name">Firstname</label>
+                                <input type="text" name='name' placeholder='Name'/>
+                            </legend>
+                             <legend>
+                                <label htmlFor="email">Firstname</label>
+                                <input type="text" name='email' placeholder='Email'/>
+                            </legend>
+                            <button type="submit">Send</button>
+                        </form>
+
+                    </div>
+
+
+            </section>
 
         </section>
     )
