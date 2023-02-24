@@ -46,17 +46,7 @@
 .courses .courses-container .card img {
   width: 100%;
 }
-.courses .courses-container .card .card-body {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  padding: 1rem 1.2rem;
-}
-.courses .courses-container .card .card-body h4 {
-  margin: 1rem 0rem;
-  font-size: 22px;
-}
-.courses .courses-container .card .card-body #arrow {
+.courses .courses-container .card #arrow {
   color: #fff;
   background: #002594;
   position: absolute;
@@ -66,6 +56,16 @@
   border-radius: 59%;
   width: 35px;
   height: 35px;
+}
+.courses .courses-container .card .card-body {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 1rem 1.2rem;
+}
+.courses .courses-container .card .card-body h4 {
+  margin: 1rem 0rem;
+  font-size: 22px;
 }
 .courses .courses-container .card .card-body a {
   max-width: 100%;

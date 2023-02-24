@@ -44,6 +44,18 @@
             & img{
                 width: 100%;
             }
+            & #arrow{
+                color: #fff;
+                background: #002594;
+                position: absolute;
+                right: 20px;
+                bottom: 160px;
+                font-size: 1.5rem;
+                border-radius: 59%;
+                width: 35px;
+                height: 35px;
+
+            }
 
             & .card-body{
                 @include display(column,center);
@@ -52,18 +64,7 @@
                     margin: 1rem 0rem;
                     @include heading-4;
                 }
-                & #arrow{
-                    color: #fff;
-                    background: #002594;
-                    position: absolute;
-                    right: 20px;
-                    bottom: 160px;
-                    font-size: 1.5rem;
-                    border-radius: 59%;
-                    width: 35px;
-                    height: 35px;
 
-                }
                 & a{
                     max-width: 100%;
                     height: 40px;

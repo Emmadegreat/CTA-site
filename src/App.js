@@ -16,6 +16,7 @@ import Header from './components/pages/header';
 import Home from './components/pages/home';
 import Login from './components/pages/login';
 import Logout from './components/pages/logout';
+import Programs from './components/pages/programs';
 import Register from './components/pages/register';
 import { useSelector } from 'react-redux';
 
@@ -59,6 +60,7 @@ function App() {
           <Route path='/*' element={ <Error404 />} />
           <Route path='/contact' element={<Contact />} />
           <Route path='/courses' element={<Courses />} />
+          <Route path='/programs' element={<Programs />} />
           {!islogged && <Route path='/login' element={<Login />} />}
           <Route path='/register' element={ < Register /> } />
           {!islogged && <Route path='/account' element={<Account />} />}

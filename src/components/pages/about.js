@@ -167,7 +167,7 @@ const About = () => {
                     })}
 
                 </div>
-                <Link to="https://www.cwwtechafrica.com/faqs" id="view-faqs">View FAQS</Link>
+                <a href="https://www.cwwtechafrica.com/faqs" id="view-faqs">View FAQS</a>
                 </section>
 
         </section>
