@@ -6,65 +6,6 @@
   font-family: "Noto", sans-serif;
 }
 
-.faqs {
-  /*& .faq-sect-4{
-     padding-bottom: 2rem;
-     margin-top: 3rem;
-
-      & .card{
-          @include display(column, center);
-          text-align: center;
-          padding: 2rem 0rem;
-
-          & h3{
-              @include heading-3;
-              padding-bottom: 1.5rem;
-          }
-          & p{
-              color:#333;
-              font-size: 1rem;
-          }
-          & form{
-              width: 65%;
-              margin: auto;
-              padding-top: 1rem;
-
-              & label{
-                  display: none;
-              }
-              & input{
-                  width: 100%;
-                  height: 40px;
-                  padding: 0.8rem 0.6rem;
-                  font-size: 1rem;
-                  margin-bottom: 0.5rem;
-              }
-              & button{
-                  width: 110px;
-                  height: 44px;
-                  font-size: 1rem;
-                  color: #fff;
-                  background: #002594;
-                  border-radius: 0.3rem;
-                  border-width: 0rem;
-                  margin: auto;
-                  margin-top: 1rem;
-              }
-          }
-          @media (max-width:500px){
-              padding: 0rem;
-
-              & form{
-                  width: 70%;
-
-                  & button{
-                      width: 100%;
-                  }
-              }
-          }
-      }
-  }*/
-}
 .faqs .spacer {
   padding-top: 6rem;
   width: 100%;
@@ -140,7 +81,7 @@
 }
 .faqs .faq-sect-3 {
   padding: 2rem 2.5rem;
-  color: #c32424;
+  color: #333333;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -161,53 +102,107 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
-  /*& .content{
-      max-height: 0;
-      transition: all 0.5s;
-      overflow: hidden;
-  }
-
-  & .show{///900 comments
-      max-height: 10rem;
-      transition: all 0.5s;
-      height: 100%;
-      line-height: 1.7;
-      font-size: 0.9rem;
-      line-height: 1.6;
-      background: #e3ecf2;
-      padding: 1.2rem;
-      //padding-right: 1rem;
-  }*/
+  margin-bottom: 2rem;
+  border: 1px solid #ced8e1;
 }
 .faqs .faq-sect-3 .card .item .title {
   display: flex;
   justify-content: space-between;
   flex-direction: row;
-  /*align-items: center;
+  align-items: center;
   cursor: pointer;
   padding: 1rem;
-  //background: #f7f7f7;
-  box-shadow: rgb(100, 122, );
-
-  & span{
-      //background: #e3ecf2;
-      border-radius: 50%;
-      width: 25px;
-      height: 25px;
-      text-align: center;
-      padding-right: 0.5rem;
-      font-weight: 700;
-      font-size: 1.5rem;
-      padding-top: 0.2rem;
-  }
-  & a{
-      font-weight: 700;
-      color: #333333;
-      opacity: 1;
-  }*/
+}
+.faqs .faq-sect-3 .card .item .title span {
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  text-align: center;
+  padding-right: 0.5rem;
+  font-weight: 700;
+  font-size: 1.5rem;
+  padding-top: 0.2rem;
+}
+.faqs .faq-sect-3 .card .item .title a {
+  font-weight: 700;
+  color: #333333;
+  opacity: 1;
+}
+.faqs .faq-sect-3 .card .item .content {
+  max-height: 0;
+  transition: all 0.5s;
+  overflow: hidden;
+}
+.faqs .faq-sect-3 .card .item .show {
+  max-height: 10rem;
+  transition: all 0.5s;
+  height: 100%;
+  line-height: 1.7;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  padding: 1.2rem;
 }
 @media (max-width: 767px) {
   .faqs .faq-sect-3 .card {
+    width: 100%;
+  }
+}
+.faqs .faq-sect-4 {
+  padding-bottom: 2rem;
+  margin-top: 3rem;
+}
+.faqs .faq-sect-4 .card {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 2rem 0rem;
+}
+.faqs .faq-sect-4 .card h3 {
+  font-size: 40px;
+  line-height: 35px;
+  font-weight: 600;
+  color: #333333;
+  padding-bottom: 1.5rem;
+}
+.faqs .faq-sect-4 .card p {
+  color: #333;
+  font-size: 1rem;
+}
+.faqs .faq-sect-4 .card form {
+  width: 65%;
+  margin: auto;
+  padding-top: 1rem;
+}
+.faqs .faq-sect-4 .card form label {
+  display: none;
+}
+.faqs .faq-sect-4 .card form input {
+  width: 100%;
+  height: 40px;
+  padding: 0.8rem 0.6rem;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+.faqs .faq-sect-4 .card form button {
+  width: 110px;
+  height: 44px;
+  font-size: 1rem;
+  color: #fff;
+  background: #002594;
+  border-radius: 0.3rem;
+  border-width: 0rem;
+  margin: auto;
+  margin-top: 1rem;
+}
+@media (max-width: 500px) {
+  .faqs .faq-sect-4 .card {
+    padding: 0rem;
+  }
+  .faqs .faq-sect-4 .card form {
+    width: 70%;
+  }
+  .faqs .faq-sect-4 .card form button {
     width: 100%;
   }
 }/*# sourceMappingURL=faqs.css.map */

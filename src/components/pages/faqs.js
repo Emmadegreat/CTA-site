@@ -1,8 +1,9 @@
 import '../styles/faqs.css'
 
+import { FaChevronDown, FaChevronRight } from 'react-icons/fa'
 import React, { useState } from 'react'
 
-import FAQ from './faq.json'
+import Faqs1 from './FAQS1'
 import { Link } from 'react-router-dom'
 
 const Faqs = () => {
@@ -41,14 +42,14 @@ const Faqs = () => {
                 <h3>CTA Cohort program</h3>
                 <div className="card">
 
-                    {FAQ.map((item, id) => {
+                    {Faqs1.map((item, index) => {
                         return (
                             <div className="item" key={item.id}>
-                                <div className="title" onClick={()=>handleFaqs(id)}>
-                                    <span>{faqs === id ? "-" : "+"}</span>
-                                    <Link href="https://www.cwwtechafrica.com">{ item.question }</Link>
+                                <div className="title" onClick={()=>handleFaqs(index)}>
+                                    <Link href="https://www.cwwtechafrica.com">{item.question}</Link>
+                                    <span>{faqs === index ? <FaChevronDown/> : <FaChevronRight/>}</span>
                                 </div>
-                                <div className={ faqs === id? "content show ":"content" }>{ item.answer }</div>
+                                <div className={ faqs === index? "content show ":"content" }>{ item.answer }</div>
                             </div>
 
                         )
