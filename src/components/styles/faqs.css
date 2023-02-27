@@ -11,18 +11,19 @@
   width: 100%;
 }
 .faqs .faq-sect-1 {
-  background-image: url("../images/sect-8.jpg");
-  background-position: center;
-  background-size: 1300px auto;
-  background-repeat: no-repeat;
-  height: 70vh;
   width: 100%;
+  height: 80vh;
+  background: linear-gradient(135deg, rgba(31, 54, 200, 0.9), rgba(21, 51, 200, 0.9)), url("../images/sect-8.jpg") no-repeat center center/cover;
+  place-content: center;
+  place-items: center;
   border-bottom-right-radius: 6rem;
+  padding: 4rem 1.5rem;
 }
 .faqs .faq-sect-1 .card {
   padding: 7rem 0rem 0rem 2.5rem;
   color: #fff;
   text-align: left;
+  z-index: 1;
 }
 .faqs .faq-sect-1 .card h2 {
   font-weight: 700;
@@ -112,6 +113,7 @@
   align-items: center;
   cursor: pointer;
   padding: 1rem;
+  box-shadow: rgba(206, 216, 225, 0.8) 1px 0.5px 3px 3px;
 }
 .faqs .faq-sect-3 .card .item .title span {
   border-radius: 50%;

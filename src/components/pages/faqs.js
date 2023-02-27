@@ -25,6 +25,7 @@ const Faqs = () => {
                     <h2>Frequently ASked <br /> Questons</h2>
                     <p>Kindly read through all frequently asked questions before reaching out to us</p>
                 </div>
+
             </section>
 
             <section className="faq-sect-2">

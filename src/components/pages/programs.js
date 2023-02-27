@@ -6,7 +6,7 @@ import FAQ from './faq.json'
 import { Link } from 'react-router-dom'
 import bootcamp from '../images/cta-bootcamp.jpg'
 import cohort from '../images/cta-cohort.jpg'
-import sect_8 from  '../images/sect-8.jpg'
+import sect_8 from  '../images/coding-duy1.jpg'
 import softskill from '../images/cta-softskill.jpg'
 
 const Programs = () => {
