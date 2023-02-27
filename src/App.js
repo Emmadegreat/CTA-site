@@ -11,6 +11,7 @@ import Contact from './components/pages/contact';
 import Courses from './components/pages/courses';
 import Detail from './components/pages/detail';
 import Error404 from './components/pages/404';
+import Faqs from './components/pages/faqs';
 import Footer from './components/pages/footer';
 import Header from './components/pages/header';
 import Home from './components/pages/home';
@@ -61,6 +62,7 @@ function App() {
           <Route path='/contact' element={<Contact />} />
           <Route path='/courses' element={<Courses />} />
           <Route path='/programs' element={<Programs />} />
+          <Route path='/faqs' element={<Faqs/>} />
           {!islogged && <Route path='/login' element={<Login />} />}
           <Route path='/register' element={ < Register /> } />
           {!islogged && <Route path='/account' element={<Account />} />}

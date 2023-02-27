@@ -54,6 +54,7 @@ const Header = () => {
                         <li><NavLink to="contact" onClick={closeLinks}>Contact us</NavLink></li>
                         <li><NavLink to="programs" onClick={closeLinks}>programmes</NavLink></li>
                         <li><NavLink to="courses" onClick={closeLinks}>Courses</NavLink></li>
+                        <li><NavLink to="faqs" onClick={closeLinks}>Faqs</NavLink></li>
 
                         {!isloggedin && (
                             <>

@@ -1,0 +1,211 @@
+@import './config';
+
+*{
+    @include general;
+}
+
+.faqs{
+
+    & .spacer{
+        padding-top: 6rem;
+        width: 100%;
+    }
+
+    & .faq-sect-1{
+        background-image: url("../images/sect-8.jpg");
+        background-position: center;
+        background-size: 1300px auto;
+        background-repeat: no-repeat;
+        height: 70vh;
+        width: 100%;
+        border-bottom-right-radius: 6rem;
+        //padding: 4rem 1.5rem;
+
+        & .card{
+            //@include display(column, left);
+            padding: 7rem 0rem 0rem 2.5rem;
+            color: #fff;
+            text-align: left;
+
+            & h2{
+                @include heading-2(#fff);
+                line-height: 1.2;
+            }
+            & p{
+                line-height: 1.6;
+                padding: 2rem 0rem;
+            }
+        }
+
+    }
+    & .faq-sect-2{
+        @include display(row, flex-start);
+        padding: 2.5rem 2.5rem 0rem 2.5rem;
+
+        & .card{
+            //margin-bottom: 2rem;
+            padding-right: 2rem;
+
+            & p{
+                font-size: 1rem;
+                line-height: 1.6;
+            }
+            & h2{
+                @include heading-2(#333333);
+            }
+            & b{
+                color: #002592;
+                padding-right: 2rem;
+                height: 70px;
+                line-height: 1.6;
+            }
+            & a{
+                text-decoration: none;
+                background: #ffc21c;
+                padding: 0.8rem 1.5rem;
+                border-radius: 0.5rem;
+                cursor: pointer;
+                color: #464343;
+
+                &:hover{
+                    background: #002592;
+                }
+            }
+        }
+        @media (max-width:767px){
+            @include display(column, flex-start);
+            padding: 2.5rem 2rem;
+        }
+    }
+
+    .faq-sect-3{
+        padding: 2rem 2.5rem;
+        //background: #e3ecf2;
+        color: #c32424;
+        @include display(column,center);
+
+        h3{
+            @include heading-3;
+            text-align: start;
+            margin-bottom: 2.5rem;
+        }
+
+        & .card{
+            //width: 70%;
+            margin: auto;
+            //border: 1px solid #ced8e1;
+            margin-bottom: 1.5rem;
+
+            & .item{
+                @include display(column, center);
+
+
+                & .title{
+                 @include display(row, space-between);
+                    //border-bottom: 1px solid #ced8e1;
+                    /*align-items: center;
+                    cursor: pointer;
+                    padding: 1rem;
+                    //background: #f7f7f7;
+                    box-shadow: rgb(100, 122, );
+
+                    & span{
+                        //background: #e3ecf2;
+                        border-radius: 50%;
+                        width: 25px;
+                        height: 25px;
+                        text-align: center;
+                        padding-right: 0.5rem;
+                        font-weight: 700;
+                        font-size: 1.5rem;
+                        padding-top: 0.2rem;
+                    }
+                    & a{
+                        font-weight: 700;
+                        color: #333333;
+                        opacity: 1;
+                    }*/
+                }
+
+                /*& .content{
+                    max-height: 0;
+                    transition: all 0.5s;
+                    overflow: hidden;
+                }
+
+                & .show{///900 comments
+                    max-height: 10rem;
+                    transition: all 0.5s;
+                    height: 100%;
+                    line-height: 1.7;
+                    font-size: 0.9rem;
+                    line-height: 1.6;
+                    background: #e3ecf2;
+                    padding: 1.2rem;
+                    //padding-right: 1rem;
+                }*/
+            }
+            @media (max-width:767px){
+                width: 100%;
+            }
+        }
+
+    }
+    /*& .faq-sect-4{
+       padding-bottom: 2rem;
+       margin-top: 3rem;
+
+        & .card{
+            @include display(column, center);
+            text-align: center;
+            padding: 2rem 0rem;
+
+            & h3{
+                @include heading-3;
+                padding-bottom: 1.5rem;
+            }
+            & p{
+                color:#333;
+                font-size: 1rem;
+            }
+            & form{
+                width: 65%;
+                margin: auto;
+                padding-top: 1rem;
+
+                & label{
+                    display: none;
+                }
+                & input{
+                    width: 100%;
+                    height: 40px;
+                    padding: 0.8rem 0.6rem;
+                    font-size: 1rem;
+                    margin-bottom: 0.5rem;
+                }
+                & button{
+                    width: 110px;
+                    height: 44px;
+                    font-size: 1rem;
+                    color: #fff;
+                    background: #002594;
+                    border-radius: 0.3rem;
+                    border-width: 0rem;
+                    margin: auto;
+                    margin-top: 1rem;
+                }
+            }
+            @media (max-width:500px){
+                padding: 0rem;
+
+                & form{
+                    width: 70%;
+
+                    & button{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }*/
+}
