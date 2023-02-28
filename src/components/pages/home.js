@@ -1,12 +1,11 @@
 import '../styles/home.css'
 import 'aos/dist/aos.css'
 
-import { FaArrowDown, FaCaretDown, FaCertificate, FaChalkboardTeacher, FaCheckCircle, FaUserCheck, FaUserGraduate } from 'react-icons/fa'
+import { FaCaretDown, FaCertificate, FaChalkboardTeacher, FaCheckCircle, FaUserCheck, FaUserGraduate } from 'react-icons/fa'
 import React, { useEffect } from 'react'
 
 import Aos from 'aos'
 import CountUp from 'react-countup'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { Link } from 'react-router-dom'
 import ScrollTrigger from 'react-scroll-trigger'
 import bootcamp from '../images/cta-bootcamp.jpg'
@@ -30,6 +29,31 @@ import sect_7 from '../images/sect-7.jpg'
 import sect_8 from  '../images/sect-8.jpg'
 import softskill from '../images/cta-softskill.jpg'
 import { useState } from 'react'
+
+//import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 //import Data from '../data.json
 
@@ -475,7 +499,7 @@ const Home = () => {
 
                     {faq.map((item, id) => {
                         return (
-                            <div className="item" key={item.id}>
+                            <div className="item" key={id}>
                                 <div className="title" onClick={()=>handleFaqs(id)}>
                                     <span>{faqs === id ? "-" : "+"}</span>
                                     <a href="https://www.cwwtechafrica.com">{ item.question }</a>

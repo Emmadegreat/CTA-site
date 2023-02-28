@@ -112,6 +112,19 @@
     font-weight: 300;
     font-size: 0.8rem;
   }
+  .header .nav-menu .dropdown {
+    background: #743737;
+    padding: 1rem;
+    position: absolute;
+    text-align: start;
+    top: 200px;
+    width: 180px;
+    border-top: 2px solid #ffc21c;
+  }
+  .header .nav-menu .icon {
+    font-size: 1.1rem;
+    padding-top: 0.4rem;
+  }
   .header .nav-menu.active {
     left: 0;
   }

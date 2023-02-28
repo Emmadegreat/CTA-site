@@ -45,7 +45,7 @@ const Faqs = () => {
 
                     {Faqs1.map((item, index) => {
                         return (
-                            <div className="item" key={item.id}>
+                            <div className="item" key={index}>
                                 <div className="title" onClick={()=>handleFaqs(index)}>
                                     <Link href="https://www.cwwtechafrica.com">{item.question}</Link>
                                     <span>{faqs === index ? <FaChevronDown/> : <FaChevronRight/>}</span>

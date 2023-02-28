@@ -1,7 +1,7 @@
 import '../styles/header.css'
 import 'aos/dist/aos.css'
 
-import { FaBars, FaTimes, FaUserGraduate } from 'react-icons/fa'
+import { FaBars, FaChevronDown, FaTimes, FaUserGraduate } from 'react-icons/fa'
 import React, { Fragment, useEffect, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 
@@ -12,16 +12,35 @@ import search from '../images/search-icon.svg'
 
 const Header = () => {
 
-    const [selectedValue, setSelectedValue] = useState('option1');
+    const [display, setDisplay] = useState(false);
+    const showDisplay = () => {
+        setDisplay(true);
+    }
+    const hideDisplay = () => {
+        setDisplay(false);
+    }
+
+    /*const [selectedValue, setSelectedValue] = useState('option1');
 
     const handleSelectChange=(event)=> {
         setSelectedValue(event.target.value);
     }
 
-    //return (
+    return (
+            <select value={selectedValue} onChange={handleSelectChange}>
+            <option value="programs">Programmes</option>
+            <option value="faqs">faqs</option>
+            <option value="option3">Option 3</option>
+        </select>
+     );*/
 
-     //);
-    //}
+    const [state, setState] = useState(false);
+    const showDropdown = () => {
+        setState(true);
+    }
+    const hideDropdown = () => {
+        setState(false);
+    }
 
     const isloggedin = useSelector((state) => (state.login.isloggedin));
 
@@ -61,14 +80,23 @@ const Header = () => {
                     <ul className={click ? "nav-menu active" : "nav-menu"}>
                         <li><NavLink to="/" onClick={closeLinks} className={({ isActive }) => isActive ? 'nav-menu.active' : ""} end style={({ isActive})=>({color:isActive ? 'blue':'black'})}>Home</NavLink></li>
                         <li><NavLink to="about" onClick={closeLinks} >About us</NavLink></li>
-                        <li><NavLink to="contact" onClick={closeLinks}>Contact us</NavLink></li>
-                        <li><NavLink to="programs" onClick={closeLinks}><select value={selectedValue} onChange={handleSelectChange}>
-            <option value="programs">Programmes</option>
-            <option value="faqs">faqs</option>
-            <option value="option3">Option 3</option>
-        </select></NavLink></li>
-                        <li><NavLink to="courses" onClick={closeLinks}>Courses</NavLink></li>
-                        <li><NavLink to="faqs" onClick={closeLinks}>Faqs</NavLink></li>
+
+                        <div className='' onMouseEnter={showDropdown} onMouseLeave={hideDropdown}>
+                            <li><NavLink to="contact" onClick={closeLinks}>Contact us <FaChevronDown className='icon'/></NavLink></li>
+
+                            { state? ( <ul onMouseEnter={showDropdown} className="dropdown">
+                                < li > <NavLink to="faqs" onClick={closeLinks}>Faqs</NavLink></li>
+                            </ul>):null
+                            }
+                        </div>
+                        <div className='' onMouseEnter={showDisplay} onMouseLeave={hideDisplay}>
+                            <li><NavLink to="programs" onClick={closeLinks}>Programmes <FaChevronDown className='icon' /></NavLink></li>
+
+                            { display? ( <ul onMouseEnter={showDisplay} className="dropdown">
+                                < li > <NavLink to="courses" onClick={closeLinks}>Courses</NavLink></li>
+                            </ul>):null
+                            }
+                        </div>
 
                         {!isloggedin && (
                             <>

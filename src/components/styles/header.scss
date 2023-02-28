@@ -68,10 +68,7 @@ $mobile:768px;
                         color: #002595;
                     }
                 }
-
-
             }
-
         }
 
 
@@ -134,6 +131,20 @@ $mobile:768px;
                     }
                 }
             }
+            & .dropdown{
+                background: #743737;
+                padding: 1rem;
+                position: absolute;
+                text-align: start;
+                top: 200px;
+                width: 180px;
+                border-top: 2px solid #ffc21c;
+            }
+            & .icon{
+                font-size: 1.1rem;
+                padding-top: 0.4rem;
+            }
+
             &.active{
                 left: 0;
             }
