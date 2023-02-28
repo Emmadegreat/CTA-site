@@ -12,6 +12,16 @@ import search from '../images/search-icon.svg'
 
 const Header = () => {
 
+    const [selectedValue, setSelectedValue] = useState('option1');
+
+    const handleSelectChange=(event)=> {
+        setSelectedValue(event.target.value);
+    }
+
+    //return (
+
+     //);
+    //}
 
     const isloggedin = useSelector((state) => (state.login.isloggedin));
 
@@ -52,7 +62,11 @@ const Header = () => {
                         <li><NavLink to="/" onClick={closeLinks} className={({ isActive }) => isActive ? 'nav-menu.active' : ""} end style={({ isActive})=>({color:isActive ? 'blue':'black'})}>Home</NavLink></li>
                         <li><NavLink to="about" onClick={closeLinks} >About us</NavLink></li>
                         <li><NavLink to="contact" onClick={closeLinks}>Contact us</NavLink></li>
-                        <li><NavLink to="programs" onClick={closeLinks}>programmes</NavLink></li>
+                        <li><NavLink to="programs" onClick={closeLinks}><select value={selectedValue} onChange={handleSelectChange}>
+            <option value="programs">Programmes</option>
+            <option value="faqs">faqs</option>
+            <option value="option3">Option 3</option>
+        </select></NavLink></li>
                         <li><NavLink to="courses" onClick={closeLinks}>Courses</NavLink></li>
                         <li><NavLink to="faqs" onClick={closeLinks}>Faqs</NavLink></li>
 

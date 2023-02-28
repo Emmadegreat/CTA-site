@@ -105,6 +105,7 @@
   flex-direction: column;
   margin-bottom: 2rem;
   border: 1px solid #ced8e1;
+  box-shadow: rgba(206, 216, 225, 0.8) 1px 0.5px 3px 3px;
 }
 .faqs .faq-sect-3 .card .item .title {
   display: flex;
@@ -113,7 +114,6 @@
   align-items: center;
   cursor: pointer;
   padding: 1rem;
-  box-shadow: rgba(206, 216, 225, 0.8) 1px 0.5px 3px 3px;
 }
 .faqs .faq-sect-3 .card .item .title span {
   border-radius: 50%;

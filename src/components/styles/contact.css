@@ -21,6 +21,8 @@
   width: 100%;
   height: 70%;
   z-index: 1000;
+  place-content: center;
+  place-items: center;
   top: 70px;
 }
 
