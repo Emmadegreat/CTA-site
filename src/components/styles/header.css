@@ -58,6 +58,19 @@
 .header .nav-bar .nav-menu li a.active {
   color: #002595;
 }
+.header .nav-bar .nav-menu .dropdown {
+  background: #fff;
+  padding: 1rem;
+  position: absolute;
+  text-align: start;
+  top: 65px;
+  width: 180px;
+  border-top: 2px solid #ffc21c;
+}
+.header .nav-bar .nav-menu .icon {
+  font-size: 1.1rem;
+  padding-top: 0.4rem;
+}
 .header .nav-bar section {
   display: flex;
   align-items: center;
@@ -69,7 +82,7 @@
 .header .nav-bar section .hamburger {
   display: none;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .header {
     display: flex;
     justify-content: space-between;

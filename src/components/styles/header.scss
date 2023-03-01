@@ -12,7 +12,7 @@
     text-align: center;
     flex-direction: $direction;
 }
-$mobile:768px;
+$mobile:767px;
 
 @mixin mobile-view {
     @media (max-width:$mobile) {
@@ -69,8 +69,20 @@ $mobile:768px;
                     }
                 }
             }
+            & .dropdown{
+                background: #fff;
+                padding: 1rem;
+                position: absolute;
+                text-align: start;
+                top: 65px;
+                width: 180px;
+                border-top: 2px solid #ffc21c;
+            }
+            & .icon{
+                font-size: 1.1rem;
+                padding-top: 0.4rem;
+            }
         }
-
 
         & section{
             display: flex;
