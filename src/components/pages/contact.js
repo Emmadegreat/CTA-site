@@ -10,8 +10,8 @@ const Contact = () => {
         <section className='contact-us'>
 
             <div className="hero-section">
-                <h2 className='contact'>Contact us</h2>
-            </div><br />
+                <h2>Contact Us</h2>
+            </div>
             <h3>We're here to help.</h3>
 
             <div className="card-wrapper">
@@ -68,11 +68,11 @@ const Contact = () => {
                     <h2>Follow us on social media</h2>
 
                     <ul>
-                        <a href="https://www.facebook.com/cwwtechafrica" target="_blank" rel='noreferrer'>< FaFacebookSquare className='social-icon' style={{ color:'#ffc21c' }} /></a>
-                        <a href="https://www.instagram.com/cwwtechafrica" target="_blank" rel='noreferrer'>< FaInstagramSquare className='social-icon' style={{ color:'#ffc21c' }} /></a>
-                        <a href="https://www.twitter.com/cwwtechafrica_" target="_blank" rel='noreferrer'>< FaTwitterSquare className='social-icon' style={{ color: '#ffc21c' }} /></a>
-                        <a href="https://www.youtube.com/@cwwtechafrica" target="_blank" rel='noreferrer'>< FaYoutubeSquare className='social-icon' style={{ color: '#ffc21c' }} /></a>
-                        <a href="https://www.linkedin.com/company/cww-tech-africa/" target="_blank" rel='noreferrer'>< FaLinkedinIn className='social-icon' style={{ color:'#ffc21c' }} /></a>
+                        <a href="https://www.facebook.com/cwwtechafrica" target="_blank" rel='noreferrer'>< FaFacebookSquare className='social-icon' style={{ color:'#002592' }} /></a>
+                        <a href="https://www.instagram.com/cwwtechafrica" target="_blank" rel='noreferrer'>< FaInstagramSquare className='social-icon' style={{ color:'#002592' }} /></a>
+                        <a href="https://www.twitter.com/cwwtechafrica_" target="_blank" rel='noreferrer'>< FaTwitterSquare className='social-icon' style={{ color: '#002592' }} /></a>
+                        <a href="https://www.youtube.com/@cwwtechafrica" target="_blank" rel='noreferrer'>< FaYoutubeSquare className='social-icon' style={{ color: '#002592' }} /></a>
+                        <a href="https://www.linkedin.com/company/cww-tech-africa/" target="_blank" rel='noreferrer'>< FaLinkedinIn className='social-icon' style={{ color:'#002592' }} /></a>
                     </ul>
 
 

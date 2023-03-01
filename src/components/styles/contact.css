@@ -17,30 +17,26 @@
   width: 100%;
   text-align: center;
   place-items: center;
-  place-content: center;
+  display: flex;
+  align-items: center;
+  text-align: left;
+}
+.hero-section h2 {
+  font-weight: 700;
+  font-size: 40px;
+  color: #002592;
+  line-height: 2;
+  position: relative;
+  top: 50px;
+  left: 30px;
 }
 
-/*.contact-us::before{
-    content: '';
-    position: absolute;
-    background: url('../images/lady-with-laptop.jpg') no-repeat center center / 100% auto;
-    width: 100%;
-    height: 70%;
-    z-index: 1000;
-    place-content: center;
-    place-items: center;
-    top: 70px;
-    //right: 0;
-    //left: 0;
-    //bottom: 0;
+contact {
+  position: relative;
+  top: 50px;
+  color: red;
+}
 
-}*/
-/*.contact{
-    position: relative;
-    top: 50px;
-    color: red;
-    //left: 50;
-}*/
 .contact-us {
   background: #f9fafb;
 }
