@@ -28,35 +28,12 @@ import sect_6 from '../images/sect-6.jpg'
 import sect_7 from '../images/sect-7.jpg'
 import sect_8 from  '../images/sect-8.jpg'
 import softskill from '../images/cta-softskill.jpg'
+import { useNavigate } from 'react-router-dom'
 import { useState } from 'react'
 
 //import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 //import Data from '../data.json
-
 
 
 const Home = () => {
@@ -78,6 +55,8 @@ const Home = () => {
     }, [])
 
     const [counter, setCounter] = useState(false);
+
+    const navigate = useNavigate();
     return (
         <section className='home'>
             <div className="spacer"></div>
@@ -513,6 +492,7 @@ const Home = () => {
 
                 </div>
                 <a href="https://www.cwwtechafrica.com/faqs" id="view-faqs">View FAQS</a>
+
                 </section>
 
 
