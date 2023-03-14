@@ -1,16 +1,24 @@
 import '../styles/login.css'
 
-import { Link } from 'react-router-dom'
 import { LoginActions } from '../../store/auth'
 import React from 'react'
 import { useDispatch } from 'react-redux'
 
+//import { Link, useNavigate } from 'react-router-dom'
+
+//import Account from './account'
+
+
+
+
 const Login = () => {
 
     const dispatch = useDispatch();
+    //const navigate = useNavigate();
 
     const loginHandler = (e) => {
         e.preventDefault();
+
         dispatch(LoginActions.login());
     }
 
@@ -20,27 +28,28 @@ const Login = () => {
             <div className="spacer"></div>
 
             <div className='login-wrapper'>
-                <div className="card"></div>
+                {/*<div className="card"></div>*/}
 
                 <div className="card">
+                    <h4>Login</h4>
                     <form action="" onSubmit={loginHandler}>
                         <legend>
-                            <label htmlFor="email">Username or Email Address</label><br />
-                            <input type="text" name='email'required />
+                            <label htmlFor="email"></label><br />
+                            <input type="text" name='email'required placeholder='Username or Email Address' />
                         </legend>
 
                         <legend>
-                            <label htmlFor="password">Password</label><br />
-                            <input type="password" name='password' required /><br />
+                            <label htmlFor="password"></label><br />
+                            <input type="password" name='password' required placeholder='Password' /><br />
 
                         </legend>
-                        <input type="checkbox" name="check" required />Remember Me <br />
+                        <input type="checkbox" name="check" required /> Remember Me <br />
 
                         <button type="submit" id='login'>Log In</button>
                     </form>
-                    <Link href="/forgotpassword">Lost your password</Link>
+                    <a href="./#">Lost your password?</a>
 
-                    <Link href="/register" id='sign-up-link'>Don't have an account? Register</Link>
+                    <p>Not a member?<a href="./register" id='sign-up-link'> Register</a></p>
                 </div>
 
             </div>

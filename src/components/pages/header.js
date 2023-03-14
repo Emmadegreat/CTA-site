@@ -78,7 +78,7 @@ const Header = () => {
 
                 <div className='nav-bar'>
                     <ul className={click ? "nav-menu active" : "nav-menu"}>
-                        <li><NavLink to="/" onClick={closeLinks} className={({ isActive }) => isActive ? 'nav-menu.active' : ""} end style={({ isActive})=>({color:isActive ? 'blue':'black'})}>Home</NavLink></li>
+                        <li><NavLink to="/" onClick={closeLinks} className={({ isActive }) => isActive ? 'nav-menu.active' : ""} end style={({ isActive }) => ({ color: isActive ? 'blue' : 'black' })}>Home</NavLink></li>
                         <li><NavLink to="about" onClick={closeLinks} >About us</NavLink></li>
 
                         <div className='' onMouseEnter={showDropdown} onMouseLeave={hideDropdown}>
@@ -107,18 +107,18 @@ const Header = () => {
 
                         {isloggedin && (
                             <>
-                                <li><NavLink to="account" onClick={closeLinks}>My account</NavLink></li>
-                                <li><NavLink onClick={logoutHandler}>Logout</NavLink></li>
+                                <li><NavLink to="./account" onClick={closeLinks}>My account</NavLink></li>
+                                <li><NavLink to="/" onClick={logoutHandler}>Logout</NavLink></li>
                             </>
                         )}
 
                     </ul>
                     <section>
-                        {/*<input type="search" name="" id="search-button" />*/}
-                        <img src={search} alt="" width={'35px'} id="search-icon" />
+                        {/*<input type="search" name="" id="search-button" />
+                        <img src={search} alt="" width={'35px'} id="search-icon" />*/}
                         <div className="hamburger" onClick={handleClick} >
-                            {click ? (<FaTimes size={20} style={{ color: 'midnightblue' }} />) :
-                                (<FaBars size={20} style={{ color: 'midnightblue' }} />)
+                            {click ? (<FaTimes size={20} style={{ color: '#fff' }} />) :
+                                (<FaBars size={20} style={{ color: '#fff' }} />)
                             }
                         </div>
                     </section>

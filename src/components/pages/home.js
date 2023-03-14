@@ -20,6 +20,7 @@ import img1 from '../images/ux.jpg'
 import img2 from '../images/data.jpg'
 import img3 from '../images/web.jpg'
 import img4 from '../images/digitalmktg.jpg'
+import { motion } from 'framer-motion'
 import review1 from '../images/review1.jpeg'
 import review2 from '../images/review2.jpg'
 import review3 from '../images/review3.jpg'
@@ -66,9 +67,9 @@ const Home = () => {
                     <p>Equipping African youths with digital and tech skills.</p>
                     <a href="https://www.cwwtechafrica.com/join-the-waitlist" target={"_blank"} rel="noreferrer">APPLY AS A TRAINEE</a>
                 </div>
-                <div className="card card2" data-aos="flip-right">
+                <motion.div className="card card2" animate={{x: 100, scale: 1}} initial={{scale: 0}}>
                     <img src={image} alt=""  className="image" />
-                </div>
+                </motion.div>
             </section>
 
             <section className="section-2">
@@ -491,7 +492,7 @@ const Home = () => {
                     })}
 
                 </div>
-                <a href="https://www.cwwtechafrica.com/faqs" id="view-faqs">View FAQS</a>
+                <a href="https://www.cwwtechafrica.com/faqs" role="noreferrer" id="view-faqs">View FAQS</a>
 
                 </section>
 

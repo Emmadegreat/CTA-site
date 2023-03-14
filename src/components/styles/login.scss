@@ -12,15 +12,24 @@
     padding: 3rem;
 
     & .login-wrapper{
-        @include display(row, space-around);
+        @include display(column, center);
         align-items: center;
         text-align: start;
+
 
         & .card{
             @include display(column, center);
             margin-left: 5rem;
-            padding-bottom: 2rem;
+            padding: 3rem;
             font-size: 0.9rem;
+            border: 1px solid #e0dede;
+            border-radius: 0.3rem;
+
+            & h4{
+                @include heading-3;
+                text-align: center;
+                line-height: 2;
+            }
             & form{
 
                 & legend{
@@ -30,27 +39,37 @@
                         max-width: 100%;
                         width: 400px;
                         padding: 1.2rem;
-                        height: 60px;
+                        border: 1px solid #e0dede;
+                        height: 50px;
                         border-radius: 0.3rem;
                     }
                 }
                 & #login{
-                    width: 100px;
+                    max-width: 100%;
+                    width: 400px;
                     height: 50px;
                     border-radius: 0.3rem;
                     background-color: #ffc21c;
                     border-width: 0rem;
                     color: #333333;
+                    font-weight: 600;
                     font-size: 1.1rem;
                     margin: 1rem 0rem;
+
+                    &:hover{
+                    background: #002594;
+                    color: #fff;
+                }
                 }
             }
             & a{
-                color: #333333;
-                margin-bottom: 1rem;
+                color: #002594;
+                margin: 1.3rem 0rem;
+                text-decoration: none;
+                text-align: center;
             }
-            & #sign-up-link{
-                font-weight: 700;
+            & p{
+                text-align: center;
             }
         }
     }
@@ -68,6 +87,9 @@
                 padding: 0rem 3rem;
                 & a{
                     color:#fff;
+                }
+                & h4{
+                    color: #fff;
                 }
 
                 & form{

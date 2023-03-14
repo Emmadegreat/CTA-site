@@ -17,8 +17,8 @@
 }
 .login .login-wrapper {
   display: flex;
-  justify-content: space-around;
-  flex-direction: row;
+  justify-content: center;
+  flex-direction: column;
   align-items: center;
   text-align: start;
 }
@@ -27,8 +27,18 @@
   justify-content: center;
   flex-direction: column;
   margin-left: 5rem;
-  padding-bottom: 2rem;
+  padding: 3rem;
   font-size: 0.9rem;
+  border: 1px solid #e0dede;
+  border-radius: 0.3rem;
+}
+.login .login-wrapper .card h4 {
+  font-size: 40px;
+  line-height: 35px;
+  font-weight: 600;
+  color: #333333;
+  text-align: center;
+  line-height: 2;
 }
 .login .login-wrapper .card form legend {
   margin-bottom: 1rem;
@@ -37,25 +47,34 @@
   max-width: 100%;
   width: 400px;
   padding: 1.2rem;
-  height: 60px;
+  border: 1px solid #e0dede;
+  height: 50px;
   border-radius: 0.3rem;
 }
 .login .login-wrapper .card form #login {
-  width: 100px;
+  max-width: 100%;
+  width: 400px;
   height: 50px;
   border-radius: 0.3rem;
   background-color: #ffc21c;
   border-width: 0rem;
   color: #333333;
+  font-weight: 600;
   font-size: 1.1rem;
   margin: 1rem 0rem;
 }
-.login .login-wrapper .card a {
-  color: #333333;
-  margin-bottom: 1rem;
+.login .login-wrapper .card form #login:hover {
+  background: #002594;
+  color: #fff;
 }
-.login .login-wrapper .card #sign-up-link {
-  font-weight: 700;
+.login .login-wrapper .card a {
+  color: #002594;
+  margin: 1.3rem 0rem;
+  text-decoration: none;
+  text-align: center;
+}
+.login .login-wrapper .card p {
+  text-align: center;
 }
 @media (max-width: 767px) {
   .login {
@@ -74,6 +93,9 @@
     padding: 0rem 3rem;
   }
   .login .login-wrapper .card a {
+    color: #fff;
+  }
+  .login .login-wrapper .card h4 {
     color: #fff;
   }
   .login .login-wrapper .card form legend input {

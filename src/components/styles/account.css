@@ -1,1 +1,66 @@
-/*# sourceMappingURL=account.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;1,100;1,500;1,900&family=Sofia+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Noto", sans-serif;
+}
+
+.space {
+  padding-top: 5rem;
+  width: 100%;
+  background: rgb(242, 240, 240);
+}
+
+.account-wrapper {
+  padding: 3rem 2rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+.account-wrapper h2 {
+  font-weight: 700;
+  font-size: 40px;
+  color: #333333;
+  line-height: 2;
+}
+.account-wrapper table {
+  width: 100%;
+  background: #e3ecf2;
+  align-items: center;
+  color: #333333;
+  z-index: 500;
+  border: 1px solid #002594;
+  border-spacing: 5px;
+}
+.account-wrapper table table, .account-wrapper table td {
+  border: 1px solid #002594;
+  padding: 0.5rem;
+}
+.account-wrapper table thead th {
+  padding: 0.2rem;
+  border: 1px solid #002594;
+}
+.account-wrapper table thead .row1, .account-wrapper table thead .row2 {
+  color: #002594;
+}
+@media (max-width: 767px) {
+  .account-wrapper table {
+    width: 100%;
+    font-size: 0.7rem;
+  }
+}
+@media (max-width: 767px) and (max-width: 516px) {
+  .account-wrapper {
+    padding: 3rem 0.3rem;
+  }
+  .account-wrapper table {
+    width: 100%;
+    font-size: 0.4rem;
+  }
+  .account-wrapper table td {
+    padding: 0.5rem 0rem;
+  }
+}/*# sourceMappingURL=account.css.map */

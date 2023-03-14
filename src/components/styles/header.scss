@@ -3,7 +3,6 @@
 *{
     @include general;
 }
-.nav-menu.active{color: red;}
 
 @mixin flex ($direction){
     display: flex;
@@ -49,20 +48,21 @@ $mobile:767px;
         & .nav-menu{
             display: flex;
 
-
             & li{
                 list-style-type: none;
-                margin: 0rem 1rem;
+                margin: 0rem 0.9rem;
 
                 & a{
                     text-decoration: none;
-                    font-weight: 700;
+                    //font-weight: 500;
                     color: #333333;
                     cursor: pointer;
                     transition: 0.5s;
 
                     &:hover{
-                        opacity: 0.7;
+                        opacity: 0.5;
+                        //font-size: 1.1rem;
+                        border-bottom: 0.2rem solid #ffc21c;
                     }
                     &.active{
                         color: #002595;
@@ -163,6 +163,9 @@ $mobile:767px;
         }
         & .nav-bar section .hamburger{
             display: block;
+            background: #002595;
+            padding: 0.6rem;
+            border-radius: 0.3rem;
         }
     }
 }

@@ -1,0 +1,73 @@
+@import "./_config.scss";
+*{
+    @include general;
+}
+.space{
+    padding-top: 5rem;
+    width: 100%;
+    background: rgb(242, 240, 240)
+}
+
+.account-wrapper{
+    padding: 3rem 2rem;
+    @include display(column, center);
+    text-align: center;
+    align-items: center;
+
+    & h2{
+        @include heading-2(#333333);
+        //text-align: center;
+    }
+
+    & table {
+        width: 100%;
+        background: #e3ecf2;
+        align-items: center;
+        color: #333333;
+        z-index: 500;
+        border: 1px solid #002594;
+        border-spacing: 5px;
+
+        & table,td {
+            border: 1px solid #002594;
+            //border-spacing: 5px;
+            padding: 0.5rem;
+        }
+        & thead {
+
+            & th{
+                padding: 0.2rem;
+                border: 1px solid #002594;
+            }
+
+            & .row1,.row2 {
+                //font-size: 1rem;
+                color:  #002594;
+
+            }
+        }
+    }
+    @media (max-width:767px){
+
+
+        & table{
+            width: 100%;
+            font-size: 0.7rem;
+
+        }
+        @media(max-width:516px){
+            padding: 3rem 0.3rem;
+
+           & table{
+                width: 100%;
+                font-size: 0.4rem;
+
+                & td{
+                    padding: 0.5rem 0rem;
+                }
+            }
+        }
+    }
+
+}
+
