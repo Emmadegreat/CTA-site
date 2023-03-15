@@ -49,7 +49,6 @@
 }
 .header .nav-bar .nav-menu li a:hover {
   opacity: 0.5;
-  border-bottom: 0.2rem solid #ffc21c;
 }
 .header .nav-bar .nav-menu li a.active {
   color: #002595;
@@ -59,7 +58,7 @@
   padding: 1rem;
   position: absolute;
   text-align: start;
-  top: 65px;
+  top: 63px;
   width: 180px;
   border-top: 2px solid #ffc21c;
 }
@@ -85,7 +84,7 @@
     align-items: center;
     text-align: center;
     flex-direction: row;
-    background: #fff;
+    background: #e3ecf2;
   }
   .header .logo img {
     width: 50px;
@@ -96,20 +95,19 @@
     align-items: flex-start;
     text-align: left;
     position: fixed;
-    top: 80px;
+    top: 90px;
     background-color: #fff;
-    height: 290px;
+    height: 350px;
     width: 100%;
     left: -100%;
     z-index: 2;
     padding: 1rem;
     transition: 1s ease;
     transition-duration: all 1s ease;
-    border-top: 3px solid midnightblue;
     box-shadow: rgb(0, 0, 0) 0px 2px 5px 0px;
   }
   .header .nav-menu li {
-    padding: 0.8rem 1rem;
+    padding: 0.65rem 1rem;
     border-bottom: 1px solid rgb(121, 108, 108);
     width: 95%;
   }
@@ -121,14 +119,14 @@
     font-weight: 300;
     font-size: 0.8rem;
   }
-  .header .nav-menu .dropdown {
-    background: #743737;
-    padding: 1rem;
-    position: absolute;
-    text-align: start;
-    top: 200px;
-    width: 180px;
-    border-top: 2px solid #ffc21c;
+  .header .nav-menu .drop-down-cont {
+    width: 100%;
+  }
+  .header .nav-menu .drop-down-cont .dropdown {
+    position: relative;
+    top: -3px;
+    width: 100%;
+    border-top: none;
   }
   .header .nav-menu .icon {
     font-size: 1.1rem;

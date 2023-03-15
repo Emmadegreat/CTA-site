@@ -81,15 +81,15 @@ const Header = () => {
                         <li><NavLink to="/" onClick={closeLinks} className={({ isActive }) => isActive ? 'nav-menu.active' : ""} end style={({ isActive }) => ({ color: isActive ? 'blue' : 'black' })}>Home</NavLink></li>
                         <li><NavLink to="about" onClick={closeLinks} >About us</NavLink></li>
 
-                        <div className='' onMouseEnter={showDropdown} onMouseLeave={hideDropdown}>
-                            <li><NavLink to="contact" onClick={closeLinks}>Contact us <FaChevronDown className='icon'/></NavLink></li>
+                        <div className='drop-down-cont' onMouseEnter={showDropdown} onMouseLeave={hideDropdown}>
+                            <li><NavLink to="contact" onClick={closeLinks} >Contact us <FaChevronDown className='icon'/></NavLink></li>
 
                             { state? ( <ul onMouseEnter={showDropdown} className="dropdown">
-                                < li > <NavLink to="faqs" onClick={closeLinks}>Faqs</NavLink></li>
+                                < li > <NavLink to="faqs" onClick={closeLinks} >Faqs</NavLink></li>
                             </ul>):null
                             }
                         </div>
-                        <div className='' onMouseEnter={showDisplay} onMouseLeave={hideDisplay}>
+                        <div className='drop-down-cont' onMouseEnter={showDisplay} onMouseLeave={hideDisplay}>
                             <li><NavLink to="programs" onClick={closeLinks}>Programmes <FaChevronDown className='icon' /></NavLink></li>
 
                             { display? ( <ul onMouseEnter={showDisplay} className="dropdown">

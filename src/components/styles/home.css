@@ -21,11 +21,27 @@
 }
 .section-1 .card {
   flex-basis: 40%;
+  /*@keyframes fadeRight {
+      from{
+          transform: translateX(330px);
+      }
+      to{
+      transform: translateX(0);
+      }
+  }*/
 }
 .section-1 .card .image {
   width: 100%;
   max-width: 240px;
   height: 100%;
+  /*animation-duration: 1.2s;
+  animation-name: fadeRight;
+  animation-timing-function:ease-in;
+  animation-delay:0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: both;
+  transform: translateX(150px);*/
 }
 .section-1 .card1 {
   display: flex;
@@ -397,6 +413,22 @@
   justify-content: space-around;
   flex-direction: row;
   padding: 1.3rem 0rem;
+  animation-duration: 0.8s;
+  animation-name: fade_6;
+  animation-timing-function: ease-in;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: both;
+  transform: translateX(150px);
+}
+@keyframes fade_6 {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
 }
 .section-6 .section-6-container .card {
   flex-basis: 45%;
@@ -537,7 +569,7 @@
   .section-7 .section-7-container .card article ul li {
     line-height: 1.6;
   }
-  .section-7 .section-7-container .card article ul a {
+  .section-7 .section-7-container .card article a {
     text-decoration: none;
     background: #002594;
     padding: 0.8rem 1.5rem;
@@ -932,209 +964,4 @@
 }
 .section-13 #view-faqs:hover {
   background: #002594;
-}
-
-/*
-.section-4{
-    padding: 4rem;
-
-    & h2{
-        //font-size: 50px;
-        //line-height: 65px;
-        text-align: center;
-
-        @include heading-2(#4b4b4b);
-    }
-
-    & .section-4-container{
-        @include display(column, center);
-        width: 65%;
-        margin: auto;
-        padding: 3rem 0rem 0rem 0rem;
-
-        & .card{
-           width: 100%;
-            margin-bottom: 0.8rem;
-
-            & p{
-                line-height: 25px;
-                color: #666666;
-                font-size: 1.1rem;
-                font-weight: 400;
-                font-family: Heebo, Helvetica, Arial, Lucida, sans-serif;
-            }
-
-            & button{
-                width: 100%;
-                text-align: right;
-                padding: 0rem 0.7rem;
-                border-radius: 0.8rem;
-                border: 0.2rem solid #ffdc7c;
-                height: 30px;
-                background: #002594;
-                color: #fff;
-                font-weight: 700;
-                font-size: 1.1rem;
-            }
-        }
-    }
-    @media (max-width:767px) {
-        padding: 4rem 2rem;
-
-        & h2{
-            font-size: 25px;
-            line-height: 40px;
-        }
-        & .section-4-container{
-            width: 85%;
-            padding: 3rem 0rem 2rem 0rem;
-
-            & .card{
-                & p{
-                    font-size: 1rem;
-                }
-            }
-        }
-    }
-}
-*/
-/*
-.section-5{
-    padding: 2.5rem;
-
-    & .section-5-container{
-        @include display(row, space-evenly);
-
-        & .card{
-            flex-basis: 42%;
-            color: #333333;
-            text-align: start;
-
-            & h3{
-                //font-size: 35px;
-                //line-height: 35px;
-                @include heading-3;
-            }
-            & p{
-                font-size: 1rem;
-                line-height: 23.8px;
-                margin: 0.7rem 0rem;
-            }
-            & button{
-                background: #002594;
-                padding: 0.5rem;
-                width: 110px;
-                height: 36px;
-                border-width: 0rem;
-                border-radius: 0.4rem;
-                margin: 1.2rem 0rem;
-
-                & a{
-                    text-decoration: none;
-                    color: #fff;
-                    font-weight: 700;
-                    font-size: 0.9rem;
-                }
-            }
-
-        }
-    }
-    @media (max-width:900px) {
-        padding: 2rem;
-
-        & .section-5-container{
-            @include display(column, center);
-
-            & .card{
-                margin-bottom: 1.6rem;
-
-                & h3{
-                    font-size: 30px;
-                }
-            }
-        }
-    }
-}
-*/
-/*
-.section-7{
-    padding: 2.5rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    margin-bottom: 3rem;
-
-    & .card{
-        margin: 2rem 0rem;
-        color: #333333;
-
-        & h3{
-            @include heading-3;
-        }
-        & p{
-            margin: 1rem 0rem;
-            font-size: 1.2rem;
-        }
-        & button{
-            background: #ffc21c;
-            padding: 0.5rem;
-            width: 170px;
-            height: 37px;
-            border-width: 0rem;
-            border-radius: 0.4rem;
-            margin: 1.2rem 0rem;
-            transition: all 1s;
-            box-shadow: rgb(0, 37, 148) 0px 2px 3px 2px;
-            position: absolute;
-            right: 40%;
-
-            & a{
-                text-decoration: none;
-                color: #000;
-                font-weight: 600;
-                font-size: 1.1rem;
-                position: relative;
-            }
-            & a:after{
-                content: "\276f";
-                position: absolute;
-                transition: 1s;
-                top: 0;
-                bottom: 0;
-                opacity: 0;
-                right: -20px;
-            }
-            &:hover a{
-                padding-right: 5px;
-            }
-            &:hover a:after{
-                opacity: 1;
-                right: -6px;
-            }
-
-        }
-    }
-    @media (max-width:900px) {
-        padding:2rem;
-
-        & .card{
-
-            & h3{
-                font-size: 30px;
-                line-height: 30px;
-            }
-            & p{
-                margin: 1rem 0rem;
-                font-size: 1.2rem;
-            }
-            @media (max-width:550px){
-
-                & button{
-                    right: 28%;
-                }
-            }
-        }
-    }
-}*//*# sourceMappingURL=home.css.map */
+}/*# sourceMappingURL=home.css.map */

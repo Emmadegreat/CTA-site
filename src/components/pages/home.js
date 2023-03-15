@@ -1,5 +1,4 @@
 import '../styles/home.css'
-import 'aos/dist/aos.css'
 
 import { FaCaretDown, FaCertificate, FaChalkboardTeacher, FaCheckCircle, FaUserCheck, FaUserGraduate } from 'react-icons/fa'
 import React, { useEffect } from 'react'
@@ -31,6 +30,8 @@ import sect_8 from  '../images/sect-8.jpg'
 import softskill from '../images/cta-softskill.jpg'
 import { useNavigate } from 'react-router-dom'
 import { useState } from 'react'
+
+//import 'aos/dist/aos.css'
 
 //import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
@@ -64,12 +65,15 @@ const Home = () => {
             <section className="section-1">
                 <div className="card card1">
                     <h1>CWW Tech Africa</h1>
-                    <p>Equipping African youths with digital and tech skills.</p>
+                    <p>
+                        We are empowering the next 1 million African youths with digital
+                        and tech skills by 2030.
+                    </p>
                     <a href="https://www.cwwtechafrica.com/join-the-waitlist" target={"_blank"} rel="noreferrer">APPLY AS A TRAINEE</a>
                 </div>
-                <motion.div className="card card2" animate={{x: 100, scale: 1}} initial={{scale: 0}}>
-                    <img src={image} alt=""  className="image" />
-                </motion.div>
+                <div className="card card2">
+                    <img src={image} alt="heroImage"  className="image" />
+                </div>
             </section>
 
             <section className="section-2">
@@ -278,10 +282,10 @@ const Home = () => {
 
             <section className="section-7">
                 <div className="section-7-container">
-                    <div className="card" data-aos="flip-right">
+                    <div className="card" id='card_7'>
                         <img src={ sect_7 } alt="section-7-img" />
                     </div>
-                    <div className="card" data-aos="flip-right">
+                    <div className="card">
                         <article>
                             <h4>CTA Business</h4>
                             <h2>Equip your workforce</h2>
@@ -494,66 +498,7 @@ const Home = () => {
                 </div>
                 <a href="https://www.cwwtechafrica.com/faqs" role="noreferrer" id="view-faqs">View FAQS</a>
 
-                </section>
-
-
-            {/*<section className="section-4">
-                <h2>Join the waitlist for CTA cohort 3.0</h2>
-                <div className="section-4-container" data-aos="flip-up">
-                    <div className="card">
-                        <p>Instructor Led Training</p>
-                        <button>100%</button>
-                    </div>
-                    <div className="card">
-                        <p>Internship</p>
-                        <button>100%</button>
-                    </div>
-                    <div className="card">
-                        <p>Mentorship</p>
-                        <button>100%</button>
-                    </div>
-                    <div className="card">
-                        <p>Learning Community</p>
-                        <button>100%</button>
-                    </div>
-                </div>
-
             </section>
-
-            <section className="section-5">
-                <section className="section-5-container">
-                    <div className="card">
-                        <h3>Want to Volunteer with us?</h3>
-                        <p>
-                            We are looking for skilled volunteers who are looking to be a part of
-                            our mission to empower African youths with in-demand digital and tech skills.
-                        </p>
-                        <button><a href="https://www.cwwtechafrica.com/cta-volunteer-form/">Learn more</a></button>
-                    </div>
-                    <div className="card">
-                        <h3>Need Interns?</h3>
-                        <p>
-                            Want to hire a talent, we have the best African talents in our community.
-                            Our traineers are empowered with in-demand tech skills and also equipped with
-                            soft skills and business skills. We have the best.
-                        </p>
-                        <button><a href="https://www.cwwtechafrica.com/internship-placement-form">Get in touch</a></button>
-                    </div>
-                </section>
-            </section>
-
-
-
-            <section className="section-7">
-                <div className="card">
-                    <h3>Stand a chance to win amazing prizes, refer a friend</h3>
-                    <p>
-                        Amazing cash prizes, laptops, power banks, and more are available to be
-                        won. Refer as many people as possible to win.
-                    </p>
-                    <button><a href="https://www.cwwtechafrica.com/join-the-waitlist/"target="_blank" rel='noreferrer'>Join the Waitlist</a></button>
-                </div>
-            </section>*/}
 
         </section>
     )
