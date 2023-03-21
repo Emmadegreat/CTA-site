@@ -484,7 +484,7 @@ const Home = () => {
                     })}
 
                 </div>
-                <a href="https://www.cwwtechafrica.com/faqs" role="noreferrer" id="view-faqs">View FAQS</a>
+                <a href="https://www.cwwtechafrica.com/faqs" role="noreferer" id="view-faqs">View FAQS</a>
 
             </section>
 
