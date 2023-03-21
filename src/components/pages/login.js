@@ -4,17 +4,9 @@ import { LoginActions } from '../../store/auth'
 import React from 'react'
 import { useDispatch } from 'react-redux'
 
-//import { Link, useNavigate } from 'react-router-dom'
-
-//import Account from './account'
-
-
-
-
 const Login = () => {
 
     const dispatch = useDispatch();
-    //const navigate = useNavigate();
 
     const loginHandler = (e) => {
         e.preventDefault();
@@ -28,7 +20,6 @@ const Login = () => {
             <div className="spacer"></div>
 
             <div className='login-wrapper'>
-                {/*<div className="card"></div>*/}
 
                 <div className="card">
                     <h4>Login</h4>

@@ -12,11 +12,6 @@ import sect_7 from '../images/sect-7.jpg'
 import sect_8 from '../images/sect-8.jpg'
 import softskill from '../images/cta-softskill.jpg'
 
-//import content_writing from '../images/content-writing.jpg'
-
-
-
-
 const Courses = () => {
     return (
         <section className='courses'>

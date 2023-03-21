@@ -11,7 +11,6 @@ import softskill from '../images/cta-softskill.jpg'
 
 const Programs = () => {
     const [faqs, setFaqs] = useState(null);
-    //const handleFaqs = (id) => setFaqs(id);
 
     const handleFaqs = (id) => {
         if (faqs === id) {

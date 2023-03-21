@@ -4,9 +4,6 @@ import { FaEnvelopeOpenText, FaFacebookSquare, FaInstagramSquare, FaLinkedinIn, 
 
 import React from 'react'
 
-//import { Link } from 'react-router-dom'
-
-
 const Contact = () => {
     return (
         <section className='contact-us'>
@@ -111,29 +108,28 @@ const Contact = () => {
             </div>
 
             <section className='com-section'>
-                    <div className="card">
-                        <h3>Join our Tech community</h3>
-                        <p>
-                            Be the first to know about the latest courses, training programs,
-                            jobs, interships and freebies.
-                        </p>
-                    </div>
-                    <div className="card">
-                        <div id=''></div>
-                        <form action="" method="post">
-                            <legend>
-                                <label htmlFor="name">Firstname</label>
-                                <input type="text" name='name' placeholder='Name'/>
-                            </legend>
-                             <legend>
-                                <label htmlFor="email">Firstname</label>
-                                <input type="text" name='email' placeholder='Email'/>
-                            </legend>
-                            <button type="submit">Send</button>
-                        </form>
+                <div className="card">
+                    <h3>Join our Tech community</h3>
+                    <p>
+                        Be the first to know about the latest courses, training programs,
+                        jobs, interships and freebies.
+                    </p>
+                </div>
+                <div className="card">
+                    <div id=''></div>
+                    <form action="" method="post">
+                        <legend>
+                            <label htmlFor="name">Firstname</label>
+                            <input type="text" name='name' placeholder='Name'/>
+                        </legend>
+                        <legend>
+                            <label htmlFor="email">Firstname</label>
+                            <input type="text" name='email' placeholder='Email'/>
+                        </legend>
+                         <button type="submit">Send</button>
+                    </form>
 
-                    </div>
-
+                </div>
 
             </section>
 

@@ -1,7 +1,7 @@
 import '../styles/home.css'
 
-import {Bounce, Fade, Slide, Zoom} from 'react-reveal'
 import { FaCaretDown, FaCertificate, FaChalkboardTeacher, FaCheckCircle, FaUserCheck, FaUserGraduate } from 'react-icons/fa'
+import { Fade, Slide, Zoom } from 'react-reveal'
 import React, { useEffect } from 'react'
 
 import CountUp from 'react-countup'
@@ -27,15 +27,7 @@ import sect_6 from '../images/sect-6.jpg'
 import sect_7 from '../images/sect-7.jpg'
 import sect_8 from  '../images/sect-8.jpg'
 import softskill from '../images/cta-softskill.jpg'
-import { useNavigate } from 'react-router-dom'
 import { useState } from 'react'
-
-//import 'aos/dist/aos.css'
-
-//import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-
-//import Data from '../data.json
-
 
 const Home = () => {
 
@@ -52,7 +44,6 @@ const Home = () => {
 
     const [counter, setCounter] = useState(false);
 
-    const navigate = useNavigate();
     return (
         <section className='home'>
             <div className="spacer"></div>
@@ -75,10 +66,6 @@ const Home = () => {
             <section className="section-2">
                 <h2>What you stand to gain</h2>
 
-                {/*Data.map((item, index = {}) => {
-
-                        return ()
-                    })*/}
 
                     <div className="container">
                         <div className="content">
@@ -142,7 +129,6 @@ const Home = () => {
                 <div className="section-3-container">
                     <div className="card">
                         <article>
-                            {/*<b>CWW TECH AFRICA</b>*/}
                             <h2>About us</h2>
                             <p>
                                 CWW tech Africa is empowering young people with digital and tech skills.

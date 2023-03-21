@@ -48,10 +48,6 @@ const Register = () => {
                     <Link to="https://www.cwwtechafrica.com/join-the-waitlist/">Join the waitlist for CTA 4.0</Link>
                 </article>
             </div>
-
-
-
-
         </section>
     )
 }

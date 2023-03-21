@@ -4,10 +4,6 @@ import { FaFacebook, FaInstagram, FaLinkedinIn, FaTwitter, FaYoutube } from 'rea
 
 import React from 'react'
 
-//import facebook from '../images/facebookicon.png'
-//import feed from '../images/feed.png'
-//import instagram from '../images/instag.png'
-
 const Footer = (props) => {
     return (
         <footer>

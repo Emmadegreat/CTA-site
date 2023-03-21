@@ -20,19 +20,6 @@ const Header = () => {
         setDisplay(false);
     }
 
-    /*const [selectedValue, setSelectedValue] = useState('option1');
-
-    const handleSelectChange=(event)=> {
-        setSelectedValue(event.target.value);
-    }
-
-    return (
-            <select value={selectedValue} onChange={handleSelectChange}>
-            <option value="programs">Programmes</option>
-            <option value="faqs">faqs</option>
-            <option value="option3">Option 3</option>
-        </select>
-     );*/
 
     const [state, setState] = useState(false);
     const showDropdown = () => {
@@ -123,10 +110,7 @@ const Header = () => {
                         </div>
                     </section>
                 </div>
-
-
             </nav>
-
         </Fragment>
     )
 }

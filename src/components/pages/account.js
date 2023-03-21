@@ -46,8 +46,6 @@ const Account = () => {
 
             </section>
 
-
-
         </section>
     )
 }

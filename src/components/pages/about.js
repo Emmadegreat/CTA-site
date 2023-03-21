@@ -11,13 +11,6 @@ import faq from './faq.json'
 import review1 from '../images/cta-about-review-1.jpg'
 import review2 from '../images/cta-about-review-2.jpeg'
 
-//import col2 from '../images/col2-img.jpg'
-
-
-
-
-
-
 const About = () => {
 
     const [faqs, setFaqs] = useState(null);
