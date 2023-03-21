@@ -6,8 +6,10 @@ import FAQ from './faq.json'
 import { Link } from 'react-router-dom'
 import bootcamp from '../images/cta-bootcamp.jpg'
 import cohort from '../images/cta-cohort.jpg'
-import sect_8 from  '../images/coding-duy1.jpg'
 import softskill from '../images/cta-softskill.jpg'
+
+//import sect_8 from  '../images/coding-duy1.jpg'
+
 
 const Programs = () => {
     const [faqs, setFaqs] = useState(null);
