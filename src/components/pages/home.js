@@ -1,7 +1,6 @@
 import '../styles/home.css'
 
 import { FaCaretDown, FaCertificate, FaChalkboardTeacher, FaCheckCircle, FaUserCheck, FaUserGraduate } from 'react-icons/fa'
-import { Fade, Slide, Zoom } from 'react-reveal'
 import React, { useEffect } from 'react'
 
 import CountUp from 'react-countup'
@@ -28,6 +27,8 @@ import sect_7 from '../images/sect-7.jpg'
 import sect_8 from  '../images/sect-8.jpg'
 import softskill from '../images/cta-softskill.jpg'
 import { useState } from 'react'
+
+//import { Fade, Slide, Zoom } from 'react-reveal'
 
 const Home = () => {
 
@@ -57,9 +58,9 @@ const Home = () => {
                     <a href="https://www.cwwtechafrica.com/join-the-waitlist" target={"_blank"} rel="noreferrer">APPLY AS A TRAINEE</a>
                 </div>
                 <div className="card card2">
-                    <Slide right>
+                    <>
                         <img src={image} alt="heroImage"  className="image" />
-                    </Slide>
+                    </>
                 </div>
             </section>
 
@@ -243,7 +244,7 @@ const Home = () => {
 
             <section className="section-6">
                 <div className="section-6-container">
-                    <Fade right>
+                    <>
                     <div className="card">
                         <article>
                             <h2>Hire an Intern</h2>
@@ -258,7 +259,7 @@ const Home = () => {
                     <div className="card">
                         <img src={ sect_6 } alt="section-6-img" />
                     </div>
-                    </Fade>
+                    </>
 
                 </div>
 
@@ -267,9 +268,9 @@ const Home = () => {
             <section className="section-7">
                 <div className="section-7-container">
                     <div className="card" id='card_7'>
-                        <Zoom out>
+                        <>
                             <img src={ sect_7 } alt="section-7-img" />
-                        </Zoom>
+                        </>
                     </div>
                     <div className="card">
                         <article>
@@ -303,9 +304,9 @@ const Home = () => {
                         </article>
                     </div>
                     <div className="card">
-                        <Slide up>
+                        <>
                             <img src={ sect_8 } alt="section-6-img" />
-                        </Slide>
+                        </>
                     </div>
 
                 </div>
