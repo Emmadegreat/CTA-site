@@ -420,7 +420,7 @@
     & .section-6-container{
         @include display(row, space-around);
         padding: 1.3rem 0rem;
-        animation-duration: 0.8s;
+        /*animation-duration: 0.8s;
         animation-name: fade_6;
         animation-timing-function:ease-in;
         animation-delay:0s;
@@ -435,7 +435,7 @@
             to{
                 transform: translateX(0);
             }
-        }
+        }*/
 
         & .card{
             flex-basis: 45%;

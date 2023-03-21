@@ -5,17 +5,22 @@ import React, {useState} from 'react'
 import { Link } from 'react-router-dom'
 import about_img from '../images/cta-about1.jpg'
 import col1_img from '../images/col2-img.jpg'
-import col2 from '../images/col2-img.jpg'
 import col2_img from '../images/col1-img.jpg'
 import col3_img from '../images/col3-img.jpg'
 import faq from './faq.json'
 import review1 from '../images/cta-about-review-1.jpg'
 import review2 from '../images/cta-about-review-2.jpeg'
 
+//import col2 from '../images/col2-img.jpg'
+
+
+
+
+
+
 const About = () => {
 
     const [faqs, setFaqs] = useState(null);
-    //const handleFaqs = (id) => setFaqs(id);
 
     const handleFaqs = (id) => {
         if (faqs === id) {
@@ -27,7 +32,7 @@ const About = () => {
 
     return (
         <section className='about'>
-            <div className="space"></div>
+            <div className="spacer"></div>
 
             <div className="section-one">
                 <div className="card">

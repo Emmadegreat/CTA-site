@@ -3,7 +3,7 @@ import React from 'react'
 const Error404 = () => {
 
     const style = {
-        padding: '4rem',
+        padding: '10rem 4rem',
         display: 'flex',
         flexDirection: 'column',
         justifyContent: 'center',
@@ -11,12 +11,12 @@ const Error404 = () => {
 
     }
   return (
-      <div style={style}>
-          <h1>
-              Page does not exit !
-          </h1>
+        <div style={style}>
+            <h1>
+                Woops! Page does not exist!
+            </h1>
 
-    </div>
+        </div>
   )
 }
 

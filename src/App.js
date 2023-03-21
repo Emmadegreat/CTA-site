@@ -9,7 +9,6 @@ import Account from './components/pages/account';
 //import { AnimationOnScroll } from 'react-animation-on-scroll';
 import Contact from './components/pages/contact';
 import Courses from './components/pages/courses';
-import Detail from './components/pages/detail';
 import Error404 from './components/pages/404';
 import Faqs from './components/pages/faqs';
 import Footer from './components/pages/footer';
@@ -19,6 +18,7 @@ import Login from './components/pages/login';
 import Logout from './components/pages/logout';
 import Programs from './components/pages/programs';
 import Register from './components/pages/register';
+import Test from './components/pages/sample';
 import { useSelector } from 'react-redux';
 
 //import image from './components/images/CWW-Tech-Africa.png'
@@ -46,13 +46,8 @@ function App() {
   return (
     <Router>
 
-
-        <Header />
-
-        {/*<AnimationOnScroll animateIn='animate__fadeInLeftBig'>*/}
-
-      {/*</AnimationOnScroll>482comments*/}
-
+      <Header />
+      <Test/>
 
       <div className="pages">
         <Routes>

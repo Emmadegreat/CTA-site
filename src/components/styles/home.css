@@ -413,22 +413,22 @@
   justify-content: space-around;
   flex-direction: row;
   padding: 1.3rem 0rem;
-  animation-duration: 0.8s;
+  /*animation-duration: 0.8s;
   animation-name: fade_6;
-  animation-timing-function: ease-in;
-  animation-delay: 0s;
+  animation-timing-function:ease-in;
+  animation-delay:0s;
   animation-iteration-count: 1;
   animation-direction: normal;
   animation-fill-mode: both;
   transform: translateX(150px);
-}
-@keyframes fade_6 {
-  from {
-    transform: translateX(100%);
-  }
-  to {
-    transform: translateX(0);
-  }
+  @keyframes fade_6 {
+      from{
+          transform: translateX(100%);
+      }
+      to{
+          transform: translateX(0);
+      }
+  }*/
 }
 .section-6 .section-6-container .card {
   flex-basis: 45%;

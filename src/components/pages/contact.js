@@ -1,9 +1,11 @@
 import '../styles/contact.css'
 
-import { FaEnvelopeOpenText, FaFacebook, FaFacebookSquare, FaInstagram, FaInstagramSquare, FaLinkedinIn, FaPhone, FaTwitter, FaTwitterSquare, FaYoutube, FaYoutubeSquare } from 'react-icons/fa'
+import { FaEnvelopeOpenText, FaFacebookSquare, FaInstagramSquare, FaLinkedinIn, FaPhone, FaTwitterSquare, FaYoutubeSquare } from 'react-icons/fa'
 
-import { Link } from 'react-router-dom'
 import React from 'react'
+
+//import { Link } from 'react-router-dom'
+
 
 const Contact = () => {
     return (

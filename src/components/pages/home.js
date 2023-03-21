@@ -1,9 +1,9 @@
 import '../styles/home.css'
 
+import {Bounce, Fade, Slide, Zoom} from 'react-reveal'
 import { FaCaretDown, FaCertificate, FaChalkboardTeacher, FaCheckCircle, FaUserCheck, FaUserGraduate } from 'react-icons/fa'
 import React, { useEffect } from 'react'
 
-import Aos from 'aos'
 import CountUp from 'react-countup'
 import { Link } from 'react-router-dom'
 import ScrollTrigger from 'react-scroll-trigger'
@@ -19,7 +19,6 @@ import img1 from '../images/ux.jpg'
 import img2 from '../images/data.jpg'
 import img3 from '../images/web.jpg'
 import img4 from '../images/digitalmktg.jpg'
-import { motion } from 'framer-motion'
 import review1 from '../images/review1.jpeg'
 import review2 from '../images/review2.jpg'
 import review3 from '../images/review3.jpg'
@@ -51,11 +50,6 @@ const Home = () => {
         }
     }
 
-    useEffect(() => {
-        Aos.init();
-        Aos.refresh({duration:1500,once:false})
-    }, [])
-
     const [counter, setCounter] = useState(false);
 
     const navigate = useNavigate();
@@ -72,7 +66,9 @@ const Home = () => {
                     <a href="https://www.cwwtechafrica.com/join-the-waitlist" target={"_blank"} rel="noreferrer">APPLY AS A TRAINEE</a>
                 </div>
                 <div className="card card2">
-                    <img src={image} alt="heroImage"  className="image" />
+                    <Slide right>
+                        <img src={image} alt="heroImage"  className="image" />
+                    </Slide>
                 </div>
             </section>
 
@@ -261,6 +257,7 @@ const Home = () => {
 
             <section className="section-6">
                 <div className="section-6-container">
+                    <Fade right>
                     <div className="card">
                         <article>
                             <h2>Hire an Intern</h2>
@@ -275,6 +272,7 @@ const Home = () => {
                     <div className="card">
                         <img src={ sect_6 } alt="section-6-img" />
                     </div>
+                    </Fade>
 
                 </div>
 
@@ -283,7 +281,9 @@ const Home = () => {
             <section className="section-7">
                 <div className="section-7-container">
                     <div className="card" id='card_7'>
-                        <img src={ sect_7 } alt="section-7-img" />
+                        <Zoom out>
+                            <img src={ sect_7 } alt="section-7-img" />
+                        </Zoom>
                     </div>
                     <div className="card">
                         <article>
@@ -317,7 +317,9 @@ const Home = () => {
                         </article>
                     </div>
                     <div className="card">
-                        <img src={ sect_8 } alt="section-6-img" />
+                        <Slide up>
+                            <img src={ sect_8 } alt="section-6-img" />
+                        </Slide>
                     </div>
 
                 </div>
