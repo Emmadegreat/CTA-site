@@ -60,7 +60,6 @@ $mobile:767px;
 
                     &:hover{
                         opacity: 0.5;
-                        //border-bottom: 0.2rem solid #ffc21c;
                     }
                     &.active{
                         color: #002595;
@@ -119,7 +118,6 @@ $mobile:767px;
             padding: 1rem;
             transition: 1s ease;
             transition-duration: all 1s ease;
-            //border-top: 3px solid midnightblue;
             box-shadow: rgba(0, 0, 0.1) 0px 2px 5px 0px;
 
             & li{

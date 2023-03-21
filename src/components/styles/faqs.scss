@@ -43,7 +43,6 @@
         padding: 2.5rem 2.5rem 0rem 2.5rem;
 
         & .card{
-            //margin-bottom: 2rem;
             padding-right: 2rem;
 
             & p{
@@ -80,7 +79,6 @@
 
     .faq-sect-3{
         padding: 2rem 2.5rem;
-        //background: #e3ecf2;
         color: #333333;
         @include display(column,center);
 
@@ -91,9 +89,8 @@
         }
 
         & .card{
-            //width: 70%;
+
             margin: auto;
-            //border: 1px solid #ced8e1;
             margin-bottom: 1.5rem;
 
             & .item{
@@ -104,7 +101,6 @@
 
                 & .title{
                  @include display(row, space-between);
-                    //border: 1px solid #ced8e1;
                     align-items: center;
                     cursor: pointer;
                     padding: 1rem;

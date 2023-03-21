@@ -14,7 +14,6 @@
 @mixin heading-1{
     font-size: 75px;
     line-height: 100px;
-    //color: #333333;
     margin-bottom: 1.5rem;
 }
 @mixin heading-2($color){
@@ -34,33 +33,4 @@
 @mixin heading-4{
     font-size: 22px;
 }
-
-@mixin button($width, $height, $bacground){
-    width: $width;
-    height: $height;
-    background: $bacground;
-    border-width: 0rem;
-    border-radius: 0.4rem;
-    padding: 0.5rem;
-
-
-    & a:after{
-        content: "\276f";
-        position: absolute;
-        transition: 1s;
-        top: 0;
-        bottom: 0;
-        opacity: 0;
-        right: -20px;
-    }
-    &:hover a{
-        padding-right: 5px;
-    }
-    &:hover a:after{
-        opacity: 1;
-        right: -6px;
-    }
-
-}
-
 

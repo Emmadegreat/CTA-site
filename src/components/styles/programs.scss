@@ -21,7 +21,6 @@
         @include display(column, center);
         align-items: center;
         text-align: center;
-        //padding: 4rem 1.5rem;
 
         & .card{
             & h2{
@@ -134,7 +133,6 @@
                     background: #ffc21c;
                     padding: 0.8rem 1.5rem;
                     border-radius: 0.5rem;
-                    //font-weight: 600;
                     margin-top: 3rem;
                     cursor: pointer;
                     color: #464343;
@@ -192,7 +190,6 @@
                     background: #ffc21c;
                     padding: 0.8rem 1.5rem;
                     border-radius: 0.5rem;
-                    //font-weight: 600;
                     margin-top: 3rem;
                     cursor: pointer;
                     color: #464343;
@@ -316,7 +313,6 @@
 
 
                 & .title{
-                 //@include display(row, space-between);
                     border-bottom: 1px solid #ced8e1;
                     align-items: center;
                     cursor: pointer;
@@ -324,7 +320,6 @@
                     background: #f7f7f7;
 
                     & span{
-                        //background: #e3ecf2;
                         border-radius: 50%;
                         width: 25px;
                         height: 25px;
@@ -347,7 +342,7 @@
                     overflow: hidden;
                 }
 
-                & .show{///900 comments
+                & .show{
                     max-height: 10rem;
                     transition: all 0.5s;
                     height: 100%;
@@ -356,7 +351,6 @@
                     line-height: 1.6;
                     background: #e3ecf2;
                     padding: 1.2rem;
-                    //padding-right: 1rem;
                 }
             }
             @media (max-width:767px){
