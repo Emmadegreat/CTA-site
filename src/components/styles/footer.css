@@ -121,42 +121,6 @@
   flex-direction: column;
   color: #fff;
   align-items: center;
-  /*& .footer-wrapper{
-     //@include display(column, center);
-     //color: #fff;
-     //align-items: center;
-     padding: 0rem 3rem;
-     & .card{
-
-          padding: 0rem 3rem;
-     }
-
-     & #second-card{
-          order: 2;
-
-          & ul a{
-              margin: 0rem 0.3rem;
-          }
-      }
-
-      & p{
-          color: #666;
-          font-size: 0.85rem;
-      }
-      @media (max-width:767px){
-          @include display(column, center);
-          padding: 0rem;
-
-          & #second-card{
-              order: 1;
-              padding-top: 1rem;
-          }
-          & #first-card{
-              order: 2;
-          }
-      }
-
-  }*/
 }
 @media (max-width: 767px) {
   .footer {
