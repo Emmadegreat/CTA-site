@@ -52,7 +52,7 @@ const Home = () => {
             <div className="spacer"></div>
             <section className="section-1">
                 <div className="card card1">
-                    <h1>CWW Tech Africa program</h1>
+                    <h1>CWW Tech Africa</h1>
                     <p>
                         We are empowering the next 1 million African youths with digital
                         and tech skills by 2030.
