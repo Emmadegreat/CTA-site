@@ -60,7 +60,7 @@ const Header = () => {
         <Fragment>
             <nav className={nav ? 'header bg' : 'header'} id='navbar'>
                 <div className='logo'>
-                    <a href="https://cwwtechafrica.com" onClick={closeLinks}><img src={ logo } alt="page-logo"  /></a>
+                    <NavLink to="/" onClick={closeLinks}><img src={ logo } alt="page-logo"  /></NavLink>
                 </div>
 
                 <div className='nav-bar'>
