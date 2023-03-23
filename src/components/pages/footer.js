@@ -3,12 +3,22 @@ import '../styles/footer.css'
 import { FaFacebook, FaInstagram, FaLinkedinIn, FaTwitter, FaYoutube } from 'react-icons/fa'
 
 import React from 'react'
+import ScrollToTop from 'react-scroll-to-top'
+import scrollToTop from 'react-scroll-to-top'
 
 const Footer = (props) => {
     return (
         <footer>
 
             <section className="first-section">
+                <div>
+                    <ScrollToTop
+                        smooth top={20}
+                        height="28" width="28"
+                        color='#fff'
+                        style={{ background: "#002594"}}
+                    />
+                </div>
 
                 <div className="card">
                     <div className="inner-card">
