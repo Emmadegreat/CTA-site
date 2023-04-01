@@ -1,10 +1,12 @@
 import '../styles/home.css'
+import 'aos/dist/aos.css';
 
 import { FaCaretDown, FaCertificate, FaChalkboardTeacher, FaCheckCircle, FaUserCheck, FaUserGraduate } from 'react-icons/fa'
+import React, {useEffect} from 'react'
 
+import AOS from 'aos';
 import CountUp from 'react-countup'
 import { Link } from 'react-router-dom'
-import React from 'react'
 import ScrollTrigger from 'react-scroll-trigger'
 import bootcamp from '../images/cta-bootcamp.jpg'
 import cohort from '../images/cta-cohort.jpg'
@@ -49,13 +51,6 @@ import { useState } from 'react'
 
 
 
-
-
-
-
-
-
-
 const Home = () => {
 
     const [faqs, setFaqs] = useState(null);
@@ -69,6 +64,16 @@ const Home = () => {
         }
     }
 
+
+    useEffect(() => {
+        AOS.init({
+            duration:1000,
+            once:false,
+            easing: 'ease-in',
+            delay: 30,
+            offset:0
+        });
+    }, [])
     const [counter, setCounter] = useState(false);
 
     return (
@@ -85,7 +90,7 @@ const Home = () => {
                 </div>
                 <div className="card card2">
                     <>
-                        <img src={image} alt="heroImage"  className="image" />
+                        <img data-aos="fade-left" src={image} alt="heroImage"  className="image" />
                     </>
                 </div>
             </section>
@@ -269,7 +274,7 @@ const Home = () => {
             </section>
 
             <section className="section-6">
-                <div className="section-6-container">
+                <div className="section-6-container" data-aos="slide-right">
                     <>
                     <div className="card">
                         <article>
@@ -283,7 +288,7 @@ const Home = () => {
                         </article>
                     </div>
                     <div className="card">
-                        <img src={ sect_6 } alt="section-6-img" />
+                        <img src={ sect_6 } alt="section-6-img" data-aos="flip-left" />
                     </div>
                     </>
 
@@ -293,7 +298,7 @@ const Home = () => {
 
             <section className="section-7">
                 <div className="section-7-container">
-                    <div className="card" id='card_7'>
+                    <div className="card" id='card_7' data-aos="zoom-in">
                         <>
                             <img src={ sect_7 } alt="section-7-img" />
                         </>
@@ -329,7 +334,7 @@ const Home = () => {
                             <a href="https://www.cwwtechafrica.com/frntend-volunteer-form/">Learn more</a>
                         </article>
                     </div>
-                    <div className="card">
+                    <div className="card" data-aos="slide-up">
                         <>
                             <img src={ sect_8 } alt="section-6-img" />
                         </>
