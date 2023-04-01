@@ -25,7 +25,7 @@ const About = () => {
 
     return (
         <section className='about'>
-            <div className="spacer"></div>
+            <div className=""></div>
 
             <div className="section-one">
                 <div className="card">
