@@ -1,4 +1,5 @@
-import 'react-reveal/globals';
+//import 'react-reveal/globals';
+
 import 'animate.css/animate.min.css';
 
 import App from './App';
