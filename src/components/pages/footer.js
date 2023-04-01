@@ -4,7 +4,6 @@ import { FaFacebook, FaInstagram, FaLinkedinIn, FaTwitter, FaYoutube } from 'rea
 
 import React from 'react'
 import ScrollToTop from 'react-scroll-to-top'
-import scrollToTop from 'react-scroll-to-top'
 
 const Footer = (props) => {
     return (
