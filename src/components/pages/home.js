@@ -90,7 +90,7 @@ const Home = () => {
                 </div>
                 <div className="card card2">
                     <>
-                        <img data-aos="fade-left" src={image} alt="heroImage"  className="image" />
+                        <img data-aos="zoom-in" src={image} alt="heroImage"  className="image" />
                     </>
                 </div>
             </section>
@@ -274,10 +274,10 @@ const Home = () => {
             </section>
 
             <section className="section-6">
-                <div className="section-6-container" data-aos="slide-right">
+                <div className="section-6-container" data-aos="flip-up">
                     <>
                     <div className="card">
-                        <article>
+                        <article data-aos="flip-up">
                             <h2>Hire an Intern</h2>
                             <p>
                                 Want to hire a talent, we have the best African talents in our community.
@@ -288,7 +288,7 @@ const Home = () => {
                         </article>
                     </div>
                     <div className="card">
-                        <img src={ sect_6 } alt="section-6-img" data-aos="flip-left" />
+                        <img src={ sect_6 } alt="section-6-img" data-aos="flip-up" />
                     </div>
                     </>
 
