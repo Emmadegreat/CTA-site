@@ -1,7 +1,6 @@
 import '../styles/home.css'
 
 import { FaCaretDown, FaCertificate, FaChalkboardTeacher, FaCheckCircle, FaUserCheck, FaUserGraduate } from 'react-icons/fa'
-import { Fade, Slide, Zoom } from 'react-reveal'
 
 import CountUp from 'react-countup'
 import { Link } from 'react-router-dom'
@@ -28,6 +27,34 @@ import sect_7 from '../images/sect-7.jpg'
 import sect_8 from  '../images/sect-8.jpg'
 import softskill from '../images/cta-softskill.jpg'
 import { useState } from 'react'
+
+//import { Fade, Slide, Zoom } from 'react-reveal'
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 const Home = () => {
 
@@ -57,9 +84,9 @@ const Home = () => {
                     <a href="https://www.cwwtechafrica.com/join-the-waitlist" target={"_blank"} rel="noreferrer">APPLY AS A TRAINEE</a>
                 </div>
                 <div className="card card2">
-                    <Slide right>
+                    <>
                         <img src={image} alt="heroImage"  className="image" />
-                    </Slide>
+                    </>
                 </div>
             </section>
 
