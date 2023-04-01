@@ -148,6 +148,12 @@
     margin-bottom: 2.5rem;
     font-size: 0.95rem;
     text-align: justify;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .section-2 .container .content h4 {
+    text-align: center;
   }
   .section-2 .container .content img {
     max-width: 60px;
