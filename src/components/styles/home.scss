@@ -143,6 +143,11 @@
                 margin-bottom: 2.5rem;
                 font-size: 0.95rem;
                 text-align: justify;
+                @include display(column, center);
+
+                & h4{
+                    text-align: center;
+                }
 
                 & img{
                     max-width: 60px;

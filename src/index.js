@@ -1,3 +1,7 @@
+//import 'react-reveal/globals';
+
+import 'animate.css/animate.min.css';
+
 import App from './App';
 import { Provider } from 'react-redux';
 import React from 'react';

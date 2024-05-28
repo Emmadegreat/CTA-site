@@ -1,8 +1,10 @@
 import '../styles/home.css'
+import 'aos/dist/aos.css';
 
 import { FaCaretDown, FaCertificate, FaChalkboardTeacher, FaCheckCircle, FaUserCheck, FaUserGraduate } from 'react-icons/fa'
-import React, { useEffect } from 'react'
+import React, {useEffect} from 'react'
 
+import AOS from 'aos';
 import CountUp from 'react-countup'
 import { Link } from 'react-router-dom'
 import ScrollTrigger from 'react-scroll-trigger'
@@ -32,6 +34,23 @@ import { useState } from 'react'
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 const Home = () => {
 
     const [faqs, setFaqs] = useState(null);
@@ -45,6 +64,16 @@ const Home = () => {
         }
     }
 
+
+    useEffect(() => {
+        AOS.init({
+            duration:1000,
+            once:false,
+            easing: 'ease-in',
+            delay: 30,
+            offset:0
+        });
+    }, [])
     const [counter, setCounter] = useState(false);
 
     return (
@@ -61,7 +90,7 @@ const Home = () => {
                 </div>
                 <div className="card card2">
                     <>
-                        <img src={image} alt="heroImage"  className="image" />
+                        <img data-aos="zoom-in" src={image} alt="heroImage"  className="image" />
                     </>
                 </div>
             </section>
@@ -245,10 +274,10 @@ const Home = () => {
             </section>
 
             <section className="section-6">
-                <div className="section-6-container">
+                <div className="section-6-container" data-aos="flip-up">
                     <>
                     <div className="card">
-                        <article>
+                        <article data-aos="flip-up">
                             <h2>Hire an Intern</h2>
                             <p>
                                 Want to hire a talent, we have the best African talents in our community.
@@ -259,7 +288,7 @@ const Home = () => {
                         </article>
                     </div>
                     <div className="card">
-                        <img src={ sect_6 } alt="section-6-img" />
+                        <img src={ sect_6 } alt="section-6-img" data-aos="flip-up" />
                     </div>
                     </>
 
@@ -269,7 +298,7 @@ const Home = () => {
 
             <section className="section-7">
                 <div className="section-7-container">
-                    <div className="card" id='card_7'>
+                    <div className="card" id='card_7' data-aos="zoom-in">
                         <>
                             <img src={ sect_7 } alt="section-7-img" />
                         </>
@@ -305,7 +334,7 @@ const Home = () => {
                             <a href="https://www.cwwtechafrica.com/frntend-volunteer-form/">Learn more</a>
                         </article>
                     </div>
-                    <div className="card">
+                    <div className="card" data-aos="slide-up">
                         <>
                             <img src={ sect_8 } alt="section-6-img" />
                         </>
