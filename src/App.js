@@ -6,7 +6,6 @@ import { Route, BrowserRouter as Router, Routes } from 'react-router-dom'
 
 import About from './components/pages/about';
 import Account from './components/pages/account';
-//import { AnimationOnScroll } from 'react-animation-on-scroll';
 import Contact from './components/pages/contact';
 import Courses from './components/pages/courses';
 import Error404 from './components/pages/404';
@@ -18,9 +17,9 @@ import Login from './components/pages/login';
 import Logout from './components/pages/logout';
 import Programs from './components/pages/programs';
 import Register from './components/pages/register';
-import Test from './components/pages/sample';
 import { useSelector } from 'react-redux';
 
+//import { AnimationOnScroll } from 'react-animation-on-scroll';
 //import image from './components/images/CWW-Tech-Africa.png'
 
 function App() {
@@ -47,7 +46,7 @@ function App() {
     <Router>
 
       <Header />
-      <Test/>
+      {/* <Test/> */}
 
       <div className="pages">
         <Routes>

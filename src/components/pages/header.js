@@ -1,8 +1,8 @@
 import '../styles/header.css'
 import 'aos/dist/aos.css'
 
-import { FaBars, FaChevronDown, FaTimes, FaUserGraduate } from 'react-icons/fa'
-import React, { Fragment, useEffect, useState } from 'react'
+import { FaBars, FaChevronDown, FaTimes } from 'react-icons/fa'
+import React, { Fragment, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 
 import { LoginActions } from '../../store/auth'
