@@ -32,25 +32,6 @@ import { useState } from 'react'
 
 //import { Fade, Slide, Zoom } from 'react-reveal'
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 const Home = () => {
 
     const [faqs, setFaqs] = useState(null);

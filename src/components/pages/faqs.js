@@ -9,7 +9,8 @@ import { Link } from 'react-router-dom'
 const Faqs = () => {
 
     const [faqs, setFaqs] = useState(null);
-    const handleFaqs = (id) =>{
+
+    const handleFaqs = (id) => {
         if (faqs === id) {
             return setFaqs(null);
         } else {

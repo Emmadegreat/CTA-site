@@ -16,8 +16,6 @@
         height: 80vh;
         background: linear-gradient(135deg, rgba(31, 54, 200, 0.9), rgba(21, 51, 200, 0.9)),
                     url("../images/sect-8.jpg") no-repeat center center / cover;
-        place-content: center;
-        place-items: center;
         border-bottom-right-radius: 6rem;
         padding: 4rem 1.5rem;
 
@@ -132,7 +130,6 @@
                     max-height: 10rem;
                     transition: all 0.5s;
                     height: 100%;
-                    line-height: 1.7;
                     font-size: 0.9rem;
                     line-height: 1.6;
                     padding: 1.2rem;
