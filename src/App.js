@@ -46,7 +46,6 @@ function App() {
     <Router>
 
       <Header />
-      {/* <Test/> */}
 
       <div className="pages">
         <Routes>
